@@ -1,0 +1,23 @@
+{
+  "skill": "geb-automation-skill",
+  "evals": [
+    {
+      "id": "geb-01",
+      "category": "basic",
+      "query": "Write a Geb test for login",
+      "expected": [
+        "Browser",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "geb-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

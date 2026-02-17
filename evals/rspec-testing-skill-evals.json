@@ -1,0 +1,23 @@
+{
+  "skill": "rspec-testing-skill",
+  "evals": [
+    {
+      "id": "rsp-01",
+      "category": "basic",
+      "query": "Write a RSpec Ruby testing test for login",
+      "expected": [
+        "rspec",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "rsp-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

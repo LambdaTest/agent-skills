@@ -1,0 +1,23 @@
+{
+  "skill": "xunit-testing-skill",
+  "evals": [
+    {
+      "id": "xun-01",
+      "category": "basic",
+      "query": "Write a xUnit C# testing test for login",
+      "expected": [
+        "Xunit",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "xun-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill": "nunit-testing-skill",
+  "evals": [
+    {
+      "id": "nun-01",
+      "category": "basic",
+      "query": "Write a NUnit C# testing test for login",
+      "expected": [
+        "Framework",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "nun-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

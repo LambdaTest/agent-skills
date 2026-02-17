@@ -1,0 +1,23 @@
+{
+  "skill": "mstest-testing-skill",
+  "evals": [
+    {
+      "id": "mst-01",
+      "category": "basic",
+      "query": "Write a MSTest C# testing test for login",
+      "expected": [
+        "UnitTesting",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "mst-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

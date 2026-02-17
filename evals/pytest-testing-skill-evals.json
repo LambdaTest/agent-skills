@@ -1,0 +1,23 @@
+{
+  "skill": "pytest-testing-skill",
+  "evals": [
+    {
+      "id": "pyt-01",
+      "category": "basic",
+      "query": "Write a Pytest testing test for login",
+      "expected": [
+        "pytest",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "pyt-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

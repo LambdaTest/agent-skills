@@ -1,0 +1,23 @@
+{
+  "skill": "mocha-testing-skill",
+  "evals": [
+    {
+      "id": "moc-01",
+      "category": "basic",
+      "query": "Write a Mocha testing test for login",
+      "expected": [
+        "mocha",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "moc-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

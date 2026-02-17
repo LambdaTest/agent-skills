@@ -1,0 +1,23 @@
+{
+  "skill": "gauge-automation-skill",
+  "evals": [
+    {
+      "id": "gau-01",
+      "category": "basic",
+      "query": "Write a Gauge by ThoughtWorks test for login",
+      "expected": [
+        "gauge",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "gau-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

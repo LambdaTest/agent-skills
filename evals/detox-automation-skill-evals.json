@@ -1,0 +1,35 @@
+{
+  "skill": "detox-automation-skill",
+  "evals": [
+    {
+      "id": "dtx-01",
+      "category": "basic",
+      "query": "Write a Detox test for React Native login",
+      "expected": [
+        "element(by.id",
+        "tap()",
+        "toBeVisible()",
+        "device.launchApp"
+      ]
+    },
+    {
+      "id": "dtx-02",
+      "category": "setup",
+      "query": "Set up Detox for my React Native project",
+      "expected": [
+        ".detoxrc.js",
+        "detox init",
+        "ios.sim.debug",
+        "android.emu.debug"
+      ]
+    },
+    {
+      "id": "dtx-03",
+      "category": "negative",
+      "query": "Write Flutter widget tests",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill": "vitest-testing-skill",
+  "evals": [
+    {
+      "id": "vit-01",
+      "category": "basic",
+      "query": "Write a Vitest testing test for login",
+      "expected": [
+        "vitest",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "vit-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

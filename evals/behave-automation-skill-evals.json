@@ -1,0 +1,23 @@
+{
+  "skill": "behave-automation-skill",
+  "evals": [
+    {
+      "id": "beh-01",
+      "category": "basic",
+      "query": "Write a Behave BDD Python test for login",
+      "expected": [
+        "behave",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "beh-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

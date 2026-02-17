@@ -1,0 +1,23 @@
+{
+  "skill": "unittest-testing-skill",
+  "evals": [
+    {
+      "id": "uni-01",
+      "category": "basic",
+      "query": "Write a Python unittest test for login",
+      "expected": [
+        "unittest",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "uni-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

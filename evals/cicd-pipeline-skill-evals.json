@@ -1,0 +1,23 @@
+{
+  "skill": "cicd-pipeline-skill",
+  "evals": [
+    {
+      "id": "cic-01",
+      "category": "basic",
+      "query": "Write a CI/CD pipeline for testing test for login",
+      "expected": [
+        "github-actions/jenkins/gitlab-ci",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "cic-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

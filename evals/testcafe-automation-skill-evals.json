@@ -1,0 +1,24 @@
+{
+  "skill": "testcafe-automation-skill",
+  "evals": [
+    {
+      "id": "tc-01",
+      "category": "basic",
+      "query": "Write a TestCafe test for form submission",
+      "expected": [
+        "fixture",
+        "test",
+        "Selector",
+        "t.typeText"
+      ]
+    },
+    {
+      "id": "tc-02",
+      "category": "negative",
+      "query": "Write Playwright test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

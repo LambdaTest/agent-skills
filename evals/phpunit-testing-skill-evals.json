@@ -1,0 +1,23 @@
+{
+  "skill": "phpunit-testing-skill",
+  "evals": [
+    {
+      "id": "php-01",
+      "category": "basic",
+      "query": "Write a PHPUnit testing test for login",
+      "expected": [
+        "PHPUnit\\Framework",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "php-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

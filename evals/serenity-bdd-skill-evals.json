@@ -1,0 +1,23 @@
+{
+  "skill": "serenity-bdd-skill",
+  "evals": [
+    {
+      "id": "ser-01",
+      "category": "basic",
+      "query": "Write a Serenity BDD test for login",
+      "expected": [
+        "serenitybdd",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "ser-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

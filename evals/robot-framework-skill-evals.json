@@ -1,0 +1,23 @@
+{
+  "skill": "robot-framework-skill",
+  "evals": [
+    {
+      "id": "rob-01",
+      "category": "basic",
+      "query": "Write a Robot Framework test for login",
+      "expected": [
+        "robot",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "rob-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "skill": "appium-automation-skill",
+  "evals": [
+    {
+      "id": "app-01",
+      "category": "basic-android",
+      "query": "Write an Appium test that logs into my Android app",
+      "expected": [
+        "UiAutomator2Options",
+        "AndroidDriver",
+        "AppiumBy.accessibilityId",
+        "WebDriverWait"
+      ]
+    },
+    {
+      "id": "app-02",
+      "category": "basic-ios",
+      "query": "Write an Appium test for my iOS app login",
+      "expected": [
+        "XCUITestOptions",
+        "IOSDriver",
+        "automationName: XCUITest"
+      ]
+    },
+    {
+      "id": "app-03",
+      "category": "cloud-routing",
+      "query": "Run my Appium tests on real Pixel 8 and iPhone 16 on LambdaTest",
+      "expected": [
+        "mobile-hub.lambdatest.com",
+        "lt://",
+        "isRealMobile",
+        "LT:Options"
+      ]
+    },
+    {
+      "id": "app-04",
+      "category": "language-detection",
+      "query": "Write Appium test in Python for Android",
+      "expected": [
+        "Appium-Python-Client",
+        "AppiumBy",
+        "webdriver.Remote",
+        "NOT Java"
+      ]
+    },
+    {
+      "id": "app-05",
+      "category": "gestures",
+      "query": "How to scroll and swipe in my Appium test",
+      "expected": [
+        "PointerInput",
+        "Sequence",
+        "createPointerMove"
+      ]
+    },
+    {
+      "id": "app-06",
+      "category": "hybrid",
+      "query": "My app has a WebView, how to test it with Appium",
+      "expected": [
+        "getContextHandles",
+        "WEBVIEW",
+        "driver.context()",
+        "switch"
+      ]
+    },
+    {
+      "id": "app-07",
+      "category": "negative-trigger",
+      "query": "Write a Selenium test for a website",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

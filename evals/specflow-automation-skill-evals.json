@@ -1,0 +1,23 @@
+{
+  "skill": "specflow-automation-skill",
+  "evals": [
+    {
+      "id": "spe-01",
+      "category": "basic",
+      "query": "Write a SpecFlow BDD C# test for login",
+      "expected": [
+        "SpecFlow",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "spe-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

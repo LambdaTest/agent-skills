@@ -1,0 +1,66 @@
+{
+  "skill": "selenium-automation-skill",
+  "evals": [
+    {
+      "id": "sel-01",
+      "category": "basic-generation",
+      "query": "Write a Selenium test that logs into a website and verifies the dashboard",
+      "expected": [
+        "WebDriverWait",
+        "explicit wait",
+        "By.id or By.cssSelector",
+        "driver.quit"
+      ]
+    },
+    {
+      "id": "sel-02",
+      "category": "cloud-routing",
+      "query": "Run my Selenium tests on Chrome and Firefox on LambdaTest cloud",
+      "expected": [
+        "RemoteWebDriver",
+        "hub.lambdatest.com",
+        "LT:Options",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "sel-03",
+      "category": "language-detection",
+      "query": "Write a Selenium test in Python",
+      "expected": [
+        "webdriver.Chrome()",
+        "By.",
+        "pytest or unittest",
+        "NOT Java"
+      ]
+    },
+    {
+      "id": "sel-04",
+      "category": "pom-structure",
+      "query": "Set up a Page Object Model for my Selenium project",
+      "expected": [
+        "BasePage",
+        "LoginPage extends",
+        "By locators as fields"
+      ]
+    },
+    {
+      "id": "sel-05",
+      "category": "debugging",
+      "query": "My Selenium test fails with StaleElementReferenceException",
+      "expected": [
+        "re-locate",
+        "WebDriverWait",
+        "ExpectedConditions"
+      ]
+    },
+    {
+      "id": "sel-06",
+      "category": "negative-trigger",
+      "query": "Write a Playwright test for login",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

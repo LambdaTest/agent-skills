@@ -1,0 +1,23 @@
+{
+  "skill": "hyperexecute-skill",
+  "evals": [
+    {
+      "id": "hyp-01",
+      "category": "basic",
+      "query": "Write a HyperExecute orchestration test for login",
+      "expected": [
+        "hyperexecute",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "hyp-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

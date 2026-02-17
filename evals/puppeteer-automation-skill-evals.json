@@ -1,0 +1,24 @@
+{
+  "skill": "puppeteer-automation-skill",
+  "evals": [
+    {
+      "id": "pup-01",
+      "category": "basic",
+      "query": "Scrape product data from a page using Puppeteer",
+      "expected": [
+        "puppeteer.launch",
+        "page.goto",
+        "page.$$eval or page.$eval"
+      ]
+    },
+    {
+      "id": "pup-02",
+      "category": "cloud",
+      "query": "Run Puppeteer on LambdaTest",
+      "expected": [
+        "cdp.lambdatest.com/puppeteer",
+        "LT:Options"
+      ]
+    }
+  ]
+}

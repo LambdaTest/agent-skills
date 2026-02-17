@@ -1,0 +1,23 @@
+{
+  "skill": "karma-testing-skill",
+  "evals": [
+    {
+      "id": "kar-01",
+      "category": "basic",
+      "query": "Write a Karma test runner test for login",
+      "expected": [
+        "karma",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "kar-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

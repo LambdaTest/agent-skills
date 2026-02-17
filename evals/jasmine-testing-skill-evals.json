@@ -1,0 +1,23 @@
+{
+  "skill": "jasmine-testing-skill",
+  "evals": [
+    {
+      "id": "jas-01",
+      "category": "basic",
+      "query": "Write a Jasmine testing test for login",
+      "expected": [
+        "jasmine",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "jas-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

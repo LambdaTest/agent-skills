@@ -1,0 +1,23 @@
+{
+  "skill": "nightwatchjs-automation-skill",
+  "evals": [
+    {
+      "id": "nig-01",
+      "category": "basic",
+      "query": "Write a NightwatchJS test for login",
+      "expected": [
+        "nightwatch",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "nig-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

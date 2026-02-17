@@ -1,0 +1,23 @@
+{
+  "skill": "lettuce-testing-skill",
+  "evals": [
+    {
+      "id": "let-01",
+      "category": "basic",
+      "query": "Write a Lettuce BDD Python test for login",
+      "expected": [
+        "lettuce",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "let-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

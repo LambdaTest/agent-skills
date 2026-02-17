@@ -1,0 +1,23 @@
+{
+  "skill": "nemojs-automation-skill",
+  "evals": [
+    {
+      "id": "nem-01",
+      "category": "basic",
+      "query": "Write a Nemo.js test for login",
+      "expected": [
+        "nemo",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "nem-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

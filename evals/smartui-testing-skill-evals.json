@@ -1,0 +1,23 @@
+{
+  "skill": "smartui-testing-skill",
+  "evals": [
+    {
+      "id": "sma-01",
+      "category": "basic",
+      "query": "Write a SmartUI visual regression test for login",
+      "expected": [
+        "smartui",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "sma-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

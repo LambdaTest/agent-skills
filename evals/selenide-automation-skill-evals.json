@@ -1,0 +1,23 @@
+{
+  "skill": "selenide-automation-skill",
+  "evals": [
+    {
+      "id": "sel-01",
+      "category": "basic",
+      "query": "Write a Selenide test for login",
+      "expected": [
+        "selenide",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "sel-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

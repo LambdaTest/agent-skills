@@ -1,0 +1,23 @@
+{
+  "skill": "testng-testing-skill",
+  "evals": [
+    {
+      "id": "tes-01",
+      "category": "basic",
+      "query": "Write a TestNG testing test for login",
+      "expected": [
+        "testng",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "tes-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

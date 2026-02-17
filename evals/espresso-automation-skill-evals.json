@@ -1,0 +1,45 @@
+{
+  "skill": "espresso-automation-skill",
+  "evals": [
+    {
+      "id": "esp-01",
+      "category": "basic",
+      "query": "Write an Espresso test for Android login screen",
+      "expected": [
+        "onView",
+        "withId",
+        "perform(typeText",
+        "check(matches"
+      ]
+    },
+    {
+      "id": "esp-02",
+      "category": "cloud",
+      "query": "Run Espresso tests on LambdaTest real devices",
+      "expected": [
+        "upload APK",
+        "lt://",
+        "mobile-api.lambdatest.com",
+        "espresso/build"
+      ]
+    },
+    {
+      "id": "esp-03",
+      "category": "recycler",
+      "query": "Test a RecyclerView list in Espresso",
+      "expected": [
+        "RecyclerViewActions",
+        "actionOnItemAtPosition",
+        "scrollTo"
+      ]
+    },
+    {
+      "id": "esp-04",
+      "category": "negative",
+      "query": "Write an XCUITest for iOS app",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

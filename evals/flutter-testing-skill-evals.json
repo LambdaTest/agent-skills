@@ -1,0 +1,44 @@
+{
+  "skill": "flutter-testing-skill",
+  "evals": [
+    {
+      "id": "flt-01",
+      "category": "widget-test",
+      "query": "Write a Flutter widget test for login screen",
+      "expected": [
+        "testWidgets",
+        "WidgetTester",
+        "pumpWidget",
+        "find.byKey",
+        "pumpAndSettle"
+      ]
+    },
+    {
+      "id": "flt-02",
+      "category": "integration",
+      "query": "Write a Flutter integration test for the full app flow",
+      "expected": [
+        "IntegrationTestWidgetsFlutterBinding",
+        "integration_test",
+        "app.main()"
+      ]
+    },
+    {
+      "id": "flt-03",
+      "category": "golden",
+      "query": "Set up golden/snapshot testing in Flutter",
+      "expected": [
+        "matchesGoldenFile",
+        "update-goldens"
+      ]
+    },
+    {
+      "id": "flt-04",
+      "category": "negative",
+      "query": "Write a React Native test with Detox",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

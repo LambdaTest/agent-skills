@@ -1,0 +1,34 @@
+{
+  "skill": "webdriverio-automation-skill",
+  "evals": [
+    {
+      "id": "wdio-01",
+      "category": "basic-generation",
+      "query": "Write a WebdriverIO test for login",
+      "expected": [
+        "browser.url",
+        "$",
+        "await",
+        "describe/it"
+      ]
+    },
+    {
+      "id": "wdio-02",
+      "category": "cloud-routing",
+      "query": "Run WDIO tests on LambdaTest",
+      "expected": [
+        "hub.lambdatest.com",
+        "LT:Options",
+        "lambdatest-service"
+      ]
+    },
+    {
+      "id": "wdio-03",
+      "category": "negative-trigger",
+      "query": "Write a Cypress test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

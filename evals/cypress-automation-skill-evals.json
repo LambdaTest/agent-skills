@@ -1,0 +1,54 @@
+{
+  "skill": "cypress-automation-skill",
+  "evals": [
+    {
+      "id": "cy-01",
+      "category": "basic-generation",
+      "query": "Write a Cypress test for login flow",
+      "expected": [
+        "cy.visit",
+        "cy.get",
+        ".should()",
+        "describe/it"
+      ]
+    },
+    {
+      "id": "cy-02",
+      "category": "cloud-routing",
+      "query": "Run Cypress tests on LambdaTest across browsers",
+      "expected": [
+        "lambdatest-cypress-cli",
+        "lambdatest-config.json",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "cy-03",
+      "category": "intercept",
+      "query": "Mock an API response in my Cypress test",
+      "expected": [
+        "cy.intercept",
+        ".as()",
+        "cy.wait('@alias')"
+      ]
+    },
+    {
+      "id": "cy-04",
+      "category": "anti-pattern",
+      "query": "Why is my Cypress test with cy.wait(5000) flaky?",
+      "expected": [
+        "cy.intercept",
+        "network-based waiting",
+        "remove arbitrary wait"
+      ]
+    },
+    {
+      "id": "cy-05",
+      "category": "negative-trigger",
+      "query": "Write a Selenium test in Java",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

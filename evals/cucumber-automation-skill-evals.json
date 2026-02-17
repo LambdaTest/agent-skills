@@ -1,0 +1,23 @@
+{
+  "skill": "cucumber-automation-skill",
+  "evals": [
+    {
+      "id": "cuc-01",
+      "category": "basic",
+      "query": "Write a Cucumber BDD test for login",
+      "expected": [
+        "cucumber",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "cuc-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

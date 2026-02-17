@@ -1,0 +1,23 @@
+{
+  "skill": "behat-automation-skill",
+  "evals": [
+    {
+      "id": "beh-01",
+      "category": "basic",
+      "query": "Write a Behat BDD PHP test for login",
+      "expected": [
+        "Behat",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "beh-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill": "junit-testing-skill",
+  "evals": [
+    {
+      "id": "jun-01",
+      "category": "basic",
+      "query": "Write a JUnit 5 unit testing test for login",
+      "expected": [
+        "jupiter",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "jun-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

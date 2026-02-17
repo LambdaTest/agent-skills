@@ -1,0 +1,23 @@
+{
+  "skill": "jest-testing-skill",
+  "evals": [
+    {
+      "id": "jes-01",
+      "category": "basic",
+      "query": "Write a Jest testing test for login",
+      "expected": [
+        "jest",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "jes-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

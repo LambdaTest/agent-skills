@@ -1,0 +1,23 @@
+{
+  "skill": "protractor-automation-skill",
+  "evals": [
+    {
+      "id": "pro-01",
+      "category": "basic",
+      "query": "Write a Protractor (legacy) test for login",
+      "expected": [
+        "protractor",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "pro-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

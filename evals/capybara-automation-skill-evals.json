@@ -1,0 +1,23 @@
+{
+  "skill": "capybara-automation-skill",
+  "evals": [
+    {
+      "id": "cap-01",
+      "category": "basic",
+      "query": "Write a Capybara test for login",
+      "expected": [
+        "capybara",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "cap-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

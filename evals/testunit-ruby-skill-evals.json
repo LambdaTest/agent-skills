@@ -1,0 +1,23 @@
+{
+  "skill": "testunit-ruby-skill",
+  "evals": [
+    {
+      "id": "tes-01",
+      "category": "basic",
+      "query": "Write a Test::Unit Ruby test for login",
+      "expected": [
+        "test/unit",
+        "test",
+        "assert"
+      ]
+    },
+    {
+      "id": "tes-02",
+      "category": "negative",
+      "query": "Write a completely unrelated framework test",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

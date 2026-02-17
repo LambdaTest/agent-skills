@@ -1,0 +1,35 @@
+{
+  "skill": "xcuitest-automation-skill",
+  "evals": [
+    {
+      "id": "xcu-01",
+      "category": "basic",
+      "query": "Write XCUITest for iOS login screen",
+      "expected": [
+        "XCUIApplication",
+        "XCTAssertTrue",
+        "waitForExistence",
+        "tap()"
+      ]
+    },
+    {
+      "id": "xcu-02",
+      "category": "cloud",
+      "query": "Run XCUITest on LambdaTest real iPhones",
+      "expected": [
+        "xcuitest/build",
+        "lt://",
+        "iPhone",
+        "mobile-api.lambdatest.com"
+      ]
+    },
+    {
+      "id": "xcu-03",
+      "category": "negative",
+      "query": "Write Espresso test for Android",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}
