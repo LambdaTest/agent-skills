@@ -29,10 +29,10 @@ Instead of getting generic test code, your AI agent becomes a **Senior QA automa
 ```bash
 # Clone the repo and copy the skill you need
 git clone https://github.com/LambdaTest/agent-skills.git
-cp -r agent-skills/selenium-automation-skill .claude/skills/
+cp -r agent-skills/selenium-skill .claude/skills/
 
 # Or for Cursor / Copilot
-cp -r agent-skills/playwright-automation-skill .cursor/skills/
+cp -r agent-skills/playwright-skill .cursor/skills/
 ```
 
 ### Option 2: Install All Skills
@@ -105,50 +105,50 @@ These skills follow the open **[Agent Skills Standard](https://agentskills.io)**
 
 | Skill | Languages | Category | Description |
 |-------|-----------|----------|-------------|
-| **[Selenium Skill](selenium-automation-skill/)** | Java, Python, JS, C#, Ruby | E2E | Selenium WebDriver with cross-browser cloud support |
-| **[Playwright Skill](playwright-automation-skill/)** | JS, TS, Python, Java, C# | E2E | Playwright browser automation with API mocking |
-| **[Cypress Skill](cypress-automation-skill/)** | JS, TS | E2E | Cypress E2E and component testing |
-| **[Jest Skill](jest-testing-skill/)** | JS, TS | Unit | Jest unit/integration tests with mocking |
-| **[JUnit 5 Skill](junit-testing-skill/)** | Java | Unit | JUnit 5 with parameterized tests and extensions |
-| **[pytest Skill](pytest-testing-skill/)** | Python | Unit | pytest with fixtures, parametrize, and plugins |
-| **[TestNG Skill](testng-testing-skill/)** | Java | Unit | TestNG with data providers and parallel execution |
-| **[WebdriverIO Skill](webdriverio-automation-skill/)** | JS, TS | E2E | WebdriverIO with page objects and cloud integration |
-| **[Appium Skill](appium-automation-skill/)** | Java, Python, JS, Ruby, C# | Mobile | Appium mobile testing for iOS and Android |
-| **[Puppeteer Skill](puppeteer-automation-skill/)** | JS, TS | E2E | Puppeteer Chrome automation |
+| **[Selenium Skill](selenium-skill/)** | Java, Python, JS, C#, Ruby | E2E | Selenium WebDriver with cross-browser cloud support |
+| **[Playwright Skill](playwright-skill/)** | JS, TS, Python, Java, C# | E2E | Playwright browser automation with API mocking |
+| **[Cypress Skill](cypress-skill/)** | JS, TS | E2E | Cypress E2E and component testing |
+| **[Jest Skill](jest-skill/)** | JS, TS | Unit | Jest unit/integration tests with mocking |
+| **[JUnit 5 Skill](junit-5-skill/)** | Java | Unit | JUnit 5 with parameterized tests and extensions |
+| **[pytest Skill](pytest-skill/)** | Python | Unit | pytest with fixtures, parametrize, and plugins |
+| **[TestNG Skill](testng-skill/)** | Java | Unit | TestNG with data providers and parallel execution |
+| **[WebdriverIO Skill](webdriverio-skill/)** | JS, TS | E2E | WebdriverIO with page objects and cloud integration |
+| **[Appium Skill](appium-skill/)** | Java, Python, JS, Ruby, C# | Mobile | Appium mobile testing for iOS and Android |
+| **[Puppeteer Skill](puppeteer-skill/)** | JS, TS | E2E | Puppeteer Chrome automation |
 | **[Test Framework Migration Skill](test-framework-migration-skill/)** | JS, TS, Java, Python, C# | Migration | Convert tests between Selenium, Playwright, Puppeteer, Cypress |
-| **[Mocha Skill](mocha-testing-skill/)** | JS, TS | Unit | Mocha with Chai assertions |
-| **[Vitest Skill](vitest-testing-skill/)** | JS, TS | Unit | Vitest for Vite projects |
-| **[Cucumber Skill](cucumber-automation-skill/)** | Java, JS, Ruby, TS | BDD | Cucumber Gherkin BDD |
-| **[Espresso Skill](espresso-automation-skill/)** | Java, Kotlin | Mobile | Espresso Android UI testing |
-| **[Nightwatch.js Skill](nightwatchjs-automation-skill/)** | JS, TS | E2E | Nightwatch.js browser automation |
+| **[Mocha Skill](mocha-skill/)** | JS, TS | Unit | Mocha with Chai assertions |
+| **[Vitest Skill](vitest-skill/)** | JS, TS | Unit | Vitest for Vite projects |
+| **[Cucumber Skill](cucumber-skill/)** | Java, JS, Ruby, TS | BDD | Cucumber Gherkin BDD |
+| **[Espresso Skill](espresso-skill/)** | Java, Kotlin | Mobile | Espresso Android UI testing |
+| **[Nightwatch.js Skill](nightwatchjs-skill/)** | JS, TS | E2E | Nightwatch.js browser automation |
 | **[Flutter Testing Skill](flutter-testing-skill/)** | Dart | Mobile | Flutter widget and integration tests |
-| **[XCUITest Skill](xcuitest-automation-skill/)** | Swift, Obj-C | Mobile | XCUITest iOS UI testing |
-| **[Detox Skill](detox-automation-skill/)** | JS, TS | Mobile | Detox React Native E2E testing |
-| **[TestCafe Skill](testcafe-automation-skill/)** | JS, TS | E2E | TestCafe cross-browser testing |
-| **[xUnit Skill](xunit-testing-skill/)** | C# | Unit | xUnit.net for .NET |
-| **[RSpec Skill](rspec-testing-skill/)** | Ruby | Unit | RSpec with shared examples |
-| **[NUnit Skill](nunit-testing-skill/)** | C# | Unit | NUnit for .NET |
-| **[Karma Skill](karma-testing-skill/)** | JS, TS | Unit | Karma test runner |
-| **[MSTest Skill](mstest-testing-skill/)** | C# | Unit | MSTest for .NET |
-| **[Jasmine Skill](jasmine-testing-skill/)** | JS, TS | Unit | Jasmine BDD-style testing |
-| **[PHPUnit Skill](phpunit-testing-skill/)** | PHP | Unit | PHPUnit with data providers |
+| **[XCUITest Skill](xcuitest-skill/)** | Swift, Obj-C | Mobile | XCUITest iOS UI testing |
+| **[Detox Skill](detox-skill/)** | JS, TS | Mobile | Detox React Native E2E testing |
+| **[TestCafe Skill](testcafe-skill/)** | JS, TS | E2E | TestCafe cross-browser testing |
+| **[xUnit Skill](xunit-skill/)** | C# | Unit | xUnit.net for .NET |
+| **[RSpec Skill](rspec-skill/)** | Ruby | Unit | RSpec with shared examples |
+| **[NUnit Skill](nunit-skill/)** | C# | Unit | NUnit for .NET |
+| **[Karma Skill](karma-skill/)** | JS, TS | Unit | Karma test runner |
+| **[MSTest Skill](mstest-skill/)** | C# | Unit | MSTest for .NET |
+| **[Jasmine Skill](jasmine-skill/)** | JS, TS | Unit | Jasmine BDD-style testing |
+| **[PHPUnit Skill](phpunit-skill/)** | PHP | Unit | PHPUnit with data providers |
 | **[Robot Framework Skill](robot-framework-skill/)** | Python, Robot | E2E | Robot Framework keyword-driven testing |
-| **[Behat Skill](behat-automation-skill/)** | PHP | BDD | Behat BDD for PHP |
-| **[Behave Skill](behave-automation-skill/)** | Python | BDD | Behave Python BDD |
-| **[Capybara Skill](capybara-automation-skill/)** | Ruby | E2E | Capybara acceptance testing |
-| **[Codeception Skill](codeception-testing-skill/)** | PHP | E2E | Codeception full-stack PHP testing |
-| **[Gauge Skill](gauge-automation-skill/)** | Java, Python, JS, Ruby, C# | BDD | Gauge specification-based testing |
-| **[Geb Skill](geb-automation-skill/)** | Groovy | E2E | Geb Groovy browser automation |
+| **[Behat Skill](behat-skill/)** | PHP | BDD | Behat BDD for PHP |
+| **[Behave Skill](behave-skill/)** | Python | BDD | Behave Python BDD |
+| **[Capybara Skill](capybara-skill/)** | Ruby | E2E | Capybara acceptance testing |
+| **[Codeception Skill](codeception-skill/)** | PHP | E2E | Codeception full-stack PHP testing |
+| **[Gauge Skill](gauge-skill/)** | Java, Python, JS, Ruby, C# | BDD | Gauge specification-based testing |
+| **[Geb Skill](geb-skill/)** | Groovy | E2E | Geb Groovy browser automation |
 | **[Laravel Dusk Skill](laravel-dusk-skill/)** | PHP | E2E | Laravel Dusk browser testing |
-| **[Lettuce Skill](lettuce-testing-skill/)** | Python | BDD | Lettuce Python BDD testing |
-| **[Nemo.js Skill](nemojs-automation-skill/)** | JS | E2E | Nemo.js PayPal browser automation |
-| **[Protractor Skill](protractor-automation-skill/)** | JS, TS | E2E | Protractor Angular E2E testing |
-| **[Selenide Skill](selenide-automation-skill/)** | Java | E2E | Selenide fluent Selenium wrapper |
+| **[Lettuce Skill](lettuce-skill/)** | Python | BDD | Lettuce Python BDD testing |
+| **[Nemo.js Skill](nemojs-skill/)** | JS | E2E | Nemo.js PayPal browser automation |
+| **[Protractor Skill](protractor-skill/)** | JS, TS | E2E | Protractor Angular E2E testing |
+| **[Selenide Skill](selenide-skill/)** | Java | E2E | Selenide fluent Selenium wrapper |
 | **[Serenity BDD Skill](serenity-bdd-skill/)** | Java | BDD | Serenity BDD with Screenplay pattern |
-| **[SmartUI Skill](smartui-testing-skill/)** | JS, TS, Java | Visual | SmartUI visual regression testing |
-| **[SpecFlow Skill](specflow-automation-skill/)** | C# | BDD | SpecFlow .NET BDD with Gherkin |
-| **[Test::Unit Skill](testunit-ruby-skill/)** | Ruby | Unit | Test::Unit Ruby testing |
-| **[unittest Skill](unittest-testing-skill/)** | Python | Unit | Python unittest with mocking |
+| **[SmartUI Skill](smartui-skill/)** | JS, TS, Java | Visual | SmartUI visual regression testing |
+| **[SpecFlow Skill](specflow-skill/)** | C# | BDD | SpecFlow .NET BDD with Gherkin |
+| **[Test::Unit Skill](testunit-skill/)** | Ruby | Unit | Test::Unit Ruby testing |
+| **[unittest Skill](unittest-skill/)** | Python | Unit | Python unittest with mocking |
 | **[HyperExecute Skill](hyperexecute-skill/)** | YAML | Cloud | HyperExecute cloud test orchestration |
 | **[CI/CD Pipeline Skill](cicd-pipeline-skill/)** | YAML | DevOps | CI/CD pipeline integration |
 
@@ -159,7 +159,7 @@ These skills follow the open **[Agent Skills Standard](https://agentskills.io)**
 Each skill follows the Agent Skills Standard with progressive disclosure:
 
 ```
-selenium-automation-skill/
+selenium-skill/
 ├── SKILL.md                          # Core instructions (<500 lines)
 │   └── Workflow + decision trees     # When/how to use the skill
 └── reference/

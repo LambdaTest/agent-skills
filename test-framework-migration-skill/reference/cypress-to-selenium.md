@@ -73,7 +73,7 @@ wait.until(ExpectedConditions.urlContains("/dashboard"));
 ## Cloud (TestMu)
 
 - Cypress: LambdaTest Cypress CLI.
-- Selenium: RemoteWebDriver + hub + DesiredCapabilities / LT:Options. See [selenium-automation-skill/reference/cloud-integration.md](../../selenium-automation-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
+- Selenium: RemoteWebDriver + hub + DesiredCapabilities / LT:Options. See [selenium-skill/reference/cloud-integration.md](../../selenium-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
 
 ## Gotchas
 

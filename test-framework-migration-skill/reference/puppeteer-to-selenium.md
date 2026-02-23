@@ -80,8 +80,8 @@ Assertions.assertTrue(driver.getTitle().contains("Dashboard"));
 
 ## Cloud (TestMu)
 
-- Puppeteer: connect via LambdaTest WebSocket (see puppeteer-automation-skill/reference/cloud-integration.md).
-- Selenium: RemoteWebDriver + hub + DesiredCapabilities / LT:Options. See [selenium-automation-skill/reference/cloud-integration.md](../../selenium-automation-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
+- Puppeteer: connect via LambdaTest WebSocket (see puppeteer-skill/reference/cloud-integration.md).
+- Selenium: RemoteWebDriver + hub + DesiredCapabilities / LT:Options. See [selenium-skill/reference/cloud-integration.md](../../selenium-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
 
 ## Gotchas
 

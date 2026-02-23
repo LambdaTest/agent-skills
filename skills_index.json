@@ -15,8 +15,8 @@
   ],
   "skills": [
     {
-      "name": "appium-automation-skill",
-      "path": "appium-automation-skill",
+      "name": "appium-skill",
+      "path": "appium-skill",
       "description": "Generates production-grade Appium mobile automation scripts for Android and iOS in Java, Python, or JavaScript. Supports real device and emulator testing locally and on TestMu AI cloud with 100+ real devices. Use when the user asks to automate mobile apps, test on Android/iOS, write Appium tests, or mentions \"Appium\", \"mobile testing\", \"real device\", \"app automation\". Triggers on: \"Appium\", \"mobile test\", \"Android test\", \"iOS test\", \"real device\", \"app automation\", \"UiAutomator\", \"XCUITest driver\", \"TestMu\", \"LambdaTest\".",
       "languages": [
         "Java",
@@ -27,63 +27,63 @@
       ],
       "category": "mobile-testing",
       "files": {
-        "skill_md": "appium-automation-skill/SKILL.md",
+        "skill_md": "appium-skill/SKILL.md",
         "reference": [
-          "appium-automation-skill/reference/cloud-integration.md",
-          "appium-automation-skill/reference/hybrid-apps.md",
-          "appium-automation-skill/reference/ios-specific.md",
-          "appium-automation-skill/reference/javascript-patterns.md",
-          "appium-automation-skill/reference/playbook.md",
-          "appium-automation-skill/reference/python-patterns.md"
+          "appium-skill/reference/cloud-integration.md",
+          "appium-skill/reference/hybrid-apps.md",
+          "appium-skill/reference/ios-specific.md",
+          "appium-skill/reference/javascript-patterns.md",
+          "appium-skill/reference/playbook.md",
+          "appium-skill/reference/python-patterns.md"
         ]
       }
     },
     {
-      "name": "behat-automation-skill",
-      "path": "behat-automation-skill",
+      "name": "behat-skill",
+      "path": "behat-skill",
       "description": "Generates Behat BDD tests for PHP with Gherkin feature files and MinkContext for browser testing. Use when user mentions \"Behat\", \"PHP BDD\", \"Mink\", \"behat.yml\". Triggers on: \"Behat\", \"PHP BDD\", \"Mink\", \"behat.yml\", \"FeatureContext PHP\".",
       "languages": [
         "PHP"
       ],
       "category": "bdd-testing",
       "files": {
-        "skill_md": "behat-automation-skill/SKILL.md",
+        "skill_md": "behat-skill/SKILL.md",
         "reference": [
-          "behat-automation-skill/reference/advanced-patterns.md",
-          "behat-automation-skill/reference/playbook.md"
+          "behat-skill/reference/advanced-patterns.md",
+          "behat-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "behave-automation-skill",
-      "path": "behave-automation-skill",
+      "name": "behave-skill",
+      "path": "behave-skill",
       "description": "Generates Behave BDD tests for Python with Gherkin feature files and step implementations. Use when user mentions \"Behave\", \"Python BDD\", \"Python Gherkin\". Triggers on: \"Behave\", \"Python BDD\", \"behave test\", \"Python feature file\".",
       "languages": [
         "Python"
       ],
       "category": "bdd-testing",
       "files": {
-        "skill_md": "behave-automation-skill/SKILL.md",
+        "skill_md": "behave-skill/SKILL.md",
         "reference": [
-          "behave-automation-skill/reference/advanced-patterns.md",
-          "behave-automation-skill/reference/playbook.md"
+          "behave-skill/reference/advanced-patterns.md",
+          "behave-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "capybara-automation-skill",
-      "path": "capybara-automation-skill",
+      "name": "capybara-skill",
+      "path": "capybara-skill",
       "description": "Generates Capybara E2E tests in Ruby with RSpec integration. Acceptance testing DSL for web apps. Use when user mentions \"Capybara\", \"visit\", \"fill_in\", \"click_button\", \"Ruby E2E\". Triggers on: \"Capybara\", \"Ruby acceptance test\", \"fill_in\", \"click_button\", \"have_content\".",
       "languages": [
         "Ruby"
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "capybara-automation-skill/SKILL.md",
+        "skill_md": "capybara-skill/SKILL.md",
         "reference": [
-          "capybara-automation-skill/reference/advanced-patterns.md",
-          "capybara-automation-skill/reference/cloud-integration.md",
-          "capybara-automation-skill/reference/playbook.md"
+          "capybara-skill/reference/advanced-patterns.md",
+          "capybara-skill/reference/cloud-integration.md",
+          "capybara-skill/reference/playbook.md"
         ]
       }
     },
@@ -103,25 +103,25 @@
       }
     },
     {
-      "name": "codeception-testing-skill",
-      "path": "codeception-testing-skill",
+      "name": "codeception-skill",
+      "path": "codeception-skill",
       "description": "Generates Codeception tests in PHP covering acceptance, functional, and unit testing. BDD-style with Actor pattern. Use when user mentions \"Codeception\", \"$I->amOnPage\", \"$I->see\", \"Cest\". Triggers on: \"Codeception\", \"$I->amOnPage\", \"AcceptanceTester\", \"Codeception PHP\", \"Cest\".",
       "languages": [
         "PHP"
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "codeception-testing-skill/SKILL.md",
+        "skill_md": "codeception-skill/SKILL.md",
         "reference": [
-          "codeception-testing-skill/reference/advanced-patterns.md",
-          "codeception-testing-skill/reference/cloud-integration.md",
-          "codeception-testing-skill/reference/playbook.md"
+          "codeception-skill/reference/advanced-patterns.md",
+          "codeception-skill/reference/cloud-integration.md",
+          "codeception-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "cucumber-automation-skill",
-      "path": "cucumber-automation-skill",
+      "name": "cucumber-skill",
+      "path": "cucumber-skill",
       "description": "Generates Cucumber BDD tests with Gherkin feature files and step definitions in Java, JavaScript, or Ruby. Use when user mentions \"Cucumber\", \"Gherkin\", \"Feature/Scenario\", \"Given/When/Then\", \"BDD\". Triggers on: \"Cucumber\", \"Gherkin\", \"BDD\", \"Feature file\", \"Given/When/Then\", \"step definitions\".",
       "languages": [
         "Java",
@@ -131,16 +131,16 @@
       ],
       "category": "bdd-testing",
       "files": {
-        "skill_md": "cucumber-automation-skill/SKILL.md",
+        "skill_md": "cucumber-skill/SKILL.md",
         "reference": [
-          "cucumber-automation-skill/reference/advanced-patterns.md",
-          "cucumber-automation-skill/reference/playbook.md"
+          "cucumber-skill/reference/advanced-patterns.md",
+          "cucumber-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "cypress-automation-skill",
-      "path": "cypress-automation-skill",
+      "name": "cypress-skill",
+      "path": "cypress-skill",
       "description": "Generates production-grade Cypress E2E and component tests in JavaScript or TypeScript. Supports local execution and TestMu AI cloud. Use when the user asks to write Cypress tests, set up Cypress, test with cy commands, or mentions \"Cypress\", \"cy.visit\", \"cy.get\", \"cy.intercept\". Triggers on: \"Cypress\", \"cy.\", \"component test\", \"E2E test\", \"TestMu\", \"LambdaTest\".",
       "languages": [
         "JavaScript",
@@ -148,19 +148,19 @@
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "cypress-automation-skill/SKILL.md",
+        "skill_md": "cypress-skill/SKILL.md",
         "reference": [
-          "cypress-automation-skill/reference/cloud-integration.md",
-          "cypress-automation-skill/reference/component-testing.md",
-          "cypress-automation-skill/reference/custom-commands.md",
-          "cypress-automation-skill/reference/debugging-flaky.md",
-          "cypress-automation-skill/reference/playbook.md"
+          "cypress-skill/reference/cloud-integration.md",
+          "cypress-skill/reference/component-testing.md",
+          "cypress-skill/reference/custom-commands.md",
+          "cypress-skill/reference/debugging-flaky.md",
+          "cypress-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "detox-automation-skill",
-      "path": "detox-automation-skill",
+      "name": "detox-skill",
+      "path": "detox-skill",
       "description": "Generates Detox E2E tests for React Native apps in JavaScript. Gray-box testing framework with automatic synchronization. Supports local simulators/emulators and TestMu AI cloud. Use when user mentions \"Detox\", \"React Native test\", \"element(by.id())\", \"device.launchApp\". Triggers on: \"Detox\", \"React Native E2E\", \"React Native test\", \"element(by.id)\", \"device.launchApp\".",
       "languages": [
         "JavaScript",
@@ -168,16 +168,16 @@
       ],
       "category": "mobile-testing",
       "files": {
-        "skill_md": "detox-automation-skill/SKILL.md",
+        "skill_md": "detox-skill/SKILL.md",
         "reference": [
-          "detox-automation-skill/reference/advanced-patterns.md",
-          "detox-automation-skill/reference/playbook.md"
+          "detox-skill/reference/advanced-patterns.md",
+          "detox-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "espresso-automation-skill",
-      "path": "espresso-automation-skill",
+      "name": "espresso-skill",
+      "path": "espresso-skill",
       "description": "Generates Espresso UI tests for Android apps in Kotlin or Java. Espresso runs inside the app process for fast, reliable UI testing. Supports local and TestMu AI cloud real devices. Use when user mentions \"Espresso\", \"onView\", \"ViewMatchers\", \"Android UI test\", or \"instrumentation test\". Triggers on: \"Espresso\", \"onView\", \"ViewMatchers\", \"Android UI test\", \"instrumentation\", \"TestMu\".",
       "languages": [
         "Java",
@@ -185,11 +185,11 @@
       ],
       "category": "mobile-testing",
       "files": {
-        "skill_md": "espresso-automation-skill/SKILL.md",
+        "skill_md": "espresso-skill/SKILL.md",
         "reference": [
-          "espresso-automation-skill/reference/advanced-patterns.md",
-          "espresso-automation-skill/reference/cloud-integration.md",
-          "espresso-automation-skill/reference/playbook.md"
+          "espresso-skill/reference/advanced-patterns.md",
+          "espresso-skill/reference/cloud-integration.md",
+          "espresso-skill/reference/playbook.md"
         ]
       }
     },
@@ -210,8 +210,8 @@
       }
     },
     {
-      "name": "gauge-automation-skill",
-      "path": "gauge-automation-skill",
+      "name": "gauge-skill",
+      "path": "gauge-skill",
       "description": "Generates Gauge test specifications in Markdown with step implementations in Java, Python, JS, or Ruby. ThoughtWorks' test automation framework. Use when user mentions \"Gauge\", \"spec file\", \"## Scenario\", \"step implementation\". Triggers on: \"Gauge\", \"Gauge spec\", \"Gauge framework\", \"ThoughtWorks test\".",
       "languages": [
         "Java",
@@ -222,27 +222,27 @@
       ],
       "category": "bdd-testing",
       "files": {
-        "skill_md": "gauge-automation-skill/SKILL.md",
+        "skill_md": "gauge-skill/SKILL.md",
         "reference": [
-          "gauge-automation-skill/reference/advanced-patterns.md",
-          "gauge-automation-skill/reference/playbook.md"
+          "gauge-skill/reference/advanced-patterns.md",
+          "gauge-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "geb-automation-skill",
-      "path": "geb-automation-skill",
+      "name": "geb-skill",
+      "path": "geb-skill",
       "description": "Generates Geb browser automation tests in Groovy with Spock integration. jQuery-like content DSL and page object pattern. Use when user mentions \"Geb\", \"Groovy test\", \"GebSpec\", \"Browser.drive\". Triggers on: \"Geb\", \"GebSpec\", \"Groovy browser test\", \"Browser.drive\".",
       "languages": [
         "Groovy"
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "geb-automation-skill/SKILL.md",
+        "skill_md": "geb-skill/SKILL.md",
         "reference": [
-          "geb-automation-skill/reference/advanced-patterns.md",
-          "geb-automation-skill/reference/cloud-integration.md",
-          "geb-automation-skill/reference/playbook.md"
+          "geb-skill/reference/advanced-patterns.md",
+          "geb-skill/reference/cloud-integration.md",
+          "geb-skill/reference/playbook.md"
         ]
       }
     },
@@ -262,8 +262,8 @@
       }
     },
     {
-      "name": "jasmine-testing-skill",
-      "path": "jasmine-testing-skill",
+      "name": "jasmine-skill",
+      "path": "jasmine-skill",
       "description": "Generates Jasmine tests in JavaScript. BDD-style framework with spies and async support. Use when user mentions \"Jasmine\", \"jasmine.createSpy\", \"toHaveBeenCalled\". Triggers on: \"Jasmine\", \"jasmine test\", \"createSpy\", \"Jasmine spec\".",
       "languages": [
         "JavaScript",
@@ -271,16 +271,16 @@
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "jasmine-testing-skill/SKILL.md",
+        "skill_md": "jasmine-skill/SKILL.md",
         "reference": [
-          "jasmine-testing-skill/reference/advanced-patterns.md",
-          "jasmine-testing-skill/reference/playbook.md"
+          "jasmine-skill/reference/advanced-patterns.md",
+          "jasmine-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "jest-testing-skill",
-      "path": "jest-testing-skill",
+      "name": "jest-skill",
+      "path": "jest-skill",
       "description": "Generates Jest unit and integration tests in JavaScript or TypeScript. Covers mocking, snapshots, async testing, and React component testing. Use when user mentions \"Jest\", \"describe/it/expect\", \"jest.mock\", \"toMatchSnapshot\". Triggers on: \"Jest\", \"expect().toBe()\", \"jest.mock\", \"snapshot test\", \"JS test\", \"React test\".",
       "languages": [
         "JavaScript",
@@ -288,32 +288,32 @@
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "jest-testing-skill/SKILL.md",
+        "skill_md": "jest-skill/SKILL.md",
         "reference": [
-          "jest-testing-skill/reference/advanced-patterns.md",
-          "jest-testing-skill/reference/playbook.md"
+          "jest-skill/reference/advanced-patterns.md",
+          "jest-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "junit-testing-skill",
-      "path": "junit-testing-skill",
+      "name": "junit-5-skill",
+      "path": "junit-5-skill",
       "description": "Generates production-grade JUnit 5 unit and integration tests in Java. Covers assertions, parameterized tests, lifecycle hooks, mocking with Mockito, and nested tests. Use when user mentions \"JUnit\", \"JUnit 5\", \"@Test\", \"assertEquals\", \"Assertions\", \"Java unit test\". Triggers on: \"JUnit\", \"@Test\", \"assertEquals\", \"Java test\", \"unit test Java\".",
       "languages": [
         "Java"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "junit-testing-skill/SKILL.md",
+        "skill_md": "junit-5-skill/SKILL.md",
         "reference": [
-          "junit-testing-skill/reference/advanced-patterns.md",
-          "junit-testing-skill/reference/playbook.md"
+          "junit-5-skill/reference/advanced-patterns.md",
+          "junit-5-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "karma-testing-skill",
-      "path": "karma-testing-skill",
+      "name": "karma-skill",
+      "path": "karma-skill",
       "description": "Generates Karma test runner configurations for browser-based JavaScript testing. Works with Jasmine, Mocha, or QUnit. Use when user mentions \"Karma\", \"karma.conf.js\", \"browser test runner\". Triggers on: \"Karma\", \"karma.conf\", \"karma test runner\", \"browser-based JS test\".",
       "languages": [
         "JavaScript",
@@ -321,10 +321,10 @@
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "karma-testing-skill/SKILL.md",
+        "skill_md": "karma-skill/SKILL.md",
         "reference": [
-          "karma-testing-skill/reference/advanced-patterns.md",
-          "karma-testing-skill/reference/playbook.md"
+          "karma-skill/reference/advanced-patterns.md",
+          "karma-skill/reference/playbook.md"
         ]
       }
     },
@@ -346,24 +346,24 @@
       }
     },
     {
-      "name": "lettuce-testing-skill",
-      "path": "lettuce-testing-skill",
+      "name": "lettuce-skill",
+      "path": "lettuce-skill",
       "description": "Generates Lettuce BDD tests for Python with feature files and step definitions. Note: Lettuce is legacy/unmaintained; consider Behave for new projects. Use when user specifically mentions \"Lettuce\". Triggers on: \"Lettuce\", \"lettuce test\", \"lettuce BDD\".",
       "languages": [
         "Python"
       ],
       "category": "bdd-testing",
       "files": {
-        "skill_md": "lettuce-testing-skill/SKILL.md",
+        "skill_md": "lettuce-skill/SKILL.md",
         "reference": [
-          "lettuce-testing-skill/reference/advanced-patterns.md",
-          "lettuce-testing-skill/reference/playbook.md"
+          "lettuce-skill/reference/advanced-patterns.md",
+          "lettuce-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "mocha-testing-skill",
-      "path": "mocha-testing-skill",
+      "name": "mocha-skill",
+      "path": "mocha-skill",
       "description": "Generates Mocha tests in JavaScript with Chai assertions and Sinon mocking. Use when user mentions \"Mocha\", \"Chai\", \"sinon\", \"describe/it (not Jest)\". Triggers on: \"Mocha\", \"Chai\", \"sinon\", \"mocha test\".",
       "languages": [
         "JavaScript",
@@ -371,49 +371,49 @@
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "mocha-testing-skill/SKILL.md",
+        "skill_md": "mocha-skill/SKILL.md",
         "reference": [
-          "mocha-testing-skill/reference/advanced-patterns.md",
-          "mocha-testing-skill/reference/playbook.md"
+          "mocha-skill/reference/advanced-patterns.md",
+          "mocha-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "mstest-testing-skill",
-      "path": "mstest-testing-skill",
+      "name": "mstest-skill",
+      "path": "mstest-skill",
       "description": "Generates MSTest tests in C#. Microsoft's built-in testing framework for .NET. Use when user mentions \"MSTest\", \"[TestMethod]\", \"[TestClass]\", \"Assert.AreEqual\". Triggers on: \"MSTest\", \"[TestMethod]\", \"[TestClass]\", \"Microsoft test framework\".",
       "languages": [
         "C#"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "mstest-testing-skill/SKILL.md",
+        "skill_md": "mstest-skill/SKILL.md",
         "reference": [
-          "mstest-testing-skill/reference/advanced-patterns.md",
-          "mstest-testing-skill/reference/playbook.md"
+          "mstest-skill/reference/advanced-patterns.md",
+          "mstest-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "nemojs-automation-skill",
-      "path": "nemojs-automation-skill",
+      "name": "nemojs-skill",
+      "path": "nemojs-skill",
       "description": "Generates Nemo.js automation tests in JavaScript. PayPal's Selenium-based test framework for Node.js. Use when user mentions \"Nemo.js\", \"nemo automation\". Triggers on: \"Nemo.js\", \"nemo automation\", \"nemo test\", \"PayPal test framework\".",
       "languages": [
         "JavaScript"
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "nemojs-automation-skill/SKILL.md",
+        "skill_md": "nemojs-skill/SKILL.md",
         "reference": [
-          "nemojs-automation-skill/reference/advanced-patterns.md",
-          "nemojs-automation-skill/reference/cloud-integration.md",
-          "nemojs-automation-skill/reference/playbook.md"
+          "nemojs-skill/reference/advanced-patterns.md",
+          "nemojs-skill/reference/cloud-integration.md",
+          "nemojs-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "nightwatchjs-automation-skill",
-      "path": "nightwatchjs-automation-skill",
+      "name": "nightwatchjs-skill",
+      "path": "nightwatchjs-skill",
       "description": "Generates NightwatchJS E2E tests in JavaScript. Integrated test runner with Selenium WebDriver, built-in assertions, and page objects. Use when user mentions \"Nightwatch\", \"NightwatchJS\", \"nightwatch.conf.js\". Triggers on: \"Nightwatch\", \"NightwatchJS\", \"nightwatch test\".",
       "languages": [
         "JavaScript",
@@ -421,49 +421,49 @@
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "nightwatchjs-automation-skill/SKILL.md",
+        "skill_md": "nightwatchjs-skill/SKILL.md",
         "reference": [
-          "nightwatchjs-automation-skill/reference/advanced-patterns.md",
-          "nightwatchjs-automation-skill/reference/cloud-integration.md",
-          "nightwatchjs-automation-skill/reference/playbook.md"
+          "nightwatchjs-skill/reference/advanced-patterns.md",
+          "nightwatchjs-skill/reference/cloud-integration.md",
+          "nightwatchjs-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "nunit-testing-skill",
-      "path": "nunit-testing-skill",
+      "name": "nunit-skill",
+      "path": "nunit-skill",
       "description": "Generates NUnit 3 tests in C#. Covers Assert.That constraint model, parameterized tests, setup/teardown, and Moq mocking. Use when user mentions \"NUnit\", \"[TestFixture]\", \"[Test]\", \"Assert.That\", \"C# unit test\". Triggers on: \"NUnit\", \"[Test]\", \"Assert.That\", \"C# test\", \"NUnit3\".",
       "languages": [
         "C#"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "nunit-testing-skill/SKILL.md",
+        "skill_md": "nunit-skill/SKILL.md",
         "reference": [
-          "nunit-testing-skill/reference/advanced-patterns.md",
-          "nunit-testing-skill/reference/playbook.md"
+          "nunit-skill/reference/advanced-patterns.md",
+          "nunit-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "phpunit-testing-skill",
-      "path": "phpunit-testing-skill",
+      "name": "phpunit-skill",
+      "path": "phpunit-skill",
       "description": "Generates PHPUnit tests in PHP. Covers assertions, data providers, mocking, and test doubles. Use when user mentions \"PHPUnit\", \"TestCase\", \"assertEquals\", \"PHP test\". Triggers on: \"PHPUnit\", \"TestCase PHP\", \"assertEquals PHP\", \"PHP unit test\".",
       "languages": [
         "PHP"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "phpunit-testing-skill/SKILL.md",
+        "skill_md": "phpunit-skill/SKILL.md",
         "reference": [
-          "phpunit-testing-skill/reference/advanced-patterns.md",
-          "phpunit-testing-skill/reference/playbook.md"
+          "phpunit-skill/reference/advanced-patterns.md",
+          "phpunit-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "playwright-automation-skill",
-      "path": "playwright-automation-skill",
+      "name": "playwright-skill",
+      "path": "playwright-skill",
       "description": "Generates production-grade Playwright automation scripts and E2E tests in TypeScript, JavaScript, Python, Java, or C#. Supports local execution and TestMu AI cloud across 3000+ browser/OS combinations and real mobile devices. Use when the user asks to write Playwright tests, automate browsers, run cross-browser tests, test on real devices, debug flaky tests, mock APIs, or do visual regression. Triggers on: \"Playwright\", \"E2E test\", \"browser test\", \"run on cloud\", \"cross-browser\", \"TestMu\", \"LambdaTest\", \"test my app\", \"test on mobile\", \"real device\".",
       "languages": [
         "JavaScript",
@@ -474,23 +474,23 @@
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "playwright-automation-skill/SKILL.md",
+        "skill_md": "playwright-skill/SKILL.md",
         "reference": [
-          "playwright-automation-skill/reference/api-mocking-visual.md",
-          "playwright-automation-skill/reference/cloud-integration.md",
-          "playwright-automation-skill/reference/csharp-patterns.md",
-          "playwright-automation-skill/reference/debugging-flaky.md",
-          "playwright-automation-skill/reference/java-patterns.md",
-          "playwright-automation-skill/reference/mobile-testing.md",
-          "playwright-automation-skill/reference/page-object-model.md",
-          "playwright-automation-skill/reference/playbook.md",
-          "playwright-automation-skill/reference/python-patterns.md"
+          "playwright-skill/reference/api-mocking-visual.md",
+          "playwright-skill/reference/cloud-integration.md",
+          "playwright-skill/reference/csharp-patterns.md",
+          "playwright-skill/reference/debugging-flaky.md",
+          "playwright-skill/reference/java-patterns.md",
+          "playwright-skill/reference/mobile-testing.md",
+          "playwright-skill/reference/page-object-model.md",
+          "playwright-skill/reference/playbook.md",
+          "playwright-skill/reference/python-patterns.md"
         ]
       }
     },
     {
-      "name": "protractor-automation-skill",
-      "path": "protractor-automation-skill",
+      "name": "protractor-skill",
+      "path": "protractor-skill",
       "description": "Generates Protractor E2E tests for Angular/AngularJS apps in JS/TS. NOTE: Protractor is officially deprecated \u2014 recommend Playwright or Cypress. Use when user mentions \"Protractor\", \"element(by.model())\", \"Angular E2E\". Triggers on: \"Protractor\", \"element(by.model)\", \"Angular E2E test\", \"protractor.conf\".",
       "languages": [
         "JavaScript",
@@ -498,17 +498,17 @@
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "protractor-automation-skill/SKILL.md",
+        "skill_md": "protractor-skill/SKILL.md",
         "reference": [
-          "protractor-automation-skill/reference/advanced-patterns.md",
-          "protractor-automation-skill/reference/cloud-integration.md",
-          "protractor-automation-skill/reference/playbook.md"
+          "protractor-skill/reference/advanced-patterns.md",
+          "protractor-skill/reference/cloud-integration.md",
+          "protractor-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "puppeteer-automation-skill",
-      "path": "puppeteer-automation-skill",
+      "name": "puppeteer-skill",
+      "path": "puppeteer-skill",
       "description": "Generates Puppeteer scripts for browser automation, scraping, and PDF generation. Triggers on: \"Puppeteer\", \"headless Chrome\", \"page.goto\", \"scrape\", \"PDF generation\".",
       "languages": [
         "JavaScript",
@@ -516,27 +516,27 @@
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "puppeteer-automation-skill/SKILL.md",
+        "skill_md": "puppeteer-skill/SKILL.md",
         "reference": [
-          "puppeteer-automation-skill/reference/advanced-patterns.md",
-          "puppeteer-automation-skill/reference/cloud-integration.md",
-          "puppeteer-automation-skill/reference/playbook.md"
+          "puppeteer-skill/reference/advanced-patterns.md",
+          "puppeteer-skill/reference/cloud-integration.md",
+          "puppeteer-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "pytest-testing-skill",
-      "path": "pytest-testing-skill",
+      "name": "pytest-skill",
+      "path": "pytest-skill",
       "description": "Generates production-grade pytest tests in Python with fixtures, parametrize, markers, mocking, and conftest patterns. Use when user mentions \"pytest\", \"conftest\", \"@pytest.fixture\", \"@pytest.mark\", \"Python test\". Triggers on: \"pytest\", \"conftest\", \"Python test\", \"parametrize\", \"Python unit test\".",
       "languages": [
         "Python"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "pytest-testing-skill/SKILL.md",
+        "skill_md": "pytest-skill/SKILL.md",
         "reference": [
-          "pytest-testing-skill/reference/advanced-patterns.md",
-          "pytest-testing-skill/reference/playbook.md"
+          "pytest-skill/reference/advanced-patterns.md",
+          "pytest-skill/reference/playbook.md"
         ]
       }
     },
@@ -559,41 +559,41 @@
       }
     },
     {
-      "name": "rspec-testing-skill",
-      "path": "rspec-testing-skill",
+      "name": "rspec-skill",
+      "path": "rspec-skill",
       "description": "Generates RSpec tests in Ruby with describe/context/it blocks, matchers, let/before hooks, and mocking. Use when user mentions \"RSpec\", \"describe do\", \"expect().to\", \"Ruby test\". Triggers on: \"RSpec\", \"expect().to eq()\", \"describe do\", \"Ruby test\", \"spec file\".",
       "languages": [
         "Ruby"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "rspec-testing-skill/SKILL.md",
+        "skill_md": "rspec-skill/SKILL.md",
         "reference": [
-          "rspec-testing-skill/reference/advanced-patterns.md",
-          "rspec-testing-skill/reference/playbook.md"
+          "rspec-skill/reference/advanced-patterns.md",
+          "rspec-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "selenide-automation-skill",
-      "path": "selenide-automation-skill",
+      "name": "selenide-skill",
+      "path": "selenide-skill",
       "description": "Generates Selenide tests in Java. Concise UI testing framework built on Selenium with automatic waits and fluent API. Use when user mentions \"Selenide\", \"$(selector)\", \"shouldBe(visible)\", \"Selenide Java\". Triggers on: \"Selenide\", \"$() selector\", \"shouldBe\", \"shouldHave\", \"Selenide test\".",
       "languages": [
         "Java"
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "selenide-automation-skill/SKILL.md",
+        "skill_md": "selenide-skill/SKILL.md",
         "reference": [
-          "selenide-automation-skill/reference/advanced-patterns.md",
-          "selenide-automation-skill/reference/cloud-integration.md",
-          "selenide-automation-skill/reference/playbook.md"
+          "selenide-skill/reference/advanced-patterns.md",
+          "selenide-skill/reference/cloud-integration.md",
+          "selenide-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "selenium-automation-skill",
-      "path": "selenium-automation-skill",
+      "name": "selenium-skill",
+      "path": "selenium-skill",
       "description": "Generates production-grade Selenium WebDriver automation scripts and tests in Java, Python, JavaScript, C#, Ruby, or PHP. Supports local execution and TestMu AI cloud with 3000+ browser/OS combinations. Use when the user asks to write Selenium tests, automate with WebDriver, run cross-browser tests on Selenium Grid, or mentions \"Selenium\", \"WebDriver\", \"RemoteWebDriver\", \"ChromeDriver\", \"GeckoDriver\". Triggers on: \"Selenium\", \"WebDriver\", \"browser automation\", \"Selenium Grid\", \"cross-browser\", \"TestMu\", \"LambdaTest\".",
       "languages": [
         "Java",
@@ -604,17 +604,17 @@
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "selenium-automation-skill/SKILL.md",
+        "skill_md": "selenium-skill/SKILL.md",
         "reference": [
-          "selenium-automation-skill/reference/cloud-integration.md",
-          "selenium-automation-skill/reference/csharp-patterns.md",
-          "selenium-automation-skill/reference/debugging-common-issues.md",
-          "selenium-automation-skill/reference/javascript-patterns.md",
-          "selenium-automation-skill/reference/page-object-model.md",
-          "selenium-automation-skill/reference/php-patterns.md",
-          "selenium-automation-skill/reference/playbook.md",
-          "selenium-automation-skill/reference/python-patterns.md",
-          "selenium-automation-skill/reference/ruby-patterns.md"
+          "selenium-skill/reference/cloud-integration.md",
+          "selenium-skill/reference/csharp-patterns.md",
+          "selenium-skill/reference/debugging-common-issues.md",
+          "selenium-skill/reference/javascript-patterns.md",
+          "selenium-skill/reference/page-object-model.md",
+          "selenium-skill/reference/php-patterns.md",
+          "selenium-skill/reference/playbook.md",
+          "selenium-skill/reference/python-patterns.md",
+          "selenium-skill/reference/ruby-patterns.md"
         ]
       }
     },
@@ -635,8 +635,8 @@
       }
     },
     {
-      "name": "smartui-testing-skill",
-      "path": "smartui-testing-skill",
+      "name": "smartui-skill",
+      "path": "smartui-skill",
       "description": "Generates SmartUI visual regression test configurations for screenshot comparison on TestMu AI cloud. Framework-agnostic \u2014 works with Playwright, Selenium, Cypress, Puppeteer. Use when user mentions \"SmartUI\", \"visual regression\", \"screenshot comparison\", \"visual testing\". Triggers on: \"SmartUI\", \"visual regression\", \"screenshot comparison\", \"pixel diff\", \"visual testing LambdaTest\".",
       "languages": [
         "JavaScript",
@@ -645,31 +645,31 @@
       ],
       "category": "visual-testing",
       "files": {
-        "skill_md": "smartui-testing-skill/SKILL.md",
+        "skill_md": "smartui-skill/SKILL.md",
         "reference": [
-          "smartui-testing-skill/reference/playbook.md"
+          "smartui-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "specflow-automation-skill",
-      "path": "specflow-automation-skill",
+      "name": "specflow-skill",
+      "path": "specflow-skill",
       "description": "Generates SpecFlow BDD tests for C#/.NET with Gherkin feature files and step bindings. Use when user mentions \"SpecFlow\", \"C# BDD\", \".NET Gherkin\", \"[Binding]\", \"[Given]/[When]/[Then]\". Triggers on: \"SpecFlow\", \"C# BDD\", \".NET BDD\", \"step bindings\", \"[Binding]\".",
       "languages": [
         "C#"
       ],
       "category": "bdd-testing",
       "files": {
-        "skill_md": "specflow-automation-skill/SKILL.md",
+        "skill_md": "specflow-skill/SKILL.md",
         "reference": [
-          "specflow-automation-skill/reference/advanced-patterns.md",
-          "specflow-automation-skill/reference/playbook.md"
+          "specflow-skill/reference/advanced-patterns.md",
+          "specflow-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "testcafe-automation-skill",
-      "path": "testcafe-automation-skill",
+      "name": "testcafe-skill",
+      "path": "testcafe-skill",
       "description": "Generates TestCafe automation tests in JavaScript or TypeScript. Supports local and TestMu AI cloud. Triggers on: \"TestCafe\", \"test cafe\", \"fixture/test\".",
       "languages": [
         "JavaScript",
@@ -677,65 +677,65 @@
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "testcafe-automation-skill/SKILL.md",
+        "skill_md": "testcafe-skill/SKILL.md",
         "reference": [
-          "testcafe-automation-skill/reference/advanced-patterns.md",
-          "testcafe-automation-skill/reference/cloud-integration.md",
-          "testcafe-automation-skill/reference/playbook.md"
+          "testcafe-skill/reference/advanced-patterns.md",
+          "testcafe-skill/reference/cloud-integration.md",
+          "testcafe-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "testng-testing-skill",
-      "path": "testng-testing-skill",
+      "name": "testng-skill",
+      "path": "testng-skill",
       "description": "Generates TestNG tests in Java with groups, data providers, parallel execution, XML suite configuration, and listeners. Use when user mentions \"TestNG\", \"@DataProvider\", \"testng.xml\", \"groups\". Triggers on: \"TestNG\", \"@DataProvider\", \"testng.xml\", \"TestNG suite\", \"parallel tests Java\".",
       "languages": [
         "Java"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "testng-testing-skill/SKILL.md",
+        "skill_md": "testng-skill/SKILL.md",
         "reference": [
-          "testng-testing-skill/reference/advanced-patterns.md",
-          "testng-testing-skill/reference/playbook.md"
+          "testng-skill/reference/advanced-patterns.md",
+          "testng-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "testunit-ruby-skill",
-      "path": "testunit-ruby-skill",
+      "name": "testunit-skill",
+      "path": "testunit-skill",
       "description": "Generates Test::Unit tests in Ruby. Classic xUnit-style testing with assert methods and test case classes. Use when user mentions \"Test::Unit\", \"assert_equal Ruby\", \"Ruby test-unit\". Triggers on: \"Test::Unit\", \"Ruby test-unit\", \"assert_equal Ruby\" (not RSpec).",
       "languages": [
         "Ruby"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "testunit-ruby-skill/SKILL.md",
+        "skill_md": "testunit-skill/SKILL.md",
         "reference": [
-          "testunit-ruby-skill/reference/advanced-patterns.md",
-          "testunit-ruby-skill/reference/playbook.md"
+          "testunit-skill/reference/advanced-patterns.md",
+          "testunit-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "unittest-testing-skill",
-      "path": "unittest-testing-skill",
+      "name": "unittest-skill",
+      "path": "unittest-skill",
       "description": "Generates Python unittest tests. Built-in testing framework with TestCase, setUp/tearDown, and assertion methods. Use when user mentions \"unittest\", \"TestCase\", \"self.assertEqual\", \"Python unittest\". Triggers on: \"unittest\", \"TestCase\", \"self.assertEqual\", \"Python unittest\" (not pytest).",
       "languages": [
         "Python"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "unittest-testing-skill/SKILL.md",
+        "skill_md": "unittest-skill/SKILL.md",
         "reference": [
-          "unittest-testing-skill/reference/advanced-patterns.md",
-          "unittest-testing-skill/reference/playbook.md"
+          "unittest-skill/reference/advanced-patterns.md",
+          "unittest-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "vitest-testing-skill",
-      "path": "vitest-testing-skill",
+      "name": "vitest-skill",
+      "path": "vitest-skill",
       "description": "Generates Vitest tests in JavaScript/TypeScript with Vite-native speed. Jest-compatible API with ESM support and HMR. Use when user mentions \"Vitest\", \"vi.mock\", \"vitest.config\". Triggers on: \"Vitest\", \"vi.mock\", \"vi.fn\", \"Vite test\", \"vitest config\".",
       "languages": [
         "JavaScript",
@@ -743,16 +743,16 @@
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "vitest-testing-skill/SKILL.md",
+        "skill_md": "vitest-skill/SKILL.md",
         "reference": [
-          "vitest-testing-skill/reference/advanced-patterns.md",
-          "vitest-testing-skill/reference/playbook.md"
+          "vitest-skill/reference/advanced-patterns.md",
+          "vitest-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "webdriverio-automation-skill",
-      "path": "webdriverio-automation-skill",
+      "name": "webdriverio-skill",
+      "path": "webdriverio-skill",
       "description": "Generates WebdriverIO (WDIO) automation tests in JavaScript or TypeScript. Supports local and TestMu AI cloud. Use when user mentions \"WebdriverIO\", \"WDIO\", \"wdio.conf\", \"browser.url\", \"$\", \"$$\". Triggers on: \"WebdriverIO\", \"WDIO\", \"wdio\", \"browser.$\".",
       "languages": [
         "JavaScript",
@@ -760,17 +760,17 @@
       ],
       "category": "e2e-testing",
       "files": {
-        "skill_md": "webdriverio-automation-skill/SKILL.md",
+        "skill_md": "webdriverio-skill/SKILL.md",
         "reference": [
-          "webdriverio-automation-skill/reference/advanced-patterns.md",
-          "webdriverio-automation-skill/reference/cloud-integration.md",
-          "webdriverio-automation-skill/reference/playbook.md"
+          "webdriverio-skill/reference/advanced-patterns.md",
+          "webdriverio-skill/reference/cloud-integration.md",
+          "webdriverio-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "xcuitest-automation-skill",
-      "path": "xcuitest-automation-skill",
+      "name": "xcuitest-skill",
+      "path": "xcuitest-skill",
       "description": "Generates XCUITest UI tests for iOS/iPadOS apps in Swift. Apple's native testing framework for reliable, fast UI automation. Supports local simulators and TestMu AI cloud real devices. Use when user mentions \"XCUITest\", \"XCTest\", \"iOS UI test\", \"Swift test\", \"XCUIApplication\". Triggers on: \"XCUITest\", \"XCTest UI\", \"iOS UI test\", \"Swift UI test\", \"XCUIApplication\", \"TestMu\".",
       "languages": [
         "Swift",
@@ -778,26 +778,26 @@
       ],
       "category": "mobile-testing",
       "files": {
-        "skill_md": "xcuitest-automation-skill/SKILL.md",
+        "skill_md": "xcuitest-skill/SKILL.md",
         "reference": [
-          "xcuitest-automation-skill/reference/advanced-patterns.md",
-          "xcuitest-automation-skill/reference/playbook.md"
+          "xcuitest-skill/reference/advanced-patterns.md",
+          "xcuitest-skill/reference/playbook.md"
         ]
       }
     },
     {
-      "name": "xunit-testing-skill",
-      "path": "xunit-testing-skill",
+      "name": "xunit-skill",
+      "path": "xunit-skill",
       "description": "Generates xUnit.net tests in C#. Covers Fact/Theory, constructor injection, IClassFixture, and FluentAssertions. Use when user mentions \"xUnit\", \"[Fact]\", \"[Theory]\", \"Assert.Equal\", \"C# xUnit\". Triggers on: \"xUnit\", \"[Fact]\", \"[Theory]\", \"Assert.Equal C#\", \"xUnit.net\".",
       "languages": [
         "C#"
       ],
       "category": "unit-testing",
       "files": {
-        "skill_md": "xunit-testing-skill/SKILL.md",
+        "skill_md": "xunit-skill/SKILL.md",
         "reference": [
-          "xunit-testing-skill/reference/advanced-patterns.md",
-          "xunit-testing-skill/reference/playbook.md"
+          "xunit-skill/reference/advanced-patterns.md",
+          "xunit-skill/reference/playbook.md"
         ]
       }
     },
@@ -805,7 +805,13 @@
       "name": "test-framework-migration-skill",
       "path": "test-framework-migration-skill",
       "description": "Migrates and converts test automation scripts between Selenium, Playwright, Puppeteer, and Cypress. Use when the user asks to migrate, convert, or port tests from one framework to another; rewrite tests in a different framework; or switch from Selenium to Playwright, Playwright to Selenium, Puppeteer to Playwright, Cypress to Playwright, or vice versa. Triggers on: \"migrate\", \"convert\", \"port\", \"selenium to playwright\", \"playwright to selenium\", \"puppeteer to playwright\", \"cypress to playwright\", \"rewrite tests in\", \"switch from [framework] to [framework]\".",
-      "languages": ["Java", "Python", "JavaScript", "TypeScript", "C#"],
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C#"
+      ],
       "category": "e2e-testing",
       "files": {
         "skill_md": "test-framework-migration-skill/SKILL.md",

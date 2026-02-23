@@ -74,7 +74,7 @@ cy.url().should('include', '/dashboard');
 ## Cloud (TestMu)
 
 - Playwright: CDP to LambdaTest.
-- Cypress: LambdaTest Cypress CLI. See [cypress-automation-skill/reference/cloud-integration.md](../../cypress-automation-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
+- Cypress: LambdaTest Cypress CLI. See [cypress-skill/reference/cloud-integration.md](../../cypress-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
 
 ## Gotchas
 

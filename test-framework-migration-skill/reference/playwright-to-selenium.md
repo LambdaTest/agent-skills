@@ -84,7 +84,7 @@ wait.until(ExpectedConditions.urlContains("/dashboard"));
 
 - Playwright on TestMu: CDP over `wss://cdp.lambdatest.com/playwright?capabilities=...`.
 - Selenium on TestMu: `RemoteWebDriver` with hub URL and `DesiredCapabilities` / `LT:Options`.  
-  See [selenium-automation-skill/reference/cloud-integration.md](../../selenium-automation-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
+  See [selenium-skill/reference/cloud-integration.md](../../selenium-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
 
 ## Gotchas
 

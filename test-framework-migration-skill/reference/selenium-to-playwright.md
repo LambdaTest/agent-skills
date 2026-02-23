@@ -85,7 +85,7 @@ await expect(page).toHaveTitle(/Dashboard/);
 
 - Selenium on TestMu: `RemoteWebDriver` + hub URL + `LT:Options` in capabilities.
 - Playwright on TestMu: CDP connection to `wss://cdp.lambdatest.com/playwright?capabilities=...` with `LT:Options`.  
-  See [playwright-automation-skill/reference/cloud-integration.md](../../playwright-automation-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
+  See [playwright-skill/reference/cloud-integration.md](../../playwright-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
 
 ## Gotchas
 

@@ -76,7 +76,7 @@ await expect(page.locator('h1')).toContainText('Dashboard');
 ## Cloud (TestMu)
 
 - Cypress on TestMu: LambdaTest Cypress CLI / plugin.
-- Playwright on TestMu: CDP connection. See [playwright-automation-skill/reference/cloud-integration.md](../../playwright-automation-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
+- Playwright on TestMu: CDP connection. See [playwright-skill/reference/cloud-integration.md](../../playwright-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
 
 ## Gotchas
 

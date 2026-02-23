@@ -78,7 +78,7 @@ await page.waitForNavigation({ waitUntil: 'networkidle0' });
 ## Cloud (TestMu)
 
 - Selenium on TestMu: RemoteWebDriver + hub + capabilities.
-- Puppeteer on TestMu: Connect via WebSocket endpoint (LambdaTest Puppeteer integration). See [puppeteer-automation-skill/reference/cloud-integration.md](../../puppeteer-automation-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
+- Puppeteer on TestMu: Connect via WebSocket endpoint (LambdaTest Puppeteer integration). See [puppeteer-skill/reference/cloud-integration.md](../../puppeteer-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
 
 ## Gotchas
 

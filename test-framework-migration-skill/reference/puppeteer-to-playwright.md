@@ -78,7 +78,7 @@ await expect(page).toHaveURL(/\/dashboard/);
 ## Cloud (TestMu)
 
 - Puppeteer: connect via LambdaTest WebSocket.
-- Playwright: CDP to `wss://cdp.lambdatest.com/playwright?capabilities=...`. See [playwright-automation-skill/reference/cloud-integration.md](../../playwright-automation-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
+- Playwright: CDP to `wss://cdp.lambdatest.com/playwright?capabilities=...`. See [playwright-skill/reference/cloud-integration.md](../../playwright-skill/reference/cloud-integration.md) and [shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md).
 
 ## Gotchas
 
