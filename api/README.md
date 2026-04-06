@@ -1,4 +1,4 @@
-# agent-skills
+# api-skills
 
 > A community-driven collection of Skills for AI agents — providing reusable behaviors, structured references, and ready-to-use integrations to make agent development faster and collaborative.
 
@@ -6,24 +6,22 @@
 
 ## What is this?
 
-**agent-skills** is a curated repository of modular *Skills* designed for AI agents. Each skill encapsulates a specific behavior or capability — such as interacting with an API, processing files, or automating workflows — so agents can reference and reuse them without reinventing the wheel.
+**api-skills** is a curated collection of modular *Skills* designed for AI agents. Each skill encapsulates a specific behavior or capability — such as interacting with an API, processing files, or automating workflows — so agents can reference and reuse them without reinventing the wheel.
 
-Whether you're building a coding assistant, a data pipeline agent, or a multi-step automation bot, this repo gives you a head start.
+Whether you're building a coding assistant, a data pipeline agent, or a multi-step automation bot, this collection gives you a head start.
 
 ---
 
 ## Repository Structure
 
 ```
-agent-skills/
-├── skills/
-│   ├── api/               # Skills for interacting with external APIs
+api/
+│   ├── api-test-case/     # Skills for generating test cases from API
 │   ├── file-handling/     # Skills for reading, writing, and transforming files
 │   ├── data-processing/   # Skills for parsing, cleaning, and analyzing data
 │   └── ...                # More categories coming soon
 |── installer/             # Help you install a complete bundle at once
-├── examples/              # Example agents using skills from this repo
-├── CONTRIBUTING.md        # Contribution guidelines
+|──────README.md
 └── README.md
 ```
 
@@ -31,7 +29,7 @@ agent-skills/
 
 ## Getting Started
 
-1. **Browse** the `skills/` directory to find a skill relevant to your use case.
+1. **Browse** the `api/` directory to find a skill relevant to your use case.
 2. **Read** the skill's `SKILL.md` file — it describes what the skill does, when to trigger it, and how to use it.
 3. **Download** the skill in your system as a zip or standalone.
 4. **Download** the installer file to install all the skills at once with a single command. More on this in the README.md file inside the `installer/` directory.
@@ -44,9 +42,8 @@ agent-skills/
 Each skill follows a consistent structure:
 
 ```
-skills/<category>/<skill-name>/
+api/<category>/<skill-name>/
 ├── SKILL.md       # Description, trigger conditions, and usage instructions
-└── examples/      # Optional usage examples
 ```
 
 A `SKILL.md` file typically includes:
@@ -76,7 +73,7 @@ Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting a pull reques
 
 ## Why This Exists
 
-Building agents that reliably perform specific tasks requires well-structured, tested, and documented behaviors. Instead of every developer writing their own skill logic from scratch, **agent-skills** provides a shared foundation — so the community can build on each other's work and iterate faster.
+Building agents that reliably perform specific tasks requires well-structured, tested, and documented behaviors. Instead of every developer writing their own skill logic from scratch, **api skills** provides a shared foundation — so the community can build on each other's work and iterate faster.
 
 ---
 
