@@ -24,34 +24,57 @@ Instead of getting generic test code, your AI agent becomes a **Senior QA automa
 
 ## Quick Start
 
-### Option 1: Install a Single Skill
+### Install All Skills
 
 ```bash
-# Clone the repo and copy the skill you need
-git clone https://github.com/LambdaTest/agent-skills.git
-cp -r agent-skills/selenium-skill .claude/skills/
-
-# Or for Cursor / Copilot
-cp -r agent-skills/playwright-skill .cursor/skills/
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git
 ```
 
-### Option 2: Install All Skills
+The CLI auto-detects your AI tool and installs to the right directory. You can also specify it explicitly:
 
 ```bash
-# Claude Code
-git clone https://github.com/LambdaTest/agent-skills.git .claude/skills/agent-skills
-
-# Gemini CLI
-git clone https://github.com/LambdaTest/agent-skills.git .gemini/skills/agent-skills
-
-# Cursor
-git clone https://github.com/LambdaTest/agent-skills.git .cursor/skills/agent-skills
-
-# Universal (.agent/ works with most tools)
-git clone https://github.com/LambdaTest/agent-skills.git .agent/skills/agent-skills
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --tool cursor
 ```
 
-Then just ask your AI assistant naturally:
+### Install a Specific Skill
+
+```bash
+# E2E Testing
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill selenium-skill
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill playwright-skill
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill cypress-skill
+
+# Unit Testing
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill jest-skill
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill pytest-skill
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill junit-5-skill
+
+# Mobile Testing
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill appium-skill
+
+# BDD
+npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill cucumber-skill
+```
+
+### Browse Available Skills
+
+```bash
+npx agent-skills list https://github.com/LambdaTest/agent-skills.git
+```
+
+### CLI Reference
+
+| Flag | Description | Example |
+|------|-------------|---------|
+| `--skill <name>` | Install a single skill | `--skill playwright-skill` |
+| `--tool <name>` | Target a specific AI tool | `--tool claude` |
+| `--dir <path>` | Custom installation directory | `--dir ./my-skills` |
+
+> Supported tools: `claude` · `cursor` · `copilot` · `gemini` · `codex` · `opencode` · `windsurf`
+
+---
+
+Once installed, just ask your AI assistant naturally:
 
 ```
 "Write Playwright tests for the login page and run them on TestMu AI cloud (Chrome + Firefox)"
@@ -61,23 +84,23 @@ Then just ask your AI assistant naturally:
 "Create JUnit 5 tests for the payments service with Mockito and GitHub Actions CI"
 
 "Run Playwright tests locally against http://localhost:3000 with trace and video enabled"
-
 ```
 
 ---
 
-## 🔌 Compatibility
+## Compatibility
 
 These skills follow the open **[Agent Skills Standard](https://agentskills.io)** (`SKILL.md` format):
 
-| Tool | Type | Support | Installation Path |
-|------|------|---------|-------------------|
-| **Claude Code** | CLI | ✅ Full | `.claude/skills/` |
-| **GitHub Copilot** | Extension | ✅ Full | `.github/skills/` |
-| **Cursor** | IDE | ✅ Full | `.cursor/skills/` |
-| **Gemini CLI** | CLI | ✅ Full | `.gemini/skills/` |
-| **Codex CLI** | CLI | ✅ Full | `.codex/skills/` |
-| **OpenCode** | CLI | ✅ Full | `.opencode/skills/` |
+| Tool | Type | Support | `--tool` flag |
+|------|------|---------|---------------|
+| **Claude Code** | CLI | ✅ Full | `claude` |
+| **GitHub Copilot** | Extension | ✅ Full | `copilot` |
+| **Cursor** | IDE | ✅ Full | `cursor` |
+| **Gemini CLI** | CLI | ✅ Full | `gemini` |
+| **Codex CLI** | CLI | ✅ Full | `codex` |
+| **OpenCode** | CLI | ✅ Full | `opencode` |
+| **Windsurf** | IDE | ✅ Full | `windsurf` |
 | **Claude.ai** | Web | ✅ Upload | Settings → Features → Skills |
 
 ---
@@ -103,54 +126,54 @@ These skills follow the open **[Agent Skills Standard](https://agentskills.io)**
 
 ## Full Skill Registry (46/46)
 
-| Skill | Languages | Category | Description |
-|-------|-----------|----------|-------------|
-| **[Selenium Skill](selenium-skill/)** | Java, Python, JS, C#, Ruby | E2E | Selenium WebDriver with cross-browser cloud support |
-| **[Playwright Skill](playwright-skill/)** | JS, TS, Python, Java, C# | E2E | Playwright browser automation with API mocking |
-| **[Cypress Skill](cypress-skill/)** | JS, TS | E2E | Cypress E2E and component testing |
-| **[Jest Skill](jest-skill/)** | JS, TS | Unit | Jest unit/integration tests with mocking |
-| **[JUnit 5 Skill](junit-5-skill/)** | Java | Unit | JUnit 5 with parameterized tests and extensions |
-| **[pytest Skill](pytest-skill/)** | Python | Unit | pytest with fixtures, parametrize, and plugins |
-| **[TestNG Skill](testng-skill/)** | Java | Unit | TestNG with data providers and parallel execution |
-| **[WebdriverIO Skill](webdriverio-skill/)** | JS, TS | E2E | WebdriverIO with page objects and cloud integration |
-| **[Appium Skill](appium-skill/)** | Java, Python, JS, Ruby, C# | Mobile | Appium mobile testing for iOS and Android |
-| **[Puppeteer Skill](puppeteer-skill/)** | JS, TS | E2E | Puppeteer Chrome automation |
-| **[Test Framework Migration Skill](test-framework-migration-skill/)** | JS, TS, Java, Python, C# | Migration | Convert tests between Selenium, Playwright, Puppeteer, Cypress |
-| **[Mocha Skill](mocha-skill/)** | JS, TS | Unit | Mocha with Chai assertions |
-| **[Vitest Skill](vitest-skill/)** | JS, TS | Unit | Vitest for Vite projects |
-| **[Cucumber Skill](cucumber-skill/)** | Java, JS, Ruby, TS | BDD | Cucumber Gherkin BDD |
-| **[Espresso Skill](espresso-skill/)** | Java, Kotlin | Mobile | Espresso Android UI testing |
-| **[Nightwatch.js Skill](nightwatchjs-skill/)** | JS, TS | E2E | Nightwatch.js browser automation |
-| **[Flutter Testing Skill](flutter-testing-skill/)** | Dart | Mobile | Flutter widget and integration tests |
-| **[XCUITest Skill](xcuitest-skill/)** | Swift, Obj-C | Mobile | XCUITest iOS UI testing |
-| **[Detox Skill](detox-skill/)** | JS, TS | Mobile | Detox React Native E2E testing |
-| **[TestCafe Skill](testcafe-skill/)** | JS, TS | E2E | TestCafe cross-browser testing |
-| **[xUnit Skill](xunit-skill/)** | C# | Unit | xUnit.net for .NET |
-| **[RSpec Skill](rspec-skill/)** | Ruby | Unit | RSpec with shared examples |
-| **[NUnit Skill](nunit-skill/)** | C# | Unit | NUnit for .NET |
-| **[Karma Skill](karma-skill/)** | JS, TS | Unit | Karma test runner |
-| **[MSTest Skill](mstest-skill/)** | C# | Unit | MSTest for .NET |
-| **[Jasmine Skill](jasmine-skill/)** | JS, TS | Unit | Jasmine BDD-style testing |
-| **[PHPUnit Skill](phpunit-skill/)** | PHP | Unit | PHPUnit with data providers |
-| **[Robot Framework Skill](robot-framework-skill/)** | Python, Robot | E2E | Robot Framework keyword-driven testing |
-| **[Behat Skill](behat-skill/)** | PHP | BDD | Behat BDD for PHP |
-| **[Behave Skill](behave-skill/)** | Python | BDD | Behave Python BDD |
-| **[Capybara Skill](capybara-skill/)** | Ruby | E2E | Capybara acceptance testing |
-| **[Codeception Skill](codeception-skill/)** | PHP | E2E | Codeception full-stack PHP testing |
-| **[Gauge Skill](gauge-skill/)** | Java, Python, JS, Ruby, C# | BDD | Gauge specification-based testing |
-| **[Geb Skill](geb-skill/)** | Groovy | E2E | Geb Groovy browser automation |
-| **[Laravel Dusk Skill](laravel-dusk-skill/)** | PHP | E2E | Laravel Dusk browser testing |
-| **[Lettuce Skill](lettuce-skill/)** | Python | BDD | Lettuce Python BDD testing |
-| **[Nemo.js Skill](nemojs-skill/)** | JS | E2E | Nemo.js PayPal browser automation |
-| **[Protractor Skill](protractor-skill/)** | JS, TS | E2E | Protractor Angular E2E testing |
-| **[Selenide Skill](selenide-skill/)** | Java | E2E | Selenide fluent Selenium wrapper |
-| **[Serenity BDD Skill](serenity-bdd-skill/)** | Java | BDD | Serenity BDD with Screenplay pattern |
-| **[SmartUI Skill](smartui-skill/)** | JS, TS, Java | Visual | SmartUI visual regression testing |
-| **[SpecFlow Skill](specflow-skill/)** | C# | BDD | SpecFlow .NET BDD with Gherkin |
-| **[Test::Unit Skill](testunit-skill/)** | Ruby | Unit | Test::Unit Ruby testing |
-| **[unittest Skill](unittest-skill/)** | Python | Unit | Python unittest with mocking |
-| **[HyperExecute Skill](hyperexecute-skill/)** | YAML | Cloud | HyperExecute cloud test orchestration |
-| **[CI/CD Pipeline Skill](cicd-pipeline-skill/)** | YAML | DevOps | CI/CD pipeline integration |
+| Skill | Languages | Category | Quick Install |
+|-------|-----------|----------|---------------|
+| **[Selenium Skill](selenium-skill/)** | Java, Python, JS, C#, Ruby | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill selenium-skill` |
+| **[Playwright Skill](playwright-skill/)** | JS, TS, Python, Java, C# | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill playwright-skill` |
+| **[Cypress Skill](cypress-skill/)** | JS, TS | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill cypress-skill` |
+| **[Jest Skill](jest-skill/)** | JS, TS | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill jest-skill` |
+| **[JUnit 5 Skill](junit-5-skill/)** | Java | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill junit-5-skill` |
+| **[pytest Skill](pytest-skill/)** | Python | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill pytest-skill` |
+| **[TestNG Skill](testng-skill/)** | Java | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill testng-skill` |
+| **[WebdriverIO Skill](webdriverio-skill/)** | JS, TS | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill webdriverio-skill` |
+| **[Appium Skill](appium-skill/)** | Java, Python, JS, Ruby, C# | Mobile | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill appium-skill` |
+| **[Puppeteer Skill](puppeteer-skill/)** | JS, TS | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill puppeteer-skill` |
+| **[Test Framework Migration Skill](test-framework-migration-skill/)** | JS, TS, Java, Python, C# | Migration | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill test-framework-migration-skill` |
+| **[Mocha Skill](mocha-skill/)** | JS, TS | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill mocha-skill` |
+| **[Vitest Skill](vitest-skill/)** | JS, TS | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill vitest-skill` |
+| **[Cucumber Skill](cucumber-skill/)** | Java, JS, Ruby, TS | BDD | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill cucumber-skill` |
+| **[Espresso Skill](espresso-skill/)** | Java, Kotlin | Mobile | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill espresso-skill` |
+| **[Nightwatch.js Skill](nightwatchjs-skill/)** | JS, TS | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill nightwatchjs-skill` |
+| **[Flutter Testing Skill](flutter-testing-skill/)** | Dart | Mobile | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill flutter-testing-skill` |
+| **[XCUITest Skill](xcuitest-skill/)** | Swift, Obj-C | Mobile | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill xcuitest-skill` |
+| **[Detox Skill](detox-skill/)** | JS, TS | Mobile | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill detox-skill` |
+| **[TestCafe Skill](testcafe-skill/)** | JS, TS | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill testcafe-skill` |
+| **[xUnit Skill](xunit-skill/)** | C# | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill xunit-skill` |
+| **[RSpec Skill](rspec-skill/)** | Ruby | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill rspec-skill` |
+| **[NUnit Skill](nunit-skill/)** | C# | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill nunit-skill` |
+| **[Karma Skill](karma-skill/)** | JS, TS | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill karma-skill` |
+| **[MSTest Skill](mstest-skill/)** | C# | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill mstest-skill` |
+| **[Jasmine Skill](jasmine-skill/)** | JS, TS | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill jasmine-skill` |
+| **[PHPUnit Skill](phpunit-skill/)** | PHP | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill phpunit-skill` |
+| **[Robot Framework Skill](robot-framework-skill/)** | Python, Robot | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill robot-framework-skill` |
+| **[Behat Skill](behat-skill/)** | PHP | BDD | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill behat-skill` |
+| **[Behave Skill](behave-skill/)** | Python | BDD | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill behave-skill` |
+| **[Capybara Skill](capybara-skill/)** | Ruby | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill capybara-skill` |
+| **[Codeception Skill](codeception-skill/)** | PHP | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill codeception-skill` |
+| **[Gauge Skill](gauge-skill/)** | Java, Python, JS, Ruby, C# | BDD | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill gauge-skill` |
+| **[Geb Skill](geb-skill/)** | Groovy | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill geb-skill` |
+| **[Laravel Dusk Skill](laravel-dusk-skill/)** | PHP | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill laravel-dusk-skill` |
+| **[Lettuce Skill](lettuce-skill/)** | Python | BDD | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill lettuce-skill` |
+| **[Nemo.js Skill](nemojs-skill/)** | JS | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill nemojs-skill` |
+| **[Protractor Skill](protractor-skill/)** | JS, TS | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill protractor-skill` |
+| **[Selenide Skill](selenide-skill/)** | Java | E2E | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill selenide-skill` |
+| **[Serenity BDD Skill](serenity-bdd-skill/)** | Java | BDD | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill serenity-bdd-skill` |
+| **[SmartUI Skill](smartui-skill/)** | JS, TS, Java | Visual | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill smartui-skill` |
+| **[SpecFlow Skill](specflow-skill/)** | C# | BDD | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill specflow-skill` |
+| **[Test::Unit Skill](testunit-skill/)** | Ruby | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill testunit-skill` |
+| **[unittest Skill](unittest-skill/)** | Python | Unit | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill unittest-skill` |
+| **[HyperExecute Skill](hyperexecute-skill/)** | YAML | Cloud | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill hyperexecute-skill` |
+| **[CI/CD Pipeline Skill](cicd-pipeline-skill/)** | YAML | DevOps | `npx agent-skills add https://github.com/LambdaTest/agent-skills.git --skill cicd-pipeline-skill` |
 
 ---
 
