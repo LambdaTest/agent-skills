@@ -136,6 +136,34 @@ Migrate in this order:
 
 For each page object, convert locators, actions, and internal methods using the pair-specific API mapping tables in the reference files. See [overview.md](overview.md) for the list of all pair-specific references.
 
+**Example — Selenium Java → Playwright TypeScript page object:**
+
+```java
+// BEFORE: Selenium Java
+public class LoginPage {
+    private By emailField = By.id("email");
+    private By submitBtn = By.cssSelector("button[type='submit']");
+    public LoginPage(WebDriver driver) { this.driver = driver; }
+    public void login(String email, String pass) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(emailField)).sendKeys(email);
+        driver.findElement(submitBtn).click();
+    }
+}
+```
+
+```typescript
+// AFTER: Playwright TypeScript
+export class LoginPage {
+    readonly emailField = this.page.getByLabel('Email');
+    readonly submitBtn = this.page.getByRole('button', { name: 'Sign in' });
+    constructor(private page: Page) {}
+    async login(email: string, pass: string) {
+        await this.emailField.fill(email);
+        await this.submitBtn.click(); // auto-waits for visible + enabled
+    }
+}
+```
+
 **Locator conversion priority (Playwright target):**
 1. Use `getByRole`, `getByLabel`, `getByText`, `getByTestId` where possible
 2. Fall back to `page.locator(css)` for complex selectors
@@ -237,7 +265,7 @@ For full API mapping tables, always consult the pair-specific reference file. Be
 | Selenium | `wait.until(alertIsPresent()); driver.switchTo().alert().accept();` |
 | Playwright | `page.on('dialog', d => d.accept());` -- register before triggering action |
 | Puppeteer | `page.on('dialog', d => d.accept());` -- same pattern as Playwright |
-| Cypress | `cy.on('window:confirm', () => true);` -- stub before action |
+| Cypress | `cy.on('window:alert', () => true);` for alerts; `cy.on('window:confirm', () => true);` for confirms -- stub before action |
 
 ### iframe Handling
 
@@ -274,6 +302,24 @@ For full API mapping tables, always consult the pair-specific reference file. Be
 | Playwright | `await page.locator('#upload').setInputFiles('/path/to/file');` |
 | Puppeteer | `const input = await page.$('#upload'); await input.uploadFile('/path/to/file');` |
 | Cypress | `cy.get('#upload').selectFile('path/to/file');` |
+
+### Attribute Reading
+
+| Framework | Pattern |
+|-----------|---------|
+| Selenium | `element.getAttribute("href")` |
+| Playwright | `await locator.getAttribute('href')` or `expect(loc).toHaveAttribute('href', /pattern/)` |
+| Puppeteer | `await element.evaluate(el => el.getAttribute('href'))` |
+| Cypress | `cy.get(sel).should('have.attr', 'href', '/expected')` or `cy.get(sel).invoke('attr', 'href')` |
+
+### JavaScript Execution
+
+| Framework | Pattern |
+|-----------|---------|
+| Selenium | `((JavascriptExecutor) driver).executeScript("return arguments[0].scrollHeight", element);` |
+| Playwright | `await locator.evaluate(el => el.scrollHeight)` or `await page.evaluate(() => document.title)` |
+| Puppeteer | `await element.evaluate(el => el.scrollHeight)` or `await page.evaluate(() => document.title)` |
+| Cypress | `cy.get(sel).then($el => $el[0].scrollHeight)` or `cy.window().then(win => win.document.title)` |
 
 ## §6 — Debugging Quick-Reference
 
@@ -324,7 +370,7 @@ Follow these steps when migrating CI/CD pipelines to a new test framework:
 9. **Keep test data and fixtures framework-agnostic** where possible (JSON, CSV, environment variables)
 10. **Set explicit viewport sizes** in both local and CI environments to avoid layout-dependent flakiness
 11. **Take screenshots on failure** in the target framework from day one
-12. **Use TypeScript** when migrating to Playwright, Puppeteer, or Cypress for better IDE support and compile-time safety
+12. **Consider TypeScript** when migrating to Playwright (strongly recommended for fixture typing), Puppeteer, or Cypress for better IDE support; JavaScript is fine for Puppeteer/Cypress if the team prefers it
 13. **Document the migration** -- track which tests have been migrated, which are pending, and any known issues
 14. **Do not mix frameworks in the same test file** -- complete migration per file before moving to the next
 15. **Test the CI pipeline early** -- do not wait until all tests are migrated to verify CI works with the new framework
