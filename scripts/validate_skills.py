@@ -164,6 +164,14 @@ def main():
             if os.path.exists(os.path.join(item_path, 'SKILL.md')):
                 validate_skill(item)
 
+    # Validate api/ skill directories (nested)
+    api_dir = os.path.join(REPO_ROOT, 'api')
+    if os.path.isdir(api_dir):
+        for root, dirs, files in os.walk(api_dir):
+            if 'SKILL.md' in files:
+                rel = os.path.relpath(root, REPO_ROOT)
+                validate_skill(rel)
+
     validate_skills_index()
 
     # Print results
