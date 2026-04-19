@@ -3,8 +3,9 @@
   "name": "agent-skills",
   "description": "Production-grade Agent Skills for Test Automation \u2014 46 frameworks, 15+ languages, cloud and local execution",
   "repository": "https://github.com/LambdaTest/agent-skills",
-  "total_skills": 46,
+  "total_skills": 70,
   "categories": [
+    "api-testing",
     "bdd-testing",
     "cloud-testing",
     "devops",
@@ -829,6 +830,388 @@
           "test-framework-migration-skill/reference/selenium-to-playwright.md",
           "test-framework-migration-skill/reference/selenium-to-puppeteer.md"
         ]
+      }
+    },
+    {
+      "name": "api-ai-augmented",
+      "path": "api/ai-based-api",
+      "description": "Designs AI-powered API features, LLM tool/function definitions, MCP server tool schemas, natural language to API conversion, and agentic API workflows.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/ai-based-api/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-analyzer",
+      "path": "api/api-analyzer",
+      "description": "Validates whether an API request is correct based on provided inputs (method, URL, headers, body, auth, query params).",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-analyzer/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-compliance-checker",
+      "path": "api/api-compliance",
+      "description": "Designs GDPR-compliant API patterns, PCI-DSS field handling, SOC2 audit log schemas, HIPAA data endpoints, and regulatory compliance checklists for any API.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-compliance/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-designer",
+      "path": "api/api-designer",
+      "description": "Generates complete, production-ready REST API endpoint specifications for any system or domain the user describes.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-designer/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-documentation",
+      "path": "api/api-documentation",
+      "description": "Generate comprehensive, professional API documentation from API designs, endpoint definitions, OpenAPI/Swagger specs, route lists, or raw endpoint descriptions.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-documentation/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-health-monitoring",
+      "path": "api/api-health-monitoring",
+      "description": "Designs health check endpoints, SLA definitions, alerting rules, observability strategies, and dashboard specs for any API.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-health-monitoring/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-inferrer-from-files",
+      "path": "api/api-inference-from-files",
+      "description": "Infer and list REST API endpoints from file names or project directory structures.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-inference-from-files/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-integration",
+      "path": "api/api-integration-helper",
+      "description": "Designs event-driven architectures, webhook systems, API chaining flows, ETL pipelines, and integration patterns between services.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-integration-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-mock-helper",
+      "path": "api/api-mocking",
+      "description": "Produces mock server definitions, sandbox environment specs, API stub configurations, and fixture data for any API.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-mocking/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-rate-limiting-helper",
+      "path": "api/api-ratelimit-helper",
+      "description": "Designs rate limiting strategies, quota systems, throttling policies, retry logic, and backoff patterns for APIs.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-ratelimit-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-sdk-generator",
+      "path": "api/api-sdk-generator",
+      "description": "Generates client SDK code, API wrapper libraries, request/response models, and language-specific usage patterns for any REST API.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#",
+        "Ruby",
+        "Go"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-sdk-generator/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-security-auth-pattern",
+      "path": "api/api-security-patterns",
+      "description": "Designs and documents authentication, authorization, and security patterns for any API.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-security-patterns/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-to-testcase-generator",
+      "path": "api/api-to-testcase-generator",
+      "description": "Automatically generate comprehensive test cases from API definitions, endpoint descriptions, OpenAPI/Swagger specs, Postman collections, or raw HTTP request/response examples.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-to-testcase-generator/SKILL.md",
+        "reference": [
+          "api/api-to-testcase-generator/references/framework-templates.md",
+          "api/api-to-testcase-generator/references/openapi-parsing-guide.md"
+        ]
+      }
+    },
+    {
+      "name": "api-versioning-helper",
+      "path": "api/api-versioning-helper",
+      "description": "Advises on API versioning strategies, designs deprecation flows, generates migration guides, and handles breaking vs non-breaking change classification.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-versioning-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-graphql-grpc",
+      "path": "api/graphql-grpc-helper",
+      "description": "Designs GraphQL schemas, resolvers, query/mutation/subscription patterns, and protobuf definitions for gRPC services.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "Go"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/graphql-grpc-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "newman-cicd-integration",
+      "path": "api/newman/newman-cicd-helper",
+      "description": "Generate ready-to-use CI/CD pipeline configurations that install and run Newman for automated API testing.",
+      "languages": [
+        "JavaScript",
+        "YAML"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/newman/newman-cicd-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "newman-report-analyzer",
+      "path": "api/newman/newman-report-analyzer",
+      "description": "Analyze Newman test run output, JSON reports, and JUnit XML results to summarize failures, diagnose root causes, identify slow requests, and suggest fixes.",
+      "languages": [
+        "JavaScript"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/newman/newman-report-analyzer/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "newman-script-helper",
+      "path": "api/newman/newman-script-helper",
+      "description": "Generate Newman CLI run commands with the correct flags, options, and configurations.",
+      "languages": [
+        "JavaScript"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/newman/newman-script-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "openapi-spec-generator",
+      "path": "api/openapi-spec-generator",
+      "description": "Generate complete, production-ready OpenAPI 3.x and Swagger 2.0 specifications from natural language descriptions, code, or partial specs.",
+      "languages": [
+        "YAML",
+        "JSON"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/openapi-spec-generator/SKILL.md",
+        "reference": [
+          "api/openapi-spec-generator/references/common-patterns.md",
+          "api/openapi-spec-generator/references/security-schemes.md"
+        ]
+      }
+    },
+    {
+      "name": "api-fetcher-specific-domains",
+      "path": "api/popular-api-fetcher",
+      "description": "Provides real-world API endpoint examples and specifications from well-known platforms and domain-specific systems.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/popular-api-fetcher/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "postman-collection-generator",
+      "path": "api/postman/postman-collection-generator",
+      "description": "Generate complete, import-ready Postman Collection v2.1 JSON files from natural language API descriptions or cURL commands.",
+      "languages": [
+        "JSON",
+        "JavaScript"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/postman/postman-collection-generator/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "postman-openapi-converter",
+      "path": "api/postman/postman-openapi-converter",
+      "description": "Convert OpenAPI 3.x or Swagger 2.0 specs (YAML or JSON) into complete, import-ready Postman Collection v2.1 JSON files.",
+      "languages": [
+        "JSON",
+        "YAML"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/postman/postman-openapi-converter/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "postman-test-script-generator",
+      "path": "api/postman/postman-testcase-generator",
+      "description": "Write Postman test scripts (JavaScript) for pre-request logic and post-response assertions, and embed them directly into a Postman collection.",
+      "languages": [
+        "JavaScript"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/postman/postman-testcase-generator/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "postman-newman-automation",
+      "path": "api/postman/postman-to-newman",
+      "description": "Generate Newman CLI commands, configuration files, Jenkins pipeline scripts, and shell automation for running Postman collections in CI/CD or local environments.",
+      "languages": [
+        "JavaScript",
+        "YAML"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/postman/postman-to-newman/SKILL.md",
+        "reference": []
       }
     }
   ]
