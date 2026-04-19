@@ -815,7 +815,20 @@
       "category": "e2e-testing",
       "files": {
         "skill_md": "test-framework-migration-skill/SKILL.md",
-        "reference": []
+        "reference": [
+          "test-framework-migration-skill/reference/cypress-to-playwright.md",
+          "test-framework-migration-skill/reference/cypress-to-selenium.md",
+          "test-framework-migration-skill/reference/overview.md",
+          "test-framework-migration-skill/reference/playbook.md",
+          "test-framework-migration-skill/reference/playwright-to-cypress.md",
+          "test-framework-migration-skill/reference/playwright-to-puppeteer.md",
+          "test-framework-migration-skill/reference/playwright-to-selenium.md",
+          "test-framework-migration-skill/reference/puppeteer-to-playwright.md",
+          "test-framework-migration-skill/reference/puppeteer-to-selenium.md",
+          "test-framework-migration-skill/reference/selenium-to-cypress.md",
+          "test-framework-migration-skill/reference/selenium-to-playwright.md",
+          "test-framework-migration-skill/reference/selenium-to-puppeteer.md"
+        ]
       }
     }
   ]
