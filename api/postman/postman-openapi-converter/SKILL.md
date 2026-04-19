@@ -9,6 +9,14 @@ description: >
   user pastes YAML or JSON that begins with `openapi:`, `swagger:`, or contains `paths:`
   with HTTP method keys. Always prefer this skill over the general collection generator
   when the input is a structured spec file.
+languages:
+  - JSON
+  - YAML
+category: api-testing
+license: MIT
+metadata:
+  author: TestMu AI
+  version: "1.0"
 ---
 
 # OpenAPI → Postman Collection Converter

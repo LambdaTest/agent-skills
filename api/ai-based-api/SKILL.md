@@ -7,6 +7,15 @@ description: >
   "let Claude use my API", "OpenAI function calling", "Anthropic tool use", "API agent workflow",
   or "convert user intent to API calls". Triggers on: "tool schema", "function spec", "agentic API",
   "LLM plugin", "AI integration", "RAG with my API", or "chatbot that calls my API".
+languages:
+  - JavaScript
+  - TypeScript
+  - Python
+category: api-testing
+license: MIT
+metadata:
+  author: TestMu AI
+  version: "1.0"
 ---
 
 # AI-Augmented API Skill
