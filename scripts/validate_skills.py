@@ -7,7 +7,7 @@ import sys
 import json
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_DIRS = {'evals', 'shared', '.git', 'scripts', 'docs', '__pycache__'}
+SKIP_DIRS = {'api', 'evals', 'shared', '.git', 'scripts', 'docs', '__pycache__'}
 MAX_SKILL_LINES = 500
 
 VALID_CATEGORIES = {
