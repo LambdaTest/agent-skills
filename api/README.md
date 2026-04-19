@@ -88,7 +88,7 @@ Community contributions are what make this repo valuable! You can contribute by:
 - **Improving an existing skill** with better instructions or examples
 - **Sharing example agents** that use skills from this repo
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting a pull request.
+Please read [CONTRIBUTING.md](../CONTRIBUTING.md) before submitting a pull request.
 
 ---
 
@@ -100,7 +100,7 @@ Building agents that reliably perform specific tasks requires well-structured, t
 
 ## License
 
-This repository is open source. See [LICENSE](./LICENSE) for details.
+This repository is open source. See [LICENSE](../LICENSE) for details.
 
 ---
 

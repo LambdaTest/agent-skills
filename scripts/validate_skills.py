@@ -11,7 +11,7 @@ SKIP_DIRS = {'evals', 'shared', '.git', 'scripts', 'docs', '__pycache__'}
 MAX_SKILL_LINES = 500
 
 VALID_CATEGORIES = {
-    'accessibility', 'api-testing', 'bdd-testing', 'cloud-testing',
+    'accessibility', 'api-design', 'api-testing', 'bdd-testing', 'cloud-testing',
     'devops', 'e2e-testing', 'mobile-testing', 'performance-testing',
     'security-testing', 'unit-testing', 'visual-testing',
 }
