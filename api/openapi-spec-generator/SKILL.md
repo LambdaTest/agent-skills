@@ -187,7 +187,7 @@ Timestamps:
 
 ### Step 4 — Security Schemes
 
-Read `references/security-schemes.md` for detailed patterns. Quick reference:
+Read `reference/security-schemes.md` for detailed patterns. Quick reference:
 
 | Scheme | OAS 3.x type | Notes |
 |---|---|---|
@@ -306,8 +306,8 @@ When the user provides source code, extract:
 
 ## Reference Files
 
-- `references/security-schemes.md` — Detailed security scheme examples for all auth types
-- `references/common-patterns.md` — Pagination, HATEOAS, problem+json, webhooks, file upload patterns
+- `reference/security-schemes.md` — Detailed security scheme examples for all auth types
+- `reference/common-patterns.md` — Pagination, HATEOAS, problem+json, webhooks, file upload patterns
 
 Read these when the user asks about a specific pattern or when generating complex auth/pagination setups.
 

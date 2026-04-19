@@ -108,7 +108,7 @@ For each endpoint, generate tests across these categories:
 
 ### Step 3 — Generate Test Code
 
-Follow the structure below per framework. See `references/framework-templates.md` for detailed templates.
+Follow the structure below per framework. See `reference/framework-templates.md` for detailed templates.
 
 **General principles:**
 - Each test should be atomic and independent (no shared mutable state)
@@ -186,7 +186,7 @@ describe('POST /users', () => {
 });
 ```
 
-For full templates (JUnit, RestAssured, Mocha, Newman, k6), see `references/framework-templates.md`.
+For full templates (JUnit, RestAssured, Mocha, Newman, k6), see `reference/framework-templates.md`.
 
 ---
 
@@ -243,8 +243,8 @@ Before delivering output, verify:
 
 ## Reference Files
 
-- `references/framework-templates.md` — Full boilerplate for each supported framework
-- `references/openapi-parsing-guide.md` — How to extract test data from OpenAPI schemas
+- `reference/framework-templates.md` — Full boilerplate for each supported framework
+- `reference/openapi-parsing-guide.md` — How to extract test data from OpenAPI schemas
 
 Read these when generating tests for a less-common framework or a complex OpenAPI spec.
 

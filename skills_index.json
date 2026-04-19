@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "name": "agent-skills",
-  "description": "Production-grade Agent Skills for Test Automation \u2014 46 frameworks, 15+ languages, cloud and local execution",
+  "description": "Production-grade Agent Skills for Test Automation — 70 skills, 15+ languages, cloud and local execution",
   "repository": "https://github.com/LambdaTest/agent-skills",
   "total_skills": 70,
   "categories": [
@@ -15,6 +15,276 @@
     "visual-testing"
   ],
   "skills": [
+    {
+      "name": "api-ai-augmented",
+      "path": "api/ai-based-api",
+      "description": "Designs AI-powered API features, LLM tool/function definitions, MCP server tool schemas, natural language to API conversion, and agentic API workflows. Use whenever the user asks about \"AI calling my API\", \"function calling schema\", \"tool definition for LLM\", \"MCP tools\", \"natural language API\", \"AI agent\", \"let Claude use my API\", \"OpenAI function calling\", \"Anthropic tool use\", \"API agent workflow\", or \"convert user intent to API calls\". Triggers on: \"tool schema\", \"function spec\", \"agentic API\", \"LLM plugin\", \"AI integration\", \"RAG with my API\", or \"chatbot that calls my API\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/ai-based-api/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-analyzer",
+      "path": "api/api-analyzer",
+      "description": "Validates whether an API request is correct based on provided inputs (method, URL, headers, body, auth, query params). Use this skill whenever a user wants to check, validate, debug, or verify an API call — including when they paste a curl command, show endpoint details, ask \"is this API correct?\", \"why is my API failing?\", \"does this request look right?\", or share any HTTP request for review. Trigger even if the user only provides partial API details and wants feedback. Triggers on: \"validate API\", \"check my request\", \"is this API correct\", \"debug API call\", \"curl review\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-analyzer/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-compliance-checker",
+      "path": "api/api-compliance",
+      "description": "Designs GDPR-compliant API patterns, PCI-DSS field handling, SOC2 audit log schemas, HIPAA data endpoints, and regulatory compliance checklists for any API. Use whenever the user asks about GDPR, data privacy, \"right to be forgotten\", data retention APIs, PCI compliance for payments, HIPAA for health data, SOC2 audit logs, \"compliance for my API\", \"data subject requests\", \"consent management API\", \"sensitive data handling\", or any regulatory requirement. Triggers on: CCPA, LGPD, ISO 27001, data residency, field masking, PII handling, audit trails, or \"data export endpoint\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-compliance/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-designer",
+      "path": "api/api-designer",
+      "description": "Generates complete, production-ready REST API endpoint specifications for any system or domain the user describes. Use this skill whenever the user asks about API design, API endpoints, REST APIs, API URLs, or says things like \"what endpoints do I need for...\", \"design an API for...\", \"give me the API for...\", \"list the API endpoints for...\", \"suggest me some API endpoints...\", \"provide me with APIs for...\", \"what are the expected APIs for...\", or asks about request/response structures, HTTP methods, status codes, headers, responses, payload, request body, or authorization for any application or system. Triggers on: \"API design\", \"REST endpoints\", \"API for my app\", \"endpoint list\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-designer/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-documentation",
+      "path": "api/api-documentation",
+      "description": "Generate comprehensive, professional API documentation from API designs, endpoint definitions, OpenAPI/Swagger specs, route lists, or raw endpoint descriptions. Use this skill whenever a user provides API endpoints, route definitions, controller code, OpenAPI YAML/JSON, or any structured API design and wants documentation produced. Also trigger when the user asks to \"document my API\", \"write API docs\", \"generate REST docs\", \"create API reference\", \"document these endpoints\", \"make a Swagger-like doc\", or anything that involves turning API input into readable documentation. Triggers on: \"API docs\", \"document my API\", \"REST documentation\", \"API reference\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-documentation/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-fetcher-specific-domains",
+      "path": "api/popular-api-fetcher",
+      "description": "Provides real-world API endpoint examples and specifications from well-known platforms and domain-specific systems. Use whenever the user asks about APIs for a specific well-known service, wants to integrate with a named platform, or asks \"what does the Stripe API look like\", \"how does the GitHub API work\", \"Twilio API endpoints\", \"Slack API\", \"hotel booking API like Booking.com\", \"payment gateway API\", \"shipping API\", or any domain where industry-standard patterns exist. Triggers on: \"Stripe API\", \"GitHub API\", \"Twilio API\", \"Slack API\", \"real-world API\", \"platform API\", \"domain API examples\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/popular-api-fetcher/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-graphql-grpc",
+      "path": "api/graphql-grpc-helper",
+      "description": "Designs GraphQL schemas, resolvers, query/mutation/subscription patterns, and protobuf definitions for gRPC services. Use whenever the user asks about GraphQL, \"design a GraphQL schema\", \"write mutations for\", \"GraphQL subscriptions\", \"DataLoader pattern\", \"gRPC service\", \"protobuf definition\", \"proto file\", \"service definition\", or \"when should I use GraphQL vs REST vs gRPC\". Triggers on any mention of: schema definition language, SDL, resolvers, N+1 problem, federation, stitching, proto3, streaming RPC, unary RPC, or gRPC-gateway.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "Go"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/graphql-grpc-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-health-monitoring",
+      "path": "api/api-health-monitoring",
+      "description": "Designs health check endpoints, SLA definitions, alerting rules, observability strategies, and dashboard specs for any API. Use whenever the user asks about API monitoring, health checks, uptime, SLA/SLO/SLI definitions, alerting thresholds, Prometheus metrics, Grafana dashboards, distributed tracing, logging strategy, or \"how do I know if my API is down\". Triggers on: \"health endpoint\", \"liveness probe\", \"readiness probe\", \"API metrics\", \"error rate alert\", \"latency monitoring\", \"observability for my API\", \"what should I monitor\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-health-monitoring/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-inferrer-from-files",
+      "path": "api/api-inference-from-files",
+      "description": "Infer and list REST API endpoints from file names or project directory structures. Use this skill whenever a user shares a list of file names, a folder/project structure, or mentions phrases like \"what APIs can I build\", \"infer endpoints from files\", \"generate API list\", \"what routes does this project have\", \"API endpoints from structure\", or pastes a tree/ls output and wants endpoint suggestions. Trigger even if the user only pastes raw file names without asking explicitly — if there are route/controller/model/service file names present, this skill applies. Triggers on: \"infer API\", \"endpoints from files\", \"project structure\", \"route discovery\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-inference-from-files/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-integration",
+      "path": "api/api-integration-helper",
+      "description": "Designs event-driven architectures, webhook systems, API chaining flows, ETL pipelines, and integration patterns between services. Use whenever the user asks about webhooks, event streaming, API composition, connecting two or more APIs, building pipelines, Pub/Sub, Kafka topics, ETL from API to DB, choreography vs orchestration, \"how do I connect A and B\", \"trigger X when Y happens\", \"pass data from one API to another\", or any integration pattern question. Also triggers on: Zapier-style automation, API gateway routing, service mesh, outbox pattern, CQRS, saga pattern, or event sourcing.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-integration-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-mock-helper",
+      "path": "api/api-mocking",
+      "description": "Produces mock server definitions, sandbox environment specs, API stub configurations, and fixture data for any API. Use whenever the user asks about mocking an API, creating a sandbox, \"fake server\", WireMock stubs, Prism mocks, MSW (Mock Service Worker), \"test fixtures\", \"stub the API\", \"mock this endpoint\", \"generate test data\", or \"create a sandbox environment for my API\". Triggers on: \"mock server\", \"API sandbox\", \"stub responses\", \"fixture data\", \"test doubles\", \"contract-based mocking\", \"record and replay\", or \"local API simulation\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-mocking/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-rate-limiting-helper",
+      "path": "api/api-ratelimit-helper",
+      "description": "Designs rate limiting strategies, quota systems, throttling policies, retry logic, and backoff patterns for APIs. Use whenever the user asks about rate limiting, throttling, quotas, \"too many requests\", 429 responses, \"how do I limit my API\", \"retry strategy\", \"exponential backoff\", \"burst vs sustained rate\", \"per-user limits\", tiered API plans, or concurrency limits. Also triggers on: token bucket, leaky bucket, sliding window, \"API plan limits\", \"free vs paid tier\", or \"circuit breaker\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-ratelimit-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-sdk-generator",
+      "path": "api/api-sdk-generator",
+      "description": "Generates client SDK code, API wrapper libraries, request/response models, and language-specific usage patterns for any REST API. Use whenever the user asks to \"generate an SDK\", \"write a client library\", \"create API wrappers\", \"generate TypeScript types from my API\", \"write a Python client for\", \"create request/response classes\", or wants reusable code to call an API from any programming language. Triggers on: \"client library\", \"API wrapper\", \"generate models\", \"DTO classes\", \"API client in {language}\", \"type definitions for my API\", or \"codegen from OpenAPI\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#",
+        "Ruby",
+        "Go"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-sdk-generator/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-security-auth-pattern",
+      "path": "api/api-security-patterns",
+      "description": "Designs and documents authentication, authorization, and security patterns for any API. Use whenever the user asks about OAuth 2.0, JWT, API keys, RBAC, ABAC, rate limiting for security, CORS, HTTPS enforcement, input validation, OWASP API security, token refresh flows, multi-tenancy isolation, or any question starting with \"how do I secure my API\", \"what auth should I use\", \"implement OAuth for\", \"design permissions for\", or \"API security checklist\". Triggers on any mention of: JWT, OAuth, API key, bearer token, HMAC, mTLS, SAML, SSO, RBAC, scopes, claims, or \"unauthorized\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-security-patterns/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "api-to-testcase-generator",
+      "path": "api/api-to-testcase-generator",
+      "description": "Automatically generate comprehensive test cases from API definitions, endpoint descriptions, OpenAPI/Swagger specs, Postman collections, or raw HTTP request/response examples. Use this skill whenever the user mentions generating tests from APIs, writing test cases for REST endpoints, API testing, creating test suites from specs, or converting API docs to test code. Also triggers when the user shares an OpenAPI file, Swagger YAML/JSON, Postman collection, curl commands, or any API endpoint definition and asks for tests, coverage, or validation. Supports output in popular frameworks: pytest, Jest, Mocha, JUnit, Newman, k6, and plain HTTP request scripts. Triggers on: \"write tests for my API\", \"test this endpoint\", \"API test cases\", \"generate tests from spec\".",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-to-testcase-generator/SKILL.md",
+        "reference": [
+          "api/api-to-testcase-generator/reference/framework-templates.md",
+          "api/api-to-testcase-generator/reference/openapi-parsing-guide.md"
+        ]
+      }
+    },
+    {
+      "name": "api-versioning-helper",
+      "path": "api/api-versioning-helper",
+      "description": "Advises on API versioning strategies, designs deprecation flows, generates migration guides, and handles breaking vs non-breaking change classification. Use whenever the user asks about API versioning, \"how to version my API\", \"URI vs header versioning\", \"breaking changes\", \"backward compatibility\", \"API deprecation\", \"sunset a version\", \"migrate from v1 to v2\", or \"semver for APIs\". Triggers on any question about: API evolution, adding/removing fields, changing response formats, renaming endpoints, or managing multiple API versions in production.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/api-versioning-helper/SKILL.md",
+        "reference": []
+      }
+    },
     {
       "name": "appium-skill",
       "path": "appium-skill",
@@ -250,7 +520,7 @@
     {
       "name": "hyperexecute-skill",
       "path": "hyperexecute-skill",
-      "description": "Generates HyperExecute YAML configurations for blazing-fast test orchestration on LambdaTest's TestMu AI cloud. Framework-agnostic \u2014 works with any test framework. Use when user mentions \"HyperExecute\", \"fast test execution\", \"test orchestration\", \"hyperexecute.yaml\". Triggers on: \"HyperExecute\", \"hyperexecute.yaml\", \"test orchestration\", \"HE\", \"fast parallel tests\".",
+      "description": "Generates HyperExecute YAML configurations for blazing-fast test orchestration on LambdaTest's TestMu AI cloud. Framework-agnostic — works with any test framework. Use when user mentions \"HyperExecute\", \"fast test execution\", \"test orchestration\", \"hyperexecute.yaml\". Triggers on: \"HyperExecute\", \"hyperexecute.yaml\", \"test orchestration\", \"HE\", \"fast parallel tests\".",
       "languages": [
         "YAML"
       ],
@@ -413,6 +683,46 @@
       }
     },
     {
+      "name": "newman-cicd-integration",
+      "path": "api/newman/newman-cicd-helper",
+      "description": "Generate ready-to-use CI/CD pipeline configurations that install and run Newman for automated API testing. Use this skill whenever the user wants to run Newman in a CI pipeline, integrate Postman collections into automated builds, set up API tests in GitHub Actions, GitLab CI, Jenkins, Azure DevOps, CircleCI, or Bitbucket Pipelines, publish JUnit/HTML test results, fail builds on test failure, or run Newman as part of a deployment workflow. Triggers on: \"Newman in CI\", \"run Postman tests in pipeline\", \"Newman GitHub Actions\", \"Newman Jenkins\", \"Newman GitLab\", \"Newman Azure DevOps\", \"automate API tests\", \"CI/CD Newman\", \"pipeline for Postman\", \"run Newman on every push\".",
+      "languages": [
+        "JavaScript",
+        "YAML"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/newman/newman-cicd-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "newman-report-analyzer",
+      "path": "api/newman/newman-report-analyzer",
+      "description": "Analyze Newman test run output, JSON reports, and JUnit XML results to summarize failures, diagnose root causes, identify slow requests, and suggest fixes. Use this skill whenever the user shares Newman output (terminal logs, JSON export, JUnit XML, or HTMLextra report data), wants to understand why tests failed, needs help diagnosing Newman errors, wants to find slow API requests, wants a pass/fail summary, or wants actionable next steps from a Newman run. Triggers on: \"Newman output\", \"Newman failed\", \"analyze Newman results\", \"Newman errors\", \"my tests failed in Newman\", \"Newman JSON report\", \"Newman JUnit\", \"test run results\", \"why did Newman fail\", \"Newman summary\".",
+      "languages": [
+        "JavaScript"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/newman/newman-report-analyzer/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "newman-script-helper",
+      "path": "api/newman/newman-script-helper",
+      "description": "Generate Newman CLI run commands with the correct flags, options, and configurations. Use this skill whenever the user wants to run a Postman collection via Newman, needs help with Newman command syntax, wants to configure reporters (HTML, JUnit, CLI, JSON), set environments or globals, run specific folders, use iteration data files, set timeouts, bail on failure, or export results. Triggers on: \"run my collection\", \"newman run\", \"Newman command\", \"run Postman collection from CLI\", \"Newman flags\", \"Newman reporters\", \"Newman environment\", \"Newman iteration data\".",
+      "languages": [
+        "JavaScript"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/newman/newman-script-helper/SKILL.md",
+        "reference": []
+      }
+    },
+    {
       "name": "nightwatchjs-skill",
       "path": "nightwatchjs-skill",
       "description": "Generates NightwatchJS E2E tests in JavaScript. Integrated test runner with Selenium WebDriver, built-in assertions, and page objects. Use when user mentions \"Nightwatch\", \"NightwatchJS\", \"nightwatch.conf.js\". Triggers on: \"Nightwatch\", \"NightwatchJS\", \"nightwatch test\".",
@@ -443,6 +753,23 @@
         "reference": [
           "nunit-skill/reference/advanced-patterns.md",
           "nunit-skill/reference/playbook.md"
+        ]
+      }
+    },
+    {
+      "name": "openapi-spec-generator",
+      "path": "api/openapi-spec-generator",
+      "description": "Generate complete, production-ready OpenAPI 3.x and Swagger 2.0 specifications from natural language descriptions, code, or partial specs. Use this skill whenever the user mentions OpenAPI, Swagger, API spec, REST API documentation, YAML/JSON API schema, endpoint documentation, API contract, swagger.yaml, openapi.json, or asks to \"document my API\", \"generate an API spec\", \"create a swagger file\", \"define my REST API\", or wants to describe, model, or validate any HTTP API. Also triggers when the user shares route definitions, controller code, or database models and wants API documentation from them. Triggers on: \"OpenAPI\", \"Swagger\", \"API spec\", \"swagger.yaml\", \"openapi.json\".",
+      "languages": [
+        "YAML",
+        "JSON"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/openapi-spec-generator/SKILL.md",
+        "reference": [
+          "api/openapi-spec-generator/reference/common-patterns.md",
+          "api/openapi-spec-generator/reference/security-schemes.md"
         ]
       }
     },
@@ -490,9 +817,64 @@
       }
     },
     {
+      "name": "postman-collection-generator",
+      "path": "api/postman/postman-collection-generator",
+      "description": "Generate complete, import-ready Postman Collection v2.1 JSON files from natural language API descriptions or cURL commands. Use this skill whenever the user describes an API in plain English (\"I have a REST API with these endpoints...\"), pastes cURL commands, or asks to \"create a Postman collection\", \"build a collection\", \"turn this into Postman\", or \"generate requests for my API\". Also triggers when users describe authentication flows, CRUD operations, or request/response examples and want them in Postman format. Triggers on: \"Postman collection\", \"create collection\", \"cURL to Postman\", \"build a collection\".",
+      "languages": [
+        "JSON",
+        "JavaScript"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/postman/postman-collection-generator/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "postman-newman-automation",
+      "path": "api/postman/postman-to-newman",
+      "description": "Generate Newman CLI commands, configuration files, Jenkins pipeline scripts, and shell automation for running Postman collections in CI/CD or local environments. Use this skill whenever the user wants to run Postman collections from the command line, automate API tests, integrate Postman with Jenkins, write a Jenkinsfile for API testing, generate Newman HTML/JUnit reports, or uses phrases like \"run collection via CLI\", \"automate Postman\", \"Newman command\", \"Jenkins pipeline for API tests\", \"CI for Postman\", or \"schedule collection runs\". Triggers on: \"Newman CLI\", \"automate Postman\", \"Postman CI/CD\", \"Jenkinsfile for API tests\", \"run collection\".",
+      "languages": [
+        "JavaScript",
+        "YAML"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/postman/postman-to-newman/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "postman-openapi-converter",
+      "path": "api/postman/postman-openapi-converter",
+      "description": "Convert OpenAPI 3.x or Swagger 2.0 specs (YAML or JSON) into complete, import-ready Postman Collection v2.1 JSON files. Use this skill whenever the user provides or references an OpenAPI spec, Swagger file, openapi.yaml, swagger.json, or uses phrases like \"convert my OpenAPI spec\", \"import swagger to Postman\", \"turn this spec into a collection\", or \"generate Postman requests from my API spec\". Also triggers when the user pastes YAML or JSON that begins with openapi: or swagger: or contains paths: with HTTP method keys. Triggers on: \"OpenAPI to Postman\", \"Swagger to Postman\", \"convert spec to collection\", \"import spec\".",
+      "languages": [
+        "JSON",
+        "YAML"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/postman/postman-openapi-converter/SKILL.md",
+        "reference": []
+      }
+    },
+    {
+      "name": "postman-test-script-generator",
+      "path": "api/postman/postman-testcase-generator",
+      "description": "Write Postman test scripts (JavaScript) for pre-request logic and post-response assertions, and embed them directly into a Postman collection. Use this skill whenever the user wants to add tests to Postman requests, asks about \"pm.test\", \"pm.expect\", \"Postman assertions\", \"test scripts\", \"chaining requests\", \"dynamic variables\", \"pre-request scripts\", or \"validating API responses in Postman\". Also triggers for: \"write tests for my collection\", \"add assertions to these endpoints\", \"chain the auth token to the next request\". Triggers on: \"pm.test\", \"pm.expect\", \"Postman test\", \"Postman assertions\", \"pre-request script\".",
+      "languages": [
+        "JavaScript"
+      ],
+      "category": "api-testing",
+      "files": {
+        "skill_md": "api/postman/postman-testcase-generator/SKILL.md",
+        "reference": []
+      }
+    },
+    {
       "name": "protractor-skill",
       "path": "protractor-skill",
-      "description": "Generates Protractor E2E tests for Angular/AngularJS apps in JS/TS. NOTE: Protractor is officially deprecated \u2014 recommend Playwright or Cypress. Use when user mentions \"Protractor\", \"element(by.model())\", \"Angular E2E\". Triggers on: \"Protractor\", \"element(by.model)\", \"Angular E2E test\", \"protractor.conf\".",
+      "description": "Generates Protractor E2E tests for Angular/AngularJS apps in JS/TS. NOTE: Protractor is officially deprecated — recommend Playwright or Cypress. Use when user mentions \"Protractor\", \"element(by.model())\", \"Angular E2E\". Triggers on: \"Protractor\", \"element(by.model)\", \"Angular E2E test\", \"protractor.conf\".",
       "languages": [
         "JavaScript",
         "TypeScript"
@@ -638,7 +1020,7 @@
     {
       "name": "smartui-skill",
       "path": "smartui-skill",
-      "description": "Generates SmartUI visual regression test configurations for screenshot comparison on TestMu AI cloud. Framework-agnostic \u2014 works with Playwright, Selenium, Cypress, Puppeteer. Use when user mentions \"SmartUI\", \"visual regression\", \"screenshot comparison\", \"visual testing\". Triggers on: \"SmartUI\", \"visual regression\", \"screenshot comparison\", \"pixel diff\", \"visual testing LambdaTest\".",
+      "description": "Generates SmartUI visual regression test configurations for screenshot comparison on TestMu AI cloud. Framework-agnostic — works with Playwright, Selenium, Cypress, Puppeteer. Use when user mentions \"SmartUI\", \"visual regression\", \"screenshot comparison\", \"visual testing\". Triggers on: \"SmartUI\", \"visual regression\", \"screenshot comparison\", \"pixel diff\", \"visual testing LambdaTest\".",
       "languages": [
         "JavaScript",
         "TypeScript",
@@ -665,6 +1047,36 @@
         "reference": [
           "specflow-skill/reference/advanced-patterns.md",
           "specflow-skill/reference/playbook.md"
+        ]
+      }
+    },
+    {
+      "name": "test-framework-migration-skill",
+      "path": "test-framework-migration-skill",
+      "description": "Migrates and converts test automation scripts between Selenium, Playwright, Puppeteer, and Cypress. Use when the user asks to migrate, convert, or port tests from one framework to another; rewrite tests in a different framework; or switch from Selenium to Playwright, Playwright to Selenium, Puppeteer to Playwright, Cypress to Playwright, or vice versa. Triggers on: \"migrate\", \"convert\", \"port\", \"selenium to playwright\", \"playwright to selenium\", \"puppeteer to playwright\", \"cypress to playwright\", \"rewrite tests in\", \"switch from [framework] to [framework]\".",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C#"
+      ],
+      "category": "e2e-testing",
+      "files": {
+        "skill_md": "test-framework-migration-skill/SKILL.md",
+        "reference": [
+          "test-framework-migration-skill/reference/cypress-to-playwright.md",
+          "test-framework-migration-skill/reference/cypress-to-selenium.md",
+          "test-framework-migration-skill/reference/overview.md",
+          "test-framework-migration-skill/reference/playbook.md",
+          "test-framework-migration-skill/reference/playwright-to-cypress.md",
+          "test-framework-migration-skill/reference/playwright-to-puppeteer.md",
+          "test-framework-migration-skill/reference/playwright-to-selenium.md",
+          "test-framework-migration-skill/reference/puppeteer-to-playwright.md",
+          "test-framework-migration-skill/reference/puppeteer-to-selenium.md",
+          "test-framework-migration-skill/reference/selenium-to-cypress.md",
+          "test-framework-migration-skill/reference/selenium-to-playwright.md",
+          "test-framework-migration-skill/reference/selenium-to-puppeteer.md"
         ]
       }
     },
@@ -800,418 +1212,6 @@
           "xunit-skill/reference/advanced-patterns.md",
           "xunit-skill/reference/playbook.md"
         ]
-      }
-    },
-    {
-      "name": "test-framework-migration-skill",
-      "path": "test-framework-migration-skill",
-      "description": "Migrates and converts test automation scripts between Selenium, Playwright, Puppeteer, and Cypress. Use when the user asks to migrate, convert, or port tests from one framework to another; rewrite tests in a different framework; or switch from Selenium to Playwright, Playwright to Selenium, Puppeteer to Playwright, Cypress to Playwright, or vice versa. Triggers on: \"migrate\", \"convert\", \"port\", \"selenium to playwright\", \"playwright to selenium\", \"puppeteer to playwright\", \"cypress to playwright\", \"rewrite tests in\", \"switch from [framework] to [framework]\".",
-      "languages": [
-        "Java",
-        "Python",
-        "JavaScript",
-        "TypeScript",
-        "C#"
-      ],
-      "category": "e2e-testing",
-      "files": {
-        "skill_md": "test-framework-migration-skill/SKILL.md",
-        "reference": [
-          "test-framework-migration-skill/reference/cypress-to-playwright.md",
-          "test-framework-migration-skill/reference/cypress-to-selenium.md",
-          "test-framework-migration-skill/reference/overview.md",
-          "test-framework-migration-skill/reference/playbook.md",
-          "test-framework-migration-skill/reference/playwright-to-cypress.md",
-          "test-framework-migration-skill/reference/playwright-to-puppeteer.md",
-          "test-framework-migration-skill/reference/playwright-to-selenium.md",
-          "test-framework-migration-skill/reference/puppeteer-to-playwright.md",
-          "test-framework-migration-skill/reference/puppeteer-to-selenium.md",
-          "test-framework-migration-skill/reference/selenium-to-cypress.md",
-          "test-framework-migration-skill/reference/selenium-to-playwright.md",
-          "test-framework-migration-skill/reference/selenium-to-puppeteer.md"
-        ]
-      }
-    },
-    {
-      "name": "api-ai-augmented",
-      "path": "api/ai-based-api",
-      "description": "Designs AI-powered API features, LLM tool/function definitions, MCP server tool schemas, natural language to API conversion, and agentic API workflows.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/ai-based-api/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-analyzer",
-      "path": "api/api-analyzer",
-      "description": "Validates whether an API request is correct based on provided inputs (method, URL, headers, body, auth, query params).",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-analyzer/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-compliance-checker",
-      "path": "api/api-compliance",
-      "description": "Designs GDPR-compliant API patterns, PCI-DSS field handling, SOC2 audit log schemas, HIPAA data endpoints, and regulatory compliance checklists for any API.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-compliance/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-designer",
-      "path": "api/api-designer",
-      "description": "Generates complete, production-ready REST API endpoint specifications for any system or domain the user describes.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-designer/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-documentation",
-      "path": "api/api-documentation",
-      "description": "Generate comprehensive, professional API documentation from API designs, endpoint definitions, OpenAPI/Swagger specs, route lists, or raw endpoint descriptions.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-documentation/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-health-monitoring",
-      "path": "api/api-health-monitoring",
-      "description": "Designs health check endpoints, SLA definitions, alerting rules, observability strategies, and dashboard specs for any API.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-health-monitoring/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-inferrer-from-files",
-      "path": "api/api-inference-from-files",
-      "description": "Infer and list REST API endpoints from file names or project directory structures.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-inference-from-files/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-integration",
-      "path": "api/api-integration-helper",
-      "description": "Designs event-driven architectures, webhook systems, API chaining flows, ETL pipelines, and integration patterns between services.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-integration-helper/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-mock-helper",
-      "path": "api/api-mocking",
-      "description": "Produces mock server definitions, sandbox environment specs, API stub configurations, and fixture data for any API.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-mocking/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-rate-limiting-helper",
-      "path": "api/api-ratelimit-helper",
-      "description": "Designs rate limiting strategies, quota systems, throttling policies, retry logic, and backoff patterns for APIs.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-ratelimit-helper/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-sdk-generator",
-      "path": "api/api-sdk-generator",
-      "description": "Generates client SDK code, API wrapper libraries, request/response models, and language-specific usage patterns for any REST API.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#",
-        "Ruby",
-        "Go"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-sdk-generator/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-security-auth-pattern",
-      "path": "api/api-security-patterns",
-      "description": "Designs and documents authentication, authorization, and security patterns for any API.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-security-patterns/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-to-testcase-generator",
-      "path": "api/api-to-testcase-generator",
-      "description": "Automatically generate comprehensive test cases from API definitions, endpoint descriptions, OpenAPI/Swagger specs, Postman collections, or raw HTTP request/response examples.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-to-testcase-generator/SKILL.md",
-        "reference": [
-          "api/api-to-testcase-generator/references/framework-templates.md",
-          "api/api-to-testcase-generator/references/openapi-parsing-guide.md"
-        ]
-      }
-    },
-    {
-      "name": "api-versioning-helper",
-      "path": "api/api-versioning-helper",
-      "description": "Advises on API versioning strategies, designs deprecation flows, generates migration guides, and handles breaking vs non-breaking change classification.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "C#"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/api-versioning-helper/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "api-graphql-grpc",
-      "path": "api/graphql-grpc-helper",
-      "description": "Designs GraphQL schemas, resolvers, query/mutation/subscription patterns, and protobuf definitions for gRPC services.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "Go"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/graphql-grpc-helper/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "newman-cicd-integration",
-      "path": "api/newman/newman-cicd-helper",
-      "description": "Generate ready-to-use CI/CD pipeline configurations that install and run Newman for automated API testing.",
-      "languages": [
-        "JavaScript",
-        "YAML"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/newman/newman-cicd-helper/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "newman-report-analyzer",
-      "path": "api/newman/newman-report-analyzer",
-      "description": "Analyze Newman test run output, JSON reports, and JUnit XML results to summarize failures, diagnose root causes, identify slow requests, and suggest fixes.",
-      "languages": [
-        "JavaScript"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/newman/newman-report-analyzer/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "newman-script-helper",
-      "path": "api/newman/newman-script-helper",
-      "description": "Generate Newman CLI run commands with the correct flags, options, and configurations.",
-      "languages": [
-        "JavaScript"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/newman/newman-script-helper/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "openapi-spec-generator",
-      "path": "api/openapi-spec-generator",
-      "description": "Generate complete, production-ready OpenAPI 3.x and Swagger 2.0 specifications from natural language descriptions, code, or partial specs.",
-      "languages": [
-        "YAML",
-        "JSON"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/openapi-spec-generator/SKILL.md",
-        "reference": [
-          "api/openapi-spec-generator/references/common-patterns.md",
-          "api/openapi-spec-generator/references/security-schemes.md"
-        ]
-      }
-    },
-    {
-      "name": "api-fetcher-specific-domains",
-      "path": "api/popular-api-fetcher",
-      "description": "Provides real-world API endpoint examples and specifications from well-known platforms and domain-specific systems.",
-      "languages": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/popular-api-fetcher/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "postman-collection-generator",
-      "path": "api/postman/postman-collection-generator",
-      "description": "Generate complete, import-ready Postman Collection v2.1 JSON files from natural language API descriptions or cURL commands.",
-      "languages": [
-        "JSON",
-        "JavaScript"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/postman/postman-collection-generator/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "postman-openapi-converter",
-      "path": "api/postman/postman-openapi-converter",
-      "description": "Convert OpenAPI 3.x or Swagger 2.0 specs (YAML or JSON) into complete, import-ready Postman Collection v2.1 JSON files.",
-      "languages": [
-        "JSON",
-        "YAML"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/postman/postman-openapi-converter/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "postman-test-script-generator",
-      "path": "api/postman/postman-testcase-generator",
-      "description": "Write Postman test scripts (JavaScript) for pre-request logic and post-response assertions, and embed them directly into a Postman collection.",
-      "languages": [
-        "JavaScript"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/postman/postman-testcase-generator/SKILL.md",
-        "reference": []
-      }
-    },
-    {
-      "name": "postman-newman-automation",
-      "path": "api/postman/postman-to-newman",
-      "description": "Generate Newman CLI commands, configuration files, Jenkins pipeline scripts, and shell automation for running Postman collections in CI/CD or local environments.",
-      "languages": [
-        "JavaScript",
-        "YAML"
-      ],
-      "category": "api-testing",
-      "files": {
-        "skill_md": "api/postman/postman-to-newman/SKILL.md",
-        "reference": []
       }
     }
   ]
