@@ -292,7 +292,7 @@ Provide based on what the user needs:
 
 Once the CLI command output is delivered, ask the user:
 
-"Would you like me to generate API dcoumentation for this design? (yes/no)"
+"Would you like me to generate API documentation for this design? (yes/no)"
 
 If the user says **yes**:
 - Check if the API Documentation skill is available in the installed skills list
