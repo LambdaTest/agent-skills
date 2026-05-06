@@ -7,11 +7,11 @@ import sys
 import json
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_DIRS = {'evals', 'shared', '.git', 'scripts', 'docs', '__pycache__'}
+SKIP_DIRS = {'api-skill', 'evals', 'shared', '.git', 'scripts', 'docs', '__pycache__'}
 MAX_SKILL_LINES = 500
 
 VALID_CATEGORIES = {
-    'accessibility', 'api-testing', 'bdd-testing', 'cloud-testing',
+    'accessibility', 'api-design', 'api-testing', 'bdd-testing', 'cloud-testing',
     'devops', 'e2e-testing', 'mobile-testing', 'performance-testing',
     'security-testing', 'unit-testing', 'visual-testing',
 }
@@ -163,6 +163,14 @@ def main():
         if os.path.isdir(item_path) and item not in SKIP_DIRS and not item.startswith('.'):
             if os.path.exists(os.path.join(item_path, 'SKILL.md')):
                 validate_skill(item)
+
+    # Validate api-skill/ skill directories (nested)
+    api_dir = os.path.join(REPO_ROOT, 'api-skill')
+    if os.path.isdir(api_dir):
+        for root, dirs, files in os.walk(api_dir):
+            if 'SKILL.md' in files:
+                rel = os.path.relpath(root, REPO_ROOT)
+                validate_skill(rel)
 
     validate_skills_index()
 
