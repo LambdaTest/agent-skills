@@ -1200,6 +1200,36 @@
           "xunit-skill/reference/playbook.md"
         ]
       }
+    },
+    {
+      "name": "test-framework-migration-skill",
+      "path": "test-framework-migration-skill",
+      "description": "Migrates and converts test automation scripts between Selenium, Playwright, Puppeteer, and Cypress. Use when the user asks to migrate, convert, or port tests from one framework to another; rewrite tests in a different framework; or switch from Selenium to Playwright, Playwright to Selenium, Puppeteer to Playwright, Cypress to Playwright, or vice versa. Triggers on: \"migrate\", \"convert\", \"port\", \"selenium to playwright\", \"playwright to selenium\", \"puppeteer to playwright\", \"cypress to playwright\", \"rewrite tests in\", \"switch from [framework] to [framework]\".",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C#"
+      ],
+      "category": "e2e-testing",
+      "files": {
+        "skill_md": "test-framework-migration-skill/SKILL.md",
+        "reference": [
+          "test-framework-migration-skill/reference/cypress-to-playwright.md",
+          "test-framework-migration-skill/reference/cypress-to-selenium.md",
+          "test-framework-migration-skill/reference/overview.md",
+          "test-framework-migration-skill/reference/playbook.md",
+          "test-framework-migration-skill/reference/playwright-to-cypress.md",
+          "test-framework-migration-skill/reference/playwright-to-puppeteer.md",
+          "test-framework-migration-skill/reference/playwright-to-selenium.md",
+          "test-framework-migration-skill/reference/puppeteer-to-playwright.md",
+          "test-framework-migration-skill/reference/puppeteer-to-selenium.md",
+          "test-framework-migration-skill/reference/selenium-to-cypress.md",
+          "test-framework-migration-skill/reference/selenium-to-playwright.md",
+          "test-framework-migration-skill/reference/selenium-to-puppeteer.md"
+        ]
+      }
     }
   ]
 }

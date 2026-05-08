@@ -120,4 +120,5 @@ After generating migrated code:
 | File | When to read |
 |------|--------------|
 | [reference/overview.md](reference/overview.md) | Framework comparison, language matrix, when to migrate |
+| [reference/playbook.md](reference/playbook.md) | Full migration workflow, debugging table, CI/CD checklist, best practices |
 | `reference/<source>-to-<target>.md` | Before converting any script for that pair |
