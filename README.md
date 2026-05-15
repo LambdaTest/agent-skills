@@ -1,331 +1,116 @@
-# TestMu AI Skills - Production-Grade Agent Skills for Test Automation
+# TestMu AI Skills for TestMu AI (Formerly LambdaTest)
 
-> **Battle-tested Agent Skills for Claude Code, Copilot, Cursor, Gemini CLI & more - covering every major test automation framework across 15+ languages.**
+<p align="center">
+  <a href="https://www.testmuai.com/"><img src="https://img.shields.io/badge/MADE%20BY%20TestMu%20AI-000000.svg?style=for-the-badge&labelColor=000" alt="Made by TestMu AI"></a>
+  <a href="https://github.com/LambdaTest/agent-skills/releases"><img src="https://img.shields.io/github/v/release/LambdaTest/agent-skills.svg?style=for-the-badge&labelColor=000000" alt="Latest release"></a>
+  <a href="https://community.testmuai.com/"><img src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&labelColor=000000" alt="Community"></a>
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/Skills-46-blue.svg)](#full-skill-registry)
-[![Languages](https://img.shields.io/badge/Languages-15+-green.svg)](#languages-covered)
-[![Agent Skills Standard](https://img.shields.io/badge/Agent_Skills-Standard-purple.svg)](https://agentskills.io)
-[![LambdaTest](https://img.shields.io/badge/LambdaTest-Cloud_Ready-orange.svg)](https://www.lambdatest.com)
+## Getting Started
 
----
+[TestMu AI](https://www.testmuai.com/) (Formerly LambdaTest) is the world's first full-stack AI Agentic Quality Engineering platform that empowers teams to test intelligently, smarter, and ship faster. Built for scale, it offers a full-stack testing cloud with 10K+ real devices and 3,000+ browsers. With AI-native test management, MCP servers, and agent-based automation, TestMu AI supports Selenium, Appium, Playwright, and all major frameworks. 
 
-## What Is This?
+With TestMu AI (Formerly LambdaTest), you can install production-grade Agent Skills for every major test automation framework across 15+ languages, enabling AI coding assistants like Claude Code, Copilot, Cursor, and Gemini CLI to write expert-level test automation code.
 
-TestMu AI Skills is a curated collection of **Agent Skills** that teach AI coding assistants how to write production-grade test automation. Each skill is a self-contained package of instructions, code patterns, debugging guides, and CI/CD configurations for a specific testing framework.
+- [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
+- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/) for the full setup walkthrough.
 
-Instead of getting generic test code, your AI agent becomes a **Senior QA automation architect** that knows:
-- The right project structure for each framework
-- Correct dependency versions and configurations
-- Both local and cloud (TestMu AI) execution patterns
-- Common pitfalls and how to debug them
-- CI/CD integration with GitHub Actions
-- Best practices that ship in real-world codebases
+### Prerequisites
 
-## Quick Start
+- Node.js and npm (latest stable) — required to run `npx skills`
+- An AI coding assistant (Claude Code, GitHub Copilot, Cursor, Gemini CLI, or similar)
+- A TestMu AI (Formerly LambdaTest) account with your username and access key
 
-### Install All Skills
+### Setup
+
+Clone and install dependencies:
 
 ```bash
+git clone https://github.com/LambdaTest/agent-skills && cd agent-skills
 npx skills add https://github.com/LambdaTest/agent-skills.git
 ```
 
-The CLI auto-detects your AI tool and installs to the right directory. You can also specify it explicitly:
+Set your credentials as environment variables.
 
-```bash
-npx skills add https://github.com/LambdaTest/agent-skills.git --tool cursor
-```
+**macOS / Linux:**
 
-### Install a Specific Skill
-
-```bash
-# E2E Testing
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill selenium-skill
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill playwright-skill
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill cypress-skill
-
-# Unit Testing
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill jest-skill
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill pytest-skill
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill junit-5-skill
-
-# Mobile Testing
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill appium-skill
-
-# BDD
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill cucumber-skill
-```
-
-### Browse Available Skills
-
-```bash
-npx skills list https://github.com/LambdaTest/agent-skills.git
-```
-
-### CLI Reference
-
-| Flag | Description | Example |
-|------|-------------|---------|
-| `--skill <name>` | Install a single skill | `--skill playwright-skill` |
-| `--tool <name>` | Target a specific AI tool | `--tool claude` |
-| `--dir <path>` | Custom installation directory | `--dir ./my-skills` |
-
-> Supported tools: `claude` · `cursor` · `copilot` · `gemini` · `codex` · `opencode` · `windsurf`
-
----
-
-Once installed, just ask your AI assistant naturally:
-
-```
-"Write Playwright tests for the login page and run them on TestMu AI cloud (Chrome + Firefox)"
-
-"Set up Cypress component tests for the React dashboard and upload screenshots on failure"
-
-"Create JUnit 5 tests for the payments service with Mockito and GitHub Actions CI"
-
-"Run Playwright tests locally against http://localhost:3000 with trace and video enabled"
-```
-
----
-
-## Compatibility
-
-These skills follow the open **[Agent Skills Standard](https://agentskills.io)** (`SKILL.md` format):
-
-| Tool | Type | Support | `--tool` flag |
-|------|------|---------|---------------|
-| **Claude Code** | CLI | ✅ Full | `claude` |
-| **GitHub Copilot** | Extension | ✅ Full | `copilot` |
-| **Cursor** | IDE | ✅ Full | `cursor` |
-| **Gemini CLI** | CLI | ✅ Full | `gemini` |
-| **Codex CLI** | CLI | ✅ Full | `codex` |
-| **OpenCode** | CLI | ✅ Full | `opencode` |
-| **Windsurf** | IDE | ✅ Full | `windsurf` |
-| **Claude.ai** | Web | ✅ Upload | Settings → Features → Skills |
-
----
-
-## Features & Categories
-
-| Category | Count | Frameworks |
-|----------|-------|------------|
-| 🌐 **E2E / Browser Testing** | 15 | Selenium, Playwright, Cypress, WebdriverIO, Puppeteer, TestCafe, Nightwatch.js, Capybara, Geb, Selenide, NemoJS, Protractor, Codeception, Laravel Dusk, Robot Framework |
-| 🧪 **Unit Testing** | 15 | Jest, JUnit 5, pytest, TestNG, Vitest, Mocha, Jasmine, Karma, xUnit, NUnit, MSTest, RSpec, PHPUnit, Test::Unit, unittest |
-| 📱 **Mobile Testing** | 5 | Appium, Espresso, XCUITest, Flutter, Detox |
-| 📋 **BDD Testing** | 7 | Cucumber, SpecFlow, Serenity BDD, Behave, Behat, Gauge, Lettuce |
-| 👁️ **Visual Testing** | 1 | SmartUI |
-| ☁️ **Cloud Testing** | 1 | HyperExecute |
-| 🔄 **Migration** | 1 | Selenium ↔ Playwright, Puppeteer, Cypress |
-| 🔄 **DevOps / CI/CD** | 1 | GitHub Actions / Jenkins / GitLab CI |
-
-### Languages Covered
-
-`Java` · `Python` · `JavaScript` · `TypeScript` · `C#` · `Ruby` · `PHP` · `Kotlin` · `Swift` · `Objective-C` · `Dart` · `Groovy` · `YAML` · `XML` · `Robot Framework`
-
----
-
-## Full Skill Registry (46/46)
-
-| Skill | Languages | Category | Quick Install |
-|-------|-----------|----------|---------------|
-| **[Selenium Skill](selenium-skill/)** | Java, Python, JS, C#, Ruby | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill selenium-skill` |
-| **[Playwright Skill](playwright-skill/)** | JS, TS, Python, Java, C# | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill playwright-skill` |
-| **[Cypress Skill](cypress-skill/)** | JS, TS | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill cypress-skill` |
-| **[Jest Skill](jest-skill/)** | JS, TS | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill jest-skill` |
-| **[JUnit 5 Skill](junit-5-skill/)** | Java | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill junit-5-skill` |
-| **[pytest Skill](pytest-skill/)** | Python | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill pytest-skill` |
-| **[TestNG Skill](testng-skill/)** | Java | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill testng-skill` |
-| **[WebdriverIO Skill](webdriverio-skill/)** | JS, TS | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill webdriverio-skill` |
-| **[Appium Skill](appium-skill/)** | Java, Python, JS, Ruby, C# | Mobile | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill appium-skill` |
-| **[Puppeteer Skill](puppeteer-skill/)** | JS, TS | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill puppeteer-skill` |
-| **[Test Framework Migration Skill](test-framework-migration-skill/)** | JS, TS, Java, Python, C# | Migration | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill test-framework-migration-skill` |
-| **[Mocha Skill](mocha-skill/)** | JS, TS | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill mocha-skill` |
-| **[Vitest Skill](vitest-skill/)** | JS, TS | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill vitest-skill` |
-| **[Cucumber Skill](cucumber-skill/)** | Java, JS, Ruby, TS | BDD | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill cucumber-skill` |
-| **[Espresso Skill](espresso-skill/)** | Java, Kotlin | Mobile | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill espresso-skill` |
-| **[Nightwatch.js Skill](nightwatchjs-skill/)** | JS, TS | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill nightwatchjs-skill` |
-| **[Flutter Testing Skill](flutter-testing-skill/)** | Dart | Mobile | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill flutter-testing-skill` |
-| **[XCUITest Skill](xcuitest-skill/)** | Swift, Obj-C | Mobile | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill xcuitest-skill` |
-| **[Detox Skill](detox-skill/)** | JS, TS | Mobile | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill detox-skill` |
-| **[TestCafe Skill](testcafe-skill/)** | JS, TS | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill testcafe-skill` |
-| **[xUnit Skill](xunit-skill/)** | C# | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill xunit-skill` |
-| **[RSpec Skill](rspec-skill/)** | Ruby | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill rspec-skill` |
-| **[NUnit Skill](nunit-skill/)** | C# | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill nunit-skill` |
-| **[Karma Skill](karma-skill/)** | JS, TS | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill karma-skill` |
-| **[MSTest Skill](mstest-skill/)** | C# | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill mstest-skill` |
-| **[Jasmine Skill](jasmine-skill/)** | JS, TS | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill jasmine-skill` |
-| **[PHPUnit Skill](phpunit-skill/)** | PHP | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill phpunit-skill` |
-| **[Robot Framework Skill](robot-framework-skill/)** | Python, Robot | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill robot-framework-skill` |
-| **[Behat Skill](behat-skill/)** | PHP | BDD | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill behat-skill` |
-| **[Behave Skill](behave-skill/)** | Python | BDD | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill behave-skill` |
-| **[Capybara Skill](capybara-skill/)** | Ruby | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill capybara-skill` |
-| **[Codeception Skill](codeception-skill/)** | PHP | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill codeception-skill` |
-| **[Gauge Skill](gauge-skill/)** | Java, Python, JS, Ruby, C# | BDD | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill gauge-skill` |
-| **[Geb Skill](geb-skill/)** | Groovy | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill geb-skill` |
-| **[Laravel Dusk Skill](laravel-dusk-skill/)** | PHP | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill laravel-dusk-skill` |
-| **[Lettuce Skill](lettuce-skill/)** | Python | BDD | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill lettuce-skill` |
-| **[Nemo.js Skill](nemojs-skill/)** | JS | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill nemojs-skill` |
-| **[Protractor Skill](protractor-skill/)** | JS, TS | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill protractor-skill` |
-| **[Selenide Skill](selenide-skill/)** | Java | E2E | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill selenide-skill` |
-| **[Serenity BDD Skill](serenity-bdd-skill/)** | Java | BDD | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill serenity-bdd-skill` |
-| **[SmartUI Skill](smartui-skill/)** | JS, TS, Java | Visual | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill smartui-skill` |
-| **[SpecFlow Skill](specflow-skill/)** | C# | BDD | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill specflow-skill` |
-| **[Test::Unit Skill](testunit-skill/)** | Ruby | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill testunit-skill` |
-| **[unittest Skill](unittest-skill/)** | Python | Unit | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill unittest-skill` |
-| **[HyperExecute Skill](hyperexecute-skill/)** | YAML | Cloud | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill hyperexecute-skill` |
-| **[CI/CD Pipeline Skill](cicd-pipeline-skill/)** | YAML | DevOps | `npx skills add https://github.com/LambdaTest/agent-skills.git --skill cicd-pipeline-skill` |
-
----
-
-## Skill Architecture
-
-Each skill follows the Agent Skills Standard with progressive disclosure:
-
-```
-selenium-skill/
-├── SKILL.md                          # Core instructions (<500 lines)
-│   └── Workflow + decision trees     # When/how to use the skill
-└── reference/
-    ├── playbook.md                   # Complete implementation guide
-    │   ├── Project setup & dependencies
-    │   ├── Code patterns & page objects
-    │   ├── Cloud integration (LambdaTest)
-    │   ├── CI/CD configuration
-    │   ├── Debugging table (12+ common problems)
-    │   └── Best practices checklist (14+ items)
-    ├── advanced-patterns.md          # Advanced topics
-    └── cloud-integration.md          # Cloud-specific patterns
-```
-
-**How it works:**
-1. **Metadata** (name + description) is always loaded — ~100 tokens per skill
-2. **SKILL.md body** loads when triggered — core workflow and patterns
-3. **Reference files** load on-demand — detailed code, debugging, CI/CD
-
----
-
-## Cloud Testing with TestMu AI
-
-Skills that support browser/device testing include **TestMu AI  cloud integration** out of the box.
-
-### Get Your TestMu AI Credentials
-
-Make sure you have your TestMu AI credentials with you to run test automation scripts on TestMu AI Selenium Grid. You can obtain these credentials from the [TestMu AI Automation Dashboard](https://automation.lambdatest.com/) or through [TestMu AI Profile](https://accounts.lambdatest.com/security).
-
-Set TestMu AI `USERNAME` and `ACCESS_KEY` in environment variables.
-- Copy `.env.example` to `.env` and fill in your credentials.
-
-
-or add credentials directly from your terminal:
-
-**For Linux/macOS:**
 ```bash
 export LT_USERNAME="YOUR_USERNAME"
 export LT_ACCESS_KEY="YOUR_ACCESS_KEY"
 ```
 
-**For Windows:**
+**Windows:**
+
 ```bash
 set LT_USERNAME="YOUR_USERNAME"
 set LT_ACCESS_KEY="YOUR_ACCESS_KEY"
 ```
 
-### Run Tests on the Cloud
+### Run tests
 
-Then ask your AI assistant naturally:
-```
-"Run my Selenium tests on Chrome, Firefox, and Safari on TestMu AI with OS versions Windows 11, macOS Sonoma, and Ubuntu 22.04"
-
-"Execute Playwright tests across 5 browsers in parallel on TestMu AI, tag the build as 'release-1.8.2', and capture traces on failure"
-
-"Set up Cypress on TestMu AI with video recording and JUnit reports, and upload artifacts to the dashboard"
-
-"Test my localhost app through the TestMu AI tunnel (http://localhost:3000) using Playwright and validate login + checkout flows"
-
-"Run mobile web tests on real devices via TestMu AI tunnel and verify the responsive layout on iPhone 15 and Pixel 8"
-```
-
-View your test results, logs, and video recordings on the [TestMu AI  Automation Dashboard](https://automation.lambdatest.com/).
-
----
-
-## What Each Skill Includes
-
-Every playbook follows a consistent structure:
-
-| Section | What It Covers |
-|---------|---------------|
-| **Project Setup** | Dependencies, versions, config files, project structure |
-| **Core Patterns** | Essential code patterns with complete, runnable examples |
-| **Page Objects / Utilities** | Reusable abstractions for real-world projects |
-| **Cloud Integration** | TestMu AI  RemoteWebDriver/capabilities configuration |
-| **CI/CD Integration** | GitHub Actions workflow with reports and parallel execution |
-| **Debugging Table** | 12+ common problems with cause → fix mappings |
-| **Best Practices** | 14+ actionable items for production code |
-
----
-
-## Repository Structure
-
-```
-agent-skills/
-├── README.md                  # This file
-├── LICENSE                    # MIT License
-├── CONTRIBUTING.md            # How to contribute
-├── skills_index.json          # Machine-readable skill registry
-├── scripts/
-│   └── validate_skills.py     # Validation script
-├── shared/
-│   ├── testmu-cloud-reference.md
-│   └── scripts/
-├── evals/                     # Evaluation test cases per skill
-│   └── *-evals.json
-└── <skill-name>/              # 46 skill directories
-    ├── SKILL.md
-    └── reference/
-        ├── playbook.md
-        └── advanced-patterns.md
-```
-
----
-
-## Validation
+Install a specific skill and use it with your AI assistant:
 
 ```bash
-python3 scripts/validate_skills.py
+# Install a specific skill
+npx skills add https://github.com/LambdaTest/agent-skills.git --skill selenium-skill
+npx skills add https://github.com/LambdaTest/agent-skills.git --skill playwright-skill
+npx skills add https://github.com/LambdaTest/agent-skills.git --skill cypress-skill
+
+# Browse all available skills
+npx skills list https://github.com/LambdaTest/agent-skills.git
 ```
 
-Checks: YAML frontmatter, line counts, reference files, cross-references.
+Then ask your AI assistant naturally:
 
----
+```
+"Write Playwright tests for the login page and run them on TestMu AI cloud (Chrome + Firefox)"
+"Create JUnit 5 tests for the payments service with Mockito and GitHub Actions CI"
+```
 
-## How to Contribute
+View results on your TestMu AI dashboard.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+### Local testing with TestMu AI Tunnel
 
-1. Fork the repository
-2. Create your skill directory with `SKILL.md` and `reference/playbook.md`
-3. Run `python3 scripts/validate_skills.py`
-4. Submit a Pull Request
+To test locally hosted apps, set up the TestMu AI tunnel. OS-specific guides:
 
----
+- [Local Testing on Windows](https://www.testmuai.com/support/docs/local-testing-for-windows/)
+- [Local Testing on macOS](https://www.testmuai.com/support/docs/local-testing-for-macos/)
+- [Local Testing on Linux](https://www.testmuai.com/support/docs/local-testing-for-linux/)
 
-## Credits
+Add the following to your capabilities:
 
+```js
+tunnel: true,
+```
 
-- **[TestMu AI ](https://www.testmuai.com)** — Power Your Software Testing with  AI Agents and Cloud
-- **[Anthropic](https://anthropic.com)** — Agent Skills standard and Claude Code
-- **[Agent Skills Standard](https://agentskills.io)** — Open standard for portable AI skills
+## Contributions
 
----
+Contributions are welcome. Open an issue to discuss your idea before submitting a pull request. When reporting bugs, include your Node.js version, OS, and npm version.
 
+## TestMu AI (Formerly LambdaTest) Community
+
+Connect with testers and developers in the [TestMu AI Community](https://community.testmuai.com/). Ask questions, share what you are building, and discuss best practices in test automation and DevOps.
+  
+## TestMu AI (Formerly LambdaTest) Certifications
+
+Earn free [TestMu AI Certifications](https://www.testmuai.com/certifications/) for testers, developers, and QA engineers. Validate your skills in Selenium, Cypress, Playwright, Appium, Espresso and more. Industry-recognized, shareable on LinkedIn, and built by practitioners, not marketers.
+
+## Learning Resources by TestMu AI (Formerly LambdaTest)
+
+Learn modern testing through tutorials, guides, videos, and weekly updates:
+
+* [TestMu AI Blog](https://www.testmuai.com/blog/)
+* [TestMu AI Learning Hub](https://www.testmuai.com/learning-hub/)
+* [TestMu AI on YouTube](https://www.youtube.com/@TestMuAI)
+* [TestMu AI Newsletter](https://www.testmuai.com/newsletter/)
+  
 ## LambdaTest is Now TestMu AI
 
 On **January 12, 2026**, [LambdaTest evolved to TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/), the world's first fully autonomous **Agentic AI Quality Engineering Platform**.
 
 Same team. Same infrastructure. Same customer accounts. All existing LambdaTest logins, scripts, capabilities, and integrations continue to work without change.
 
-👉 Find the new home for [LambdaTest](https://www.testmuai.com).
+Find the new home for [LambdaTest](https://www.testmuai.com).
 
 ### How LambdaTest Evolved into TestMu AI
 
@@ -333,10 +118,10 @@ In 2017, we launched LambdaTest with a simple mission: make testing fast, reliab
 
 As software development entered the AI era, testing had to evolve, too. We rebuilt the architecture to be AI-native from the ground up, with autonomous agents that **plan, author, execute, analyze, and optimize tests** while keeping humans in the loop. The platform integrates with your repos, CI, IDEs, and terminals, continuously learning from every code change and development signal.
 
-That evolution earned a new name: **TestMu AI**, built for an AI-first future of quality engineering. TestMu is not a new name for us. It is the name of our annual community conference, which has brought together 100,000+ quality engineers to discuss how AI would reshape testing, long before that became an industry norm. TestMu AI reflects our commitment to community-driven innovation and AI-native architecture.
+That evolution earned a new name: **TestMu AI**, built for an AI-first future of quality engineering. TestMu is not a new name for us. It is the name of our annual community conference, which has brought together 100,000+ quality engineers to discuss how AI would reshape testing, long before that became an industry norm. 
 
----
+What started as a high-performance cloud testing platform has transformed into an AI-native, multi-agent system powering a connected, end-to-end quality layer. That evolution defined a new identity: LambdaTest evolved into TestMu AI, built for an AI-first future of quality engineering.
 
-## License
+## Support
 
-MIT License. See [LICENSE](LICENSE) for details.
+Got a question? Email [support@testmuai.com](mailto:support@testmuai.com) or chat with us 24x7 from our chat portal.
