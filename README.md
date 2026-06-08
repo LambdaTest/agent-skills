@@ -17,7 +17,7 @@ With TestMu AI (Formerly LambdaTest), you can install production-grade Agent Ski
 
 ### Prerequisites
 
-- Node.js and npm (latest stable) — required to run `npx skills`
+- Node.js and npm (latest stable) — required to run `npx agentskillsforall`
 - An AI coding assistant (Claude Code, GitHub Copilot, Cursor, Gemini CLI, or similar)
 - A TestMu AI (Formerly LambdaTest) account with your username and access key
 
@@ -27,7 +27,7 @@ Clone and install dependencies:
 
 ```bash
 git clone https://github.com/LambdaTest/agent-skills && cd agent-skills
-npx skills add https://github.com/LambdaTest/agent-skills.git
+npx agentskillsforall add https://github.com/LambdaTest/agent-skills.git
 ```
 
 Set your credentials as environment variables.
@@ -52,12 +52,12 @@ Install a specific skill and use it with your AI assistant:
 
 ```bash
 # Install a specific skill
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill selenium-skill
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill playwright-skill
-npx skills add https://github.com/LambdaTest/agent-skills.git --skill cypress-skill
+npx agentskillsforall add https://github.com/LambdaTest/agent-skills.git --skill selenium-skill
+npx agentskillsforall add https://github.com/LambdaTest/agent-skills.git --skill playwright-skill
+npx agentskillsforall add https://github.com/LambdaTest/agent-skills.git --skill cypress-skill
 
 # Browse all available skills
-npx skills list https://github.com/LambdaTest/agent-skills.git
+npx agentskillsforall list https://github.com/LambdaTest/agent-skills.git
 ```
 
 Then ask your AI assistant naturally:
