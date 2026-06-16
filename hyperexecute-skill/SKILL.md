@@ -1,6 +1,12 @@
 ---
 name: hyperexecute-skill
-description: Operates HyperExecute end-to-end for TestMu AI/LambdaTest cloud test execution: analyze projects, create YAML, validate locally, run CLI jobs, debug failures, and wire CI. Use when the user mentions HyperExecute, hyperexecute.yaml, HyperExecute CLI, autosplit, matrix execution, LambdaTest grid, cloud test runs, CI test orchestration, or migrating Playwright/Cypress/Selenium/Pytest/WebdriverIO tests to HyperExecute.
+description: >
+  Operates HyperExecute end-to-end for TestMu AI/LambdaTest cloud test
+  execution: analyze projects, create YAML, validate locally, run CLI jobs,
+  debug failures, and wire CI. Use when the user mentions HyperExecute,
+  hyperexecute.yaml, HyperExecute CLI, autosplit, matrix execution,
+  LambdaTest grid, cloud test runs, CI test orchestration, or migrating
+  Playwright/Cypress/Selenium/Pytest/WebdriverIO tests to HyperExecute.
 languages:
   - YAML
   - JavaScript
