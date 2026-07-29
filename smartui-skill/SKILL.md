@@ -55,7 +55,7 @@ const { smartuiSnapshot } = require('@lambdatest/smartui-cli');
 
 ```bash
 # Install
-npm install @lambdatest/smartui-cli --save-dev
+npm install @lambdatest/smartui-cli@latest --save-dev
 
 # Configure
 npx smartui config:create smartui.config.json
@@ -135,7 +135,7 @@ WebDriver driver = new RemoteWebDriver(
 
 | Task | Command |
 |------|---------|
-| Install | `npm install @lambdatest/smartui-cli` |
+| Install | `npm install @lambdatest/smartui-cli@latest` |
 | Init config | `npx smartui config:create smartui.config.json` |
 | Run | `npx smartui exec -- <test command>` |
 | Storybook | `npx smartui storybook <url>` |

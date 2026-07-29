@@ -5,12 +5,12 @@
 ### CLI Installation & Configuration
 ```bash
 # Install SmartUI CLI
-npm install -g @lambdatest/smartui-cli
+npm install -g @lambdatest/smartui-cli@latest
 
 # Project setup
 mkdir smartui-project && cd smartui-project
 npm init -y
-npm install @lambdatest/smartui-cli playwright @playwright/test --save-dev
+npm install @lambdatest/smartui-cli@latest playwright @playwright/test --save-dev
 
 # Install browsers
 npx playwright install chromium
