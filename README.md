@@ -83,6 +83,16 @@ Add the following to your capabilities:
 tunnel: true,
 ```
 
+## Rook: Skills for Testing AI Agents
+
+[Rook](https://github.com/LambdaTest/rook) is the TestMu AI terminal tool that tests AI agents you own: it reads the agent's codebase, generates scenarios, invokes the agent for real and grades the evidence. Its coding-agent skill teaches Claude Code, Codex and Gemini CLI to drive Rook headlessly. It ships with its own installer rather than through `agentskillsforall`:
+
+```bash
+npx @testmuai/rook-skill
+```
+
+Requires Node.js 22+. The skill source, references and a user guide live in the [Rook repository](https://github.com/LambdaTest/rook#for-ai-coding-agents-reading-this); the [Agent Skills documentation](https://www.testmuai.com/support/docs/agent-skills/) lists it alongside the framework skills above.
+
 ## Contributions
 
 Contributions are welcome. Open an issue to discuss your idea before submitting a pull request. When reporting bugs, include your Node.js version, OS, and npm version.
