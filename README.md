@@ -13,7 +13,7 @@
 With TestMu AI (Formerly LambdaTest), you can install production-grade Agent Skills for every major test automation framework across 15+ languages, enabling AI coding assistants like Claude Code, Copilot, Cursor, and Gemini CLI to write expert-level test automation code.
 
 - [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
-- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/) for the full setup walkthrough.
+- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/agent-skills/) for the full setup walkthrough.
 
 ### Prerequisites
 
