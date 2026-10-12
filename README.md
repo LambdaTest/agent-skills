@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-[TestMu AI](https://www.testmuai.com/) (Formerly LambdaTest) is the world's first full-stack AI Agentic Quality Engineering platform that empowers teams to test intelligently, smarter, and ship faster. Built for scale, it offers a full-stack testing cloud with 10K+ real devices and 3,000+ browsers. With AI-native test management, MCP servers, and agent-based automation, TestMu AI supports Selenium, Appium, Playwright, and all major frameworks. 
+[TestMu AI](https://www.testmuai.com/) is the world's first full-stack AI Agentic Quality Engineering platform that empowers teams to test intelligently, smarter, and ship faster. Built for scale, it offers a full-stack testing cloud with 10K+ real devices and 3,000+ browsers. With AI-native test management, MCP servers, and agent-based automation, TestMu AI supports Selenium, Appium, Playwright, and all major frameworks for End-to-End (E2E) testing. 
 
 With TestMu AI (Formerly LambdaTest), you can install production-grade Agent Skills for every major test automation framework across 15+ languages, enabling AI coding assistants like Claude Code, Copilot, Cursor, and Gemini CLI to write expert-level test automation code.
 
