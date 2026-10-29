@@ -129,6 +129,7 @@ export LT_ACCESS_KEY="your-access-key"
 | Scan at a point | `driver.executeScript("lambda-accessibility-scan")` |
 | Scan every navigation | `accessibility.autoscan` = `true` (Selenium only) |
 | Read results in code | Accessibility MCP server (dashboard-only otherwise) |
+| Scan a live page without code | Paste the URL into the [website accessibility checker](https://www.testmuai.com/wcag-accessibility-checker/) (WCAG 2.2, ADA, Section 508) |
 | Dashboard | `https://accounts.lambdatest.com/dashboard` -> Accessibility |
 
 ## Deep Patterns
