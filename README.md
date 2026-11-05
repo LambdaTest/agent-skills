@@ -83,6 +83,32 @@ Add the following to your capabilities:
 tunnel: true,
 ```
 
+## Migration Skills: Move Test Suites to TestMu AI
+
+These skills migrate an existing suite from another testing cloud or tool to TestMu AI (Formerly LambdaTest) with the smallest working diff: same tests, same framework, same language, new endpoints, capabilities, status hooks, uploads, tunnel and CI. Each skill first asks which TestMu AI product you are moving to (Browser Cloud and Real Device Cloud, or HyperExecute), then converts the repo, verifies it, and writes a `TESTMU_MIGRATION.md` record.
+
+| Skill | Migrates from |
+|-------|---------------|
+| `browserstack-migration-skill` | BrowserStack Automate, App Automate, SDK (`browserstack.yml`), Local, Cypress CLI |
+| `saucelabs-migration-skill` | Sauce Labs (Selenium, Appium, saucectl, Sauce Connect, Sauce Bindings) |
+| `perfecto-migration-skill` | Perfecto (Appium, Selenium, Reportium, Quantum) |
+| `kobiton-migration-skill` | Kobiton |
+| `headspin-migration-skill` | HeadSpin |
+| `digitalai-migration-skill` | Digital.ai Continuous Testing (Experitest / SeeTest) |
+| `aws-device-farm-migration-skill` | AWS Device Farm (Appium, Espresso, XCUITest, desktop browser grid) |
+| `firebase-test-lab-migration-skill` | Firebase Test Lab (Espresso, XCUITest) |
+| `azure-playwright-migration-skill` | Azure / Microsoft Playwright Testing |
+| `cypress-cloud-migration-skill` | Cypress Cloud (`--record`, parallel groups) |
+| `selfhosted-grid-migration-skill` | Selenium Grid, Selenoid, Moon, Zalenium, local Appium |
+| `lowcode-tools-migration-skill` | Low-code and AI testing tools (Katalon, Testim, mabl, testRigor, ACCELQ and others) to KaneAI |
+| `percy-migration-skill` | Percy visual testing to SmartUI |
+
+```bash
+npx agentskillsforall add https://github.com/LambdaTest/agent-skills.git --skill browserstack-migration-skill
+```
+
+Then ask: "Migrate this repo from BrowserStack to TestMu AI" or "Move our Sauce Labs suite to HyperExecute".
+
 ## Rook: Skills for Testing AI Agents
 
 [Rook](https://github.com/LambdaTest/rook) is the TestMu AI terminal tool that tests AI agents you own: it reads the agent's codebase, generates scenarios, invokes the agent for real and grades the evidence. Its coding-agent skill teaches Claude Code, Codex and Gemini CLI to drive Rook headlessly. It ships with its own installer rather than through `agentskillsforall`:

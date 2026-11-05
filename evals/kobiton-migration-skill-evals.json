@@ -1,0 +1,41 @@
+{
+  "skill": "kobiton-migration-skill",
+  "evals": [
+    {
+      "id": "kob-01",
+      "category": "basic",
+      "query": "Migrate my Kobiton test suite to TestMu AI",
+      "expected": [
+        "TestMu AI",
+        "LT:Options",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "kob-02",
+      "category": "basic",
+      "query": "What is the TestMu AI equivalent of this Kobiton configuration?",
+      "expected": [
+        "TestMu AI",
+        "equivalent"
+      ]
+    },
+    {
+      "id": "kob-03",
+      "category": "hyperexecute",
+      "query": "Move our Kobiton tests to HyperExecute",
+      "expected": [
+        "hyperexecute.yaml",
+        "HyperExecute"
+      ]
+    },
+    {
+      "id": "kob-04",
+      "category": "negative",
+      "query": "Write a new Playwright test for the login page from scratch",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

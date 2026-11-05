@@ -1,0 +1,41 @@
+{
+  "skill": "digitalai-migration-skill",
+  "evals": [
+    {
+      "id": "dig-01",
+      "category": "basic",
+      "query": "Migrate my Digital.ai test suite to TestMu AI",
+      "expected": [
+        "TestMu AI",
+        "LT:Options",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "dig-02",
+      "category": "basic",
+      "query": "What is the TestMu AI equivalent of this Digital.ai configuration?",
+      "expected": [
+        "TestMu AI",
+        "equivalent"
+      ]
+    },
+    {
+      "id": "dig-03",
+      "category": "hyperexecute",
+      "query": "Move our Digital.ai tests to HyperExecute",
+      "expected": [
+        "hyperexecute.yaml",
+        "HyperExecute"
+      ]
+    },
+    {
+      "id": "dig-04",
+      "category": "negative",
+      "query": "Write a new Playwright test for the login page from scratch",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "skill": "cypress-cloud-migration-skill",
+  "evals": [
+    {
+      "id": "cyc-01",
+      "category": "basic",
+      "query": "Migrate my Cypress Cloud test suite to TestMu AI",
+      "expected": [
+        "TestMu AI",
+        "LT:Options",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "cyc-02",
+      "category": "basic",
+      "query": "What is the TestMu AI equivalent of this Cypress Cloud configuration?",
+      "expected": [
+        "TestMu AI",
+        "equivalent"
+      ]
+    },
+    {
+      "id": "cyc-03",
+      "category": "hyperexecute",
+      "query": "Move our Cypress Cloud tests to HyperExecute",
+      "expected": [
+        "hyperexecute.yaml",
+        "HyperExecute"
+      ]
+    },
+    {
+      "id": "cyc-04",
+      "category": "negative",
+      "query": "Write a new Playwright test for the login page from scratch",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

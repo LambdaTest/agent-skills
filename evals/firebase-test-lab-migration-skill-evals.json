@@ -1,0 +1,41 @@
+{
+  "skill": "firebase-test-lab-migration-skill",
+  "evals": [
+    {
+      "id": "fir-01",
+      "category": "basic",
+      "query": "Migrate my Firebase Test Lab test suite to TestMu AI",
+      "expected": [
+        "TestMu AI",
+        "LT:Options",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "fir-02",
+      "category": "basic",
+      "query": "What is the TestMu AI equivalent of this Firebase Test Lab configuration?",
+      "expected": [
+        "TestMu AI",
+        "equivalent"
+      ]
+    },
+    {
+      "id": "fir-03",
+      "category": "hyperexecute",
+      "query": "Move our Firebase Test Lab tests to HyperExecute",
+      "expected": [
+        "hyperexecute.yaml",
+        "HyperExecute"
+      ]
+    },
+    {
+      "id": "fir-04",
+      "category": "negative",
+      "query": "Write a new Playwright test for the login page from scratch",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}
