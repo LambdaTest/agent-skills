@@ -1,0 +1,41 @@
+{
+  "skill": "saucelabs-migration-skill",
+  "evals": [
+    {
+      "id": "sau-01",
+      "category": "basic",
+      "query": "Migrate my Sauce Labs test suite to TestMu AI",
+      "expected": [
+        "TestMu AI",
+        "LT:Options",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "sau-02",
+      "category": "basic",
+      "query": "What is the TestMu AI equivalent of this Sauce Labs configuration?",
+      "expected": [
+        "TestMu AI",
+        "equivalent"
+      ]
+    },
+    {
+      "id": "sau-03",
+      "category": "hyperexecute",
+      "query": "Move our Sauce Labs tests to HyperExecute",
+      "expected": [
+        "hyperexecute.yaml",
+        "HyperExecute"
+      ]
+    },
+    {
+      "id": "sau-04",
+      "category": "negative",
+      "query": "Write a new Playwright test for the login page from scratch",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
   "name": "agent-skills",
-  "description": "Production-grade Agent Skills for Test Automation — 70 skills, 15+ languages, cloud and local execution",
+  "description": "Production-grade Agent Skills for Test Automation — 84 skills, 15+ languages, cloud and local execution",
   "repository": "https://github.com/LambdaTest/agent-skills",
-  "total_skills": 70,
+  "total_skills": 84,
   "categories": [
     "api-testing",
     "bdd-testing",
@@ -1228,6 +1228,314 @@
           "test-framework-migration-skill/reference/selenium-to-cypress.md",
           "test-framework-migration-skill/reference/selenium-to-playwright.md",
           "test-framework-migration-skill/reference/selenium-to-puppeteer.md"
+        ]
+      }
+    },
+    {
+      "name": "browserstack-migration-skill",
+      "path": "browserstack-migration-skill",
+      "description": "Migrate test automation from BrowserStack to TestMu AI (formerly LambdaTest) in any language or framework. Covers Automate (Selenium), App Automate (Appium, Espresso, XCUITest), the BrowserStack SDK and browserstack.yml, browserstack-cypress-cli, Playwright and Puppeteer over cdp.browserstack.com, BrowserStack Local, Percy, Accessibility Testing, Test Observability. Use this whenever someone wants to move, switch, port, migrate or point tests from BrowserStack to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from BrowserStack, mentions bstack:options, browserstack.yml, browserstack.json, BrowserStack SDK, BrowserStack Local, browserstack_executor, Percy, hub.browserstack.com, or wants a migration plan, estimate, PR or checklist for a repo currently on BrowserStack, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C#",
+        "Ruby",
+        "PHP",
+        "Kotlin",
+        "Swift",
+        "YAML"
+      ],
+      "category": "cloud-testing",
+      "files": {
+        "skill_md": "browserstack-migration-skill/SKILL.md",
+        "reference": [
+          "browserstack-migration-skill/reference/browserstack.md",
+          "browserstack-migration-skill/reference/hyperexecute.md",
+          "browserstack-migration-skill/reference/languages.md",
+          "browserstack-migration-skill/reference/playbook.md",
+          "browserstack-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "saucelabs-migration-skill",
+      "path": "saucelabs-migration-skill",
+      "description": "Migrate test automation from Sauce Labs to TestMu AI (formerly LambdaTest) in any language or framework. Covers Selenium and Appium on ondemand.REGION.saucelabs.com, saucectl (Playwright, Cypress, TestCafe, Espresso, XCUITest, Replay), Sauce Connect 4 and 5, Sauce Storage, @wdio/sauce-service, @saucelabs/playwright-reporter, Sauce Visual. Use this whenever someone wants to move, switch, port, migrate or point tests from Sauce Labs to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from Sauce Labs, mentions sauce:options, saucectl, .sauce/config.yml, Sauce Connect, sc run, SAUCE_USERNAME, sauce:job-result, storage:filename=, or wants a migration plan, estimate, PR or checklist for a repo currently on Sauce Labs, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C#",
+        "Ruby",
+        "PHP",
+        "Kotlin",
+        "Swift",
+        "YAML"
+      ],
+      "category": "cloud-testing",
+      "files": {
+        "skill_md": "saucelabs-migration-skill/SKILL.md",
+        "reference": [
+          "saucelabs-migration-skill/reference/hyperexecute.md",
+          "saucelabs-migration-skill/reference/languages.md",
+          "saucelabs-migration-skill/reference/playbook.md",
+          "saucelabs-migration-skill/reference/saucelabs.md",
+          "saucelabs-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "perfecto-migration-skill",
+      "path": "perfecto-migration-skill",
+      "description": "Migrate test automation from Perfecto (Perforce) to TestMu AI (formerly LambdaTest) in any language or framework. Covers Perfecto mobile and web cloud, securityToken auth, perfecto:options, the Reportium reporting SDK (PerfectoExecutionContext, ReportiumClient), the Quantum framework, Perfecto Connect. Use this whenever someone wants to move, switch, port, migrate or point tests from Perfecto to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from Perfecto, mentions perfectomobile.com, nexperience/perfectomobile/wd/hub, securityToken, perfecto:options, ReportiumClient, PerfectoExecutionContext, PRIVATE: app locators, perfectoconnect, or wants a migration plan, estimate, PR or checklist for a repo currently on Perfecto, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "C#",
+        "Ruby"
+      ],
+      "category": "cloud-testing",
+      "files": {
+        "skill_md": "perfecto-migration-skill/SKILL.md",
+        "reference": [
+          "perfecto-migration-skill/reference/hyperexecute.md",
+          "perfecto-migration-skill/reference/languages.md",
+          "perfecto-migration-skill/reference/perfecto.md",
+          "perfecto-migration-skill/reference/playbook.md",
+          "perfecto-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "kobiton-migration-skill",
+      "path": "kobiton-migration-skill",
+      "description": "Migrate test automation from Kobiton to TestMu AI (formerly LambdaTest) in any language or framework. Covers Kobiton real-device Appium cloud (api.kobiton.com/wd/hub), kobiton: capabilities, Kobiton App Repository (kobiton-store:), NOVA Scriptless exports. Use this whenever someone wants to move, switch, port, migrate or point tests from Kobiton to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from Kobiton, mentions api.kobiton.com, kobiton:, kobiton-store:, deviceGroup, sessionName, captureScreenshots, KOBITON_USERNAME, KOBITON_API_KEY, or wants a migration plan, estimate, PR or checklist for a repo currently on Kobiton, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "C#",
+        "Ruby"
+      ],
+      "category": "mobile-testing",
+      "files": {
+        "skill_md": "kobiton-migration-skill/SKILL.md",
+        "reference": [
+          "kobiton-migration-skill/reference/hyperexecute.md",
+          "kobiton-migration-skill/reference/kobiton.md",
+          "kobiton-migration-skill/reference/languages.md",
+          "kobiton-migration-skill/reference/playbook.md",
+          "kobiton-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "headspin-migration-skill",
+      "path": "headspin-migration-skill",
+      "description": "Migrate test automation from HeadSpin to TestMu AI (formerly LambdaTest) in any language or framework. Covers HeadSpin per-device Appium and Selenium endpoints (token in URL), headspin: capabilities, User Flows, the automation-config API, hs connect browser for Playwright and Puppeteer. Use this whenever someone wants to move, switch, port, migrate or point tests from HeadSpin to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from HeadSpin, mentions headspin.io, /v0/TOKEN/wd/hub, headspin:capture, headspin:testName, headspin:selector, headspin:quitSession, automation-config, hs connect browser, or wants a migration plan, estimate, PR or checklist for a repo currently on HeadSpin, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "C#"
+      ],
+      "category": "mobile-testing",
+      "files": {
+        "skill_md": "headspin-migration-skill/SKILL.md",
+        "reference": [
+          "headspin-migration-skill/reference/headspin.md",
+          "headspin-migration-skill/reference/hyperexecute.md",
+          "headspin-migration-skill/reference/languages.md",
+          "headspin-migration-skill/reference/playbook.md",
+          "headspin-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "digitalai-migration-skill",
+      "path": "digitalai-migration-skill",
+      "description": "Migrate test automation from Digital.ai Continuous Testing (Experitest / SeeTest) to TestMu AI (formerly LambdaTest) in any language or framework. Covers cloud.seetest.io and company.experitest.com grids, accessKey auth, digitalai:options, deviceQuery selectors, cloud: app references, seetest:client.* commands, Cloud Agent. Use this whenever someone wants to move, switch, port, migrate or point tests from Digital.ai Continuous Testing to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from Digital.ai Continuous Testing, mentions seetest, experitest, digitalai:options, deviceQuery, SEETEST_IO_ACCESS_KEY, cloud: app values, seetest:client, reportUrl, or wants a migration plan, estimate, PR or checklist for a repo currently on Digital.ai Continuous Testing, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "C#"
+      ],
+      "category": "mobile-testing",
+      "files": {
+        "skill_md": "digitalai-migration-skill/SKILL.md",
+        "reference": [
+          "digitalai-migration-skill/reference/digitalai.md",
+          "digitalai-migration-skill/reference/hyperexecute.md",
+          "digitalai-migration-skill/reference/languages.md",
+          "digitalai-migration-skill/reference/playbook.md",
+          "digitalai-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "aws-device-farm-migration-skill",
+      "path": "aws-device-farm-migration-skill",
+      "description": "Migrate test automation from AWS Device Farm to TestMu AI (formerly LambdaTest) in any language or framework. Covers Device Farm desktop browser testing (create_test_grid_url) and mobile runs with test spec YAML, DEVICEFARM_* env vars, device pools, Appium/Espresso/XCUITest/instrumentation uploads. Use this whenever someone wants to move, switch, port, migrate or point tests from AWS Device Farm to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from AWS Device Farm, mentions create_test_grid_url, CreateTestGridUrl, boto3 devicefarm, DEVICEFARM_DEVICE_NAME, DEVICEFARM_APP_PATH, test spec YAML with phases install/pre_test/test, appium --base-path, 127.0.0.1:4723 inside a Device Farm package, or wants a migration plan, estimate, PR or checklist for a repo currently on AWS Device Farm, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "Kotlin",
+        "Swift",
+        "YAML"
+      ],
+      "category": "mobile-testing",
+      "files": {
+        "skill_md": "aws-device-farm-migration-skill/SKILL.md",
+        "reference": [
+          "aws-device-farm-migration-skill/reference/aws-device-farm.md",
+          "aws-device-farm-migration-skill/reference/hyperexecute.md",
+          "aws-device-farm-migration-skill/reference/languages.md",
+          "aws-device-farm-migration-skill/reference/playbook.md",
+          "aws-device-farm-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "firebase-test-lab-migration-skill",
+      "path": "firebase-test-lab-migration-skill",
+      "description": "Migrate test automation from Firebase Test Lab to TestMu AI (formerly LambdaTest) in any language or framework. Covers gcloud firebase test android|ios run (instrumentation, XCTest, Robo, Game Loop), device model and API-level strings, Fastlane/Bitrise/Codemagic/GitHub Actions wrappers; Test Lab is deprecated with shutdown on 30 September 2027. Use this whenever someone wants to move, switch, port, migrate or point tests from Firebase Test Lab to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from Firebase Test Lab, mentions gcloud firebase test, --type instrumentation, --type robo, --device model=, run_tests_firebase_testlab and firebase_test_lab_ios_xctest fastlane actions, test lab in CI YAML, Firebase Test Lab shutdown, or wants a migration plan, estimate, PR or checklist for a repo currently on Firebase Test Lab, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Kotlin",
+        "Swift",
+        "YAML"
+      ],
+      "category": "mobile-testing",
+      "files": {
+        "skill_md": "firebase-test-lab-migration-skill/SKILL.md",
+        "reference": [
+          "firebase-test-lab-migration-skill/reference/firebase-test-lab.md",
+          "firebase-test-lab-migration-skill/reference/hyperexecute.md",
+          "firebase-test-lab-migration-skill/reference/languages.md",
+          "firebase-test-lab-migration-skill/reference/playbook.md",
+          "firebase-test-lab-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "azure-playwright-migration-skill",
+      "path": "azure-playwright-migration-skill",
+      "description": "Migrate test automation from Azure Playwright Workspaces / Microsoft Playwright Testing to TestMu AI (formerly LambdaTest) in any language or framework. Covers playwright.service.config.ts with @azure/playwright createAzurePlaywrightConfig (or the retired @azure/microsoft-playwright-testing getServiceConfig), PLAYWRIGHT_SERVICE_URL, Entra ID or access-token auth, exposeNetwork, the Azure reporter. Use this whenever someone wants to move, switch, port, migrate or point tests from Azure Playwright Workspaces to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from Azure Playwright Workspaces, mentions playwright.service.config, @azure/playwright, createAzurePlaywrightConfig, @azure/microsoft-playwright-testing, getServiceConfig, PLAYWRIGHT_SERVICE_URL, PLAYWRIGHT_SERVICE_ACCESS_TOKEN, ServiceOS, or wants a migration plan, estimate, PR or checklist for a repo currently on Azure Playwright Workspaces, even without the word migrate.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "C#",
+        "Python",
+        "YAML"
+      ],
+      "category": "cloud-testing",
+      "files": {
+        "skill_md": "azure-playwright-migration-skill/SKILL.md",
+        "reference": [
+          "azure-playwright-migration-skill/reference/azure-playwright.md",
+          "azure-playwright-migration-skill/reference/hyperexecute.md",
+          "azure-playwright-migration-skill/reference/languages.md",
+          "azure-playwright-migration-skill/reference/playbook.md",
+          "azure-playwright-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "cypress-cloud-migration-skill",
+      "path": "cypress-cloud-migration-skill",
+      "description": "Migrate test automation from Cypress Cloud to TestMu AI (formerly LambdaTest) in any language or framework. Covers cypress run --record --key, projectId, --parallel/--group/--ci-build-id orchestration, cypress-io/github-action record mode, Cypress Cloud Test Replay and analytics. Use this whenever someone wants to move, switch, port, migrate or point tests from Cypress Cloud to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from Cypress Cloud, mentions cypress run --record, CYPRESS_RECORD_KEY, projectId in cypress.config, --parallel, --group, --ci-build-id, cypress-io/github-action record: true, Cypress Dashboard, or wants a migration plan, estimate, PR or checklist for a repo currently on Cypress Cloud, even without the word migrate.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "YAML"
+      ],
+      "category": "cloud-testing",
+      "files": {
+        "skill_md": "cypress-cloud-migration-skill/SKILL.md",
+        "reference": [
+          "cypress-cloud-migration-skill/reference/cypress-cloud.md",
+          "cypress-cloud-migration-skill/reference/hyperexecute.md",
+          "cypress-cloud-migration-skill/reference/languages.md",
+          "cypress-cloud-migration-skill/reference/playbook.md",
+          "cypress-cloud-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "selfhosted-grid-migration-skill",
+      "path": "selfhosted-grid-migration-skill",
+      "description": "Migrate test automation from self-hosted Selenium Grid, docker-selenium, Selenoid, Aerokube Moon, Zalenium, and local Playwright/Puppeteer/Cypress/TestCafe/Appium to TestMu AI (formerly LambdaTest) in any language or framework. Covers localhost:4444 Selenium Grid, docker-selenium images, Selenoid (selenoid:options), Moon (moon:options, Playwright/Puppeteer endpoints), Zalenium, and tests that launch browsers or Appium locally. Use this whenever someone wants to move, switch, port, migrate or point tests from self-hosted grids and local runners to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from self-hosted grids and local runners, mentions localhost:4444, selenium-hub, selenium/standalone-chrome, SE_NODE_MAX_SESSIONS, selenoid:options, enableVNC, moon:options, aerokube, or wants a migration plan, estimate, PR or checklist for a repo currently on self-hosted grids and local runners, even without the word migrate.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C#",
+        "Ruby",
+        "PHP",
+        "Kotlin",
+        "Swift",
+        "YAML"
+      ],
+      "category": "cloud-testing",
+      "files": {
+        "skill_md": "selfhosted-grid-migration-skill/SKILL.md",
+        "reference": [
+          "selfhosted-grid-migration-skill/reference/hyperexecute.md",
+          "selfhosted-grid-migration-skill/reference/languages.md",
+          "selfhosted-grid-migration-skill/reference/playbook.md",
+          "selfhosted-grid-migration-skill/reference/selfhosted-grid.md",
+          "selfhosted-grid-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "lowcode-tools-migration-skill",
+      "path": "lowcode-tools-migration-skill",
+      "description": "Migrate test automation from mabl, Testim, Momentic, QA Wolf, Functionize and other low-code or managed test services to TestMu AI (formerly LambdaTest) in any language or framework. Covers mabl (CLI deployments, Playwright export), Testim (@testim/testim-cli, own-grid --host), Momentic (YAML tests, momentic run), QA Wolf (customer-owned Playwright repos), Functionize (model-based cloud tests), Selenium IDE .side files. Use this whenever someone wants to move, switch, port, migrate or point tests from low-code and managed test tools to TestMu AI or LambdaTest, asks what the TestMu or LT:Options equivalent is for a capability, config, CLI flag or API from low-code and managed test tools, mentions mabl, mabl tests export, Testim, testim-cli, Momentic, momentic run, QA Wolf, qawolf, or wants a migration plan, estimate, PR or checklist for a repo currently on low-code and managed test tools, even without the word migrate.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "YAML"
+      ],
+      "category": "cloud-testing",
+      "files": {
+        "skill_md": "lowcode-tools-migration-skill/SKILL.md",
+        "reference": [
+          "lowcode-tools-migration-skill/reference/hyperexecute.md",
+          "lowcode-tools-migration-skill/reference/languages.md",
+          "lowcode-tools-migration-skill/reference/lowcode-tools.md",
+          "lowcode-tools-migration-skill/reference/playbook.md",
+          "lowcode-tools-migration-skill/reference/testmu-target.md"
+        ]
+      }
+    },
+    {
+      "name": "percy-migration-skill",
+      "path": "percy-migration-skill",
+      "description": "Migrate visual regression testing from BrowserStack Percy (web, Percy on Automate, App Percy, Storybook, static snapshots, uploads) to TestMu AI SmartUI in any language or framework: Playwright, Cypress, Selenium (JS, Python, Java, C#, Ruby), Puppeteer, WebdriverIO, TestCafe, Capybara, Appium, Storybook. Use whenever someone wants to move from Percy to SmartUI or LambdaTest, mentions @percy/cli, percy exec, percySnapshot, percyScreenshot, PERCY_TOKEN, .percy.yml, App Percy or Percy baselines, or asks for the SmartUI equivalent of a Percy command, option or SDK call.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#",
+        "Ruby"
+      ],
+      "category": "visual-testing",
+      "files": {
+        "skill_md": "percy-migration-skill/SKILL.md",
+        "reference": [
+          "percy-migration-skill/reference/percy.md",
+          "percy-migration-skill/reference/playbook.md",
+          "percy-migration-skill/reference/smartui-target.md"
         ]
       }
     }

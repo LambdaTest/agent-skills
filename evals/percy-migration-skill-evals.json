@@ -1,0 +1,39 @@
+{
+  "skill": "percy-migration-skill",
+  "evals": [
+    {
+      "id": "pcy-01",
+      "category": "basic",
+      "query": "Migrate our Percy visual tests to SmartUI",
+      "expected": [
+        "smartui",
+        "PROJECT_TOKEN",
+        "smartui exec"
+      ]
+    },
+    {
+      "id": "pcy-02",
+      "category": "basic",
+      "query": "What is the SmartUI equivalent of percyCSS?",
+      "expected": [
+        "customCSS"
+      ]
+    },
+    {
+      "id": "pcy-03",
+      "category": "storybook",
+      "query": "Move percy storybook to TestMu AI",
+      "expected": [
+        "smartui-storybook"
+      ]
+    },
+    {
+      "id": "pcy-04",
+      "category": "negative",
+      "query": "Write a new SmartUI test for the home page from scratch",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

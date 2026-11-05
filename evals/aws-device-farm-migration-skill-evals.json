@@ -1,0 +1,41 @@
+{
+  "skill": "aws-device-farm-migration-skill",
+  "evals": [
+    {
+      "id": "awd-01",
+      "category": "basic",
+      "query": "Migrate my AWS Device Farm test suite to TestMu AI",
+      "expected": [
+        "TestMu AI",
+        "LT:Options",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "awd-02",
+      "category": "basic",
+      "query": "What is the TestMu AI equivalent of this AWS Device Farm configuration?",
+      "expected": [
+        "TestMu AI",
+        "equivalent"
+      ]
+    },
+    {
+      "id": "awd-03",
+      "category": "hyperexecute",
+      "query": "Move our AWS Device Farm tests to HyperExecute",
+      "expected": [
+        "hyperexecute.yaml",
+        "HyperExecute"
+      ]
+    },
+    {
+      "id": "awd-04",
+      "category": "negative",
+      "query": "Write a new Playwright test for the login page from scratch",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

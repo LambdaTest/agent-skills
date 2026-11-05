@@ -1,0 +1,41 @@
+{
+  "skill": "perfecto-migration-skill",
+  "evals": [
+    {
+      "id": "per-01",
+      "category": "basic",
+      "query": "Migrate my Perfecto test suite to TestMu AI",
+      "expected": [
+        "TestMu AI",
+        "LT:Options",
+        "LT_USERNAME"
+      ]
+    },
+    {
+      "id": "per-02",
+      "category": "basic",
+      "query": "What is the TestMu AI equivalent of this Perfecto configuration?",
+      "expected": [
+        "TestMu AI",
+        "equivalent"
+      ]
+    },
+    {
+      "id": "per-03",
+      "category": "hyperexecute",
+      "query": "Move our Perfecto tests to HyperExecute",
+      "expected": [
+        "hyperexecute.yaml",
+        "HyperExecute"
+      ]
+    },
+    {
+      "id": "per-04",
+      "category": "negative",
+      "query": "Write a new Playwright test for the login page from scratch",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}
