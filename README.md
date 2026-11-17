@@ -109,6 +109,24 @@ npx agentskillsforall add https://github.com/LambdaTest/agent-skills.git --skill
 
 Then ask: "Migrate this repo from BrowserStack to TestMu AI" or "Move our Sauce Labs suite to HyperExecute".
 
+## Testing Best Practices Skills
+
+These skills do not generate a project. They teach the agent how to review and harden tests that already exist, fix flaky ones by finding the cause, and plan coverage for an AI agent. The three web testing skills end by verifying the behaviour in a real browser with [Kane CLI](https://github.com/LambdaTest/kane-cli) and walk the agent through installing it and the `kanecli-skill`. The agent testing skill points to [Rook](https://github.com/LambdaTest/rook) and the `rook-skill` instead.
+
+| Skill | Use it for |
+|-------|------------|
+| `playwright-patterns-skill` | Locator priority, web-first assertions, isolation, network mocking, config and a review checklist for Playwright tests |
+| `selenium-patterns-skill` | Explicit waits, locator priority, driver lifecycle, page objects and the common WebDriver exceptions |
+| `flaky-test-fixes-skill` | Reproduce, classify, fix and prove for intermittent failures, with the fixes that only hide the problem |
+| `agent-testing-checks-skill` | What to cover when testing an AI agent, how to assert on non-deterministic output, and how to run it with Rook |
+
+```bash
+npx agentskillsforall add https://github.com/LambdaTest/agent-skills.git --skill flaky-test-fixes-skill
+npx agentskillsforall add https://github.com/LambdaTest/agent-skills.git --skill kanecli-skill
+```
+
+Then ask: "Review my Playwright tests" or "This test fails one run in ten, find out why".
+
 ## Rook: Skills for Testing AI Agents
 
 [Rook](https://github.com/LambdaTest/rook) is the TestMu AI terminal tool that tests AI agents you own: it reads the agent's codebase, generates scenarios, invokes the agent for real and grades the evidence. Its coding-agent skill teaches Claude Code, Codex and Gemini CLI to drive Rook headlessly. It ships with its own installer rather than through `agentskillsforall`:

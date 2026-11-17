@@ -1,0 +1,48 @@
+{
+  "skill": "selenium-patterns-skill",
+  "evals": [
+    {
+      "id": "sep-01",
+      "category": "waits",
+      "query": "My Selenium test uses Thread.sleep(5000) and still fails sometimes",
+      "expected": [
+        "WebDriverWait",
+        "ExpectedConditions"
+      ]
+    },
+    {
+      "id": "sep-02",
+      "category": "exceptions",
+      "query": "I keep getting StaleElementReferenceException in Selenium Python",
+      "expected": [
+        "find",
+        "wait.until"
+      ]
+    },
+    {
+      "id": "sep-03",
+      "category": "exceptions",
+      "query": "ElementClickInterceptedException when clicking the submit button",
+      "expected": [
+        "invisibility",
+        "overlay"
+      ]
+    },
+    {
+      "id": "sep-04",
+      "category": "lifecycle",
+      "query": "Chrome processes are left running on our CI agent after Selenium tests",
+      "expected": [
+        "quit()"
+      ]
+    },
+    {
+      "id": "sep-05",
+      "category": "negative",
+      "query": "Write a Cypress component test for this React button",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

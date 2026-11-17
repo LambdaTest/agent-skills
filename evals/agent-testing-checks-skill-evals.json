@@ -1,0 +1,54 @@
+{
+  "skill": "agent-testing-checks-skill",
+  "evals": [
+    {
+      "id": "atc-01",
+      "category": "coverage",
+      "query": "How should I test our support chatbot before launch?",
+      "expected": [
+        "grounding",
+        "prompt injection",
+        "pass rate",
+        "rook"
+      ]
+    },
+    {
+      "id": "atc-02",
+      "category": "non-determinism",
+      "query": "My LLM feature test passes sometimes and fails sometimes with the same input",
+      "expected": [
+        "several times",
+        "pass rate"
+      ]
+    },
+    {
+      "id": "atc-03",
+      "category": "tool-calls",
+      "query": "Our agent can issue refunds, what do we need to test?",
+      "expected": [
+        "staging",
+        "once",
+        "end state"
+      ]
+    },
+    {
+      "id": "atc-04",
+      "category": "rook",
+      "query": "Test the agent in this repo",
+      "expected": [
+        "rook explore",
+        "rook generate",
+        "rook run",
+        "rook-skill"
+      ]
+    },
+    {
+      "id": "atc-05",
+      "category": "negative",
+      "query": "Write a Playwright test for the checkout page",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

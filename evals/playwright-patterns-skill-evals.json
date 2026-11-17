@@ -1,0 +1,52 @@
+{
+  "skill": "playwright-patterns-skill",
+  "evals": [
+    {
+      "id": "pwp-01",
+      "category": "review",
+      "query": "Review this Playwright test: it uses page.waitForTimeout(3000) before clicking Checkout",
+      "expected": [
+        "waitForTimeout",
+        "expect(",
+        "getByRole"
+      ]
+    },
+    {
+      "id": "pwp-02",
+      "category": "locators",
+      "query": "My Playwright test fails with strict mode violation, locator resolved to 2 elements",
+      "expected": [
+        "filter",
+        "scope",
+        "first()"
+      ]
+    },
+    {
+      "id": "pwp-03",
+      "category": "isolation",
+      "query": "Playwright tests pass alone but fail when run in parallel",
+      "expected": [
+        "workerIndex",
+        "storageState",
+        "context"
+      ]
+    },
+    {
+      "id": "pwp-04",
+      "category": "verification",
+      "query": "I fixed the Playwright spec, is the checkout flow done?",
+      "expected": [
+        "kane-cli run",
+        "--agent"
+      ]
+    },
+    {
+      "id": "pwp-05",
+      "category": "negative",
+      "query": "Write unit tests for this Python function with pytest",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

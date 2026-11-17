@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
   "name": "agent-skills",
-  "description": "Production-grade Agent Skills for Test Automation — 84 skills, 15+ languages, cloud and local execution",
+  "description": "Production-grade Agent Skills for Test Automation — 88 skills, 15+ languages, cloud and local execution",
   "repository": "https://github.com/LambdaTest/agent-skills",
-  "total_skills": 84,
+  "total_skills": 88,
   "categories": [
     "api-testing",
     "bdd-testing",
@@ -1536,6 +1536,75 @@
           "percy-migration-skill/reference/percy.md",
           "percy-migration-skill/reference/playbook.md",
           "percy-migration-skill/reference/smartui-target.md"
+        ]
+      }
+    },
+    {
+      "name": "playwright-patterns-skill",
+      "path": "playwright-patterns-skill",
+      "description": "Review and hardening rules for Playwright tests: locator priority, web-first assertions, test isolation, network mocking, config and a pre-merge checklist. Use when reviewing, fixing or stabilising existing Playwright specs, page objects, fixtures or playwright.config, or when the user says \"review my Playwright test\", \"Playwright best practices\", \"locator strategy\", \"strict mode violation\" or \"my Playwright test keeps timing out\". To scaffold a new Playwright project or run on TestMu AI cloud, use playwright-skill.",
+      "languages": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "category": "e2e-testing",
+      "files": {
+        "skill_md": "playwright-patterns-skill/SKILL.md",
+        "reference": [
+          "playwright-patterns-skill/reference/playbook.md"
+        ]
+      }
+    },
+    {
+      "name": "selenium-patterns-skill",
+      "path": "selenium-patterns-skill",
+      "description": "Review and hardening rules for Selenium WebDriver tests: explicit waits, locator priority, driver lifecycle, page objects and the exceptions that cause most failures. Use when reviewing, fixing or stabilising existing Selenium tests or page objects, or when the user mentions WebDriverWait, \"implicit wait\", StaleElementReferenceException, NoSuchElementException, ElementClickInterceptedException, Thread.sleep or \"Selenium best practices\". To scaffold a new Selenium project or run on TestMu AI cloud, use selenium-skill.",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "C#"
+      ],
+      "category": "e2e-testing",
+      "files": {
+        "skill_md": "selenium-patterns-skill/SKILL.md",
+        "reference": [
+          "selenium-patterns-skill/reference/playbook.md"
+        ]
+      }
+    },
+    {
+      "name": "flaky-test-fixes-skill",
+      "path": "flaky-test-fixes-skill",
+      "description": "A diagnosis-first procedure for flaky tests in any UI or integration suite (Playwright, Selenium, Cypress, WebdriverIO, Jest, pytest): reproduce and measure, classify the cause, fix the cause, prove the fix. Use when a test fails intermittently, passes on retry, fails only in CI, only in parallel or only in the full suite, or when the user says \"flaky\", \"intermittent\", \"works on my machine\", \"quarantine this test\" or asks to add a retry, a sleep or a longer timeout.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java"
+      ],
+      "category": "e2e-testing",
+      "files": {
+        "skill_md": "flaky-test-fixes-skill/SKILL.md",
+        "reference": [
+          "flaky-test-fixes-skill/reference/playbook.md"
+        ]
+      }
+    },
+    {
+      "name": "agent-testing-checks-skill",
+      "path": "agent-testing-checks-skill",
+      "description": "Coverage checklist and review rules for testing an AI agent: a chatbot, support assistant, voice agent or tool-calling agent. Covers what to test (grounding, tool calls, side effects, multi-turn, prompt injection, data handling), how to assert on non-deterministic output, and how to read results. Use when the user asks \"how do I test my agent\", \"what should we test before launching the chatbot\", \"agent testing\", \"LLM evals\", or mentions hallucination, \"prompt injection\", red teaming or non-deterministic output. Points to Rook to generate scenarios, run the agent and grade the evidence; install rook-skill to drive Rook.",
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python"
+      ],
+      "category": "e2e-testing",
+      "files": {
+        "skill_md": "agent-testing-checks-skill/SKILL.md",
+        "reference": [
+          "agent-testing-checks-skill/reference/playbook.md"
         ]
       }
     }
