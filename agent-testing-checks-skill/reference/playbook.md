@@ -2,7 +2,7 @@
 
 Companion to `SKILL.md`. The checklists live in `SKILL.md`; this page holds the debugging table for AI agent failures, a case file format and a CI job.
 
-For TestMu AI cloud capabilities, see [../../shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md). To run agent tests with Rook, use `rook-skill`.
+For TestMu AI cloud capabilities, see [../../shared/testmu-cloud-reference.md](../../shared/testmu-cloud-reference.md). To drive Rook end to end, use `rook-skill`; its `references/ci.md` has the complete pipeline with verdict gating.
 
 ## Debugging table
 
@@ -16,9 +16,9 @@ For TestMu AI cloud capabilities, see [../../shared/testmu-cloud-reference.md](.
 | 6 | It forgets an earlier turn | context truncated or summary dropped a fact | test long conversations; assert on facts from turn one at turn ten |
 | 7 | It reveals the system prompt or another user's data | no output filtering or over-broad retrieval scope | scope retrieval to the user; add must-not-include checks |
 | 8 | The LLM judge passes obviously bad answers | the rubric is vague, or the judge was never validated | write a pass or fail rubric with examples; check the judge against human labels |
-| 9 | Evals pass at the API, the product still fails | the widget, streaming or rendering breaks | run key conversations through the real UI with Kane CLI |
+| 9 | Evals pass at the API, the product still fails | the widget, streaming or rendering breaks | invoke the deployed agent through its real entry point with a Rook profile |
 | 10 | Quality drops after a model or prompt change | no regression set, or only an average score tracked | pin versions in the run record; compare pass rate per category |
-| 11 | The coding agent reports "all tests pass" and the feature is broken | tests were loosened, skipped or mocked | diff the test files; rerun the suite yourself; verify in a browser |
+| 11 | Passes in staging, fails in production | different model version, tools or data between the two | pin versions; test a staging target that mirrors production |
 | 12 | Latency or cost doubles | extra tool loops or a larger context | cap steps per turn; log tokens and tool calls per case |
 
 ## Case file format
@@ -39,23 +39,34 @@ For TestMu AI cloud capabilities, see [../../shared/testmu-cloud-reference.md](.
 
 ## CI: GitHub Actions
 
+A person must review the target, its real writes, the credit spend and the tool grants before this job is enabled.
+
 ```yaml
-name: agent-checks
+name: agent-tests
 on: [pull_request]
 jobs:
-  evals:
+  rook:
     runs-on: ubuntu-latest
+    env:
+      LT_USERNAME: ${{ secrets.LT_USERNAME }}
+      LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
-      - run: npm ci
-      - run: npm run evals -- --runs 5 --fail-under 0.9
-      - name: Run the key conversation through the real UI
+        with: { node-version: 22 }
+      - run: npm install -g @testmuai/rook@latest
+      - run: rook project use "${{ vars.ROOK_PROJECT_ID }}"
+      - run: rook agent use "${{ vars.ROOK_AGENT_ID }}"
+      - run: rook sync --yes
+      - run: rook run --yes --json > run.json
+      - run: rook report "$(jq -r .run_id run.json)" --json > report.json
+      - name: Fail the build unless every scenario ran and passed
         run: |
-          npm install -g @testmuai/kane-cli
-          kane-cli login --username "${{ secrets.LT_USERNAME }}" --access-key "${{ secrets.LT_ACCESS_KEY }}"
-          kane-cli run "Go to ${{ vars.PREVIEW_URL }}, open the support chat, ask 'What is your refund window?', store the assistant's reply as 'reply'" --agent --headless --timeout 180
+          jq -e '.report.totals.failed == 0 and .report.totals.unjudged == 0
+            and .report.totals.not_run == 0 and .report.totals.executed > 0' report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: rook-report, path: report.json }
 ```
 
-`npm run evals` stands for your own eval runner; replace it with the command your project uses.
+`rook run` exits 0 when the run finishes, whether scenarios passed or failed, so the gate reads the verdict counts from the report. The job expects a committed `.testmuai/rook/` tree with a configured profile. This is the short form; the recipe in `rook-skill` adds the full completion checks.
