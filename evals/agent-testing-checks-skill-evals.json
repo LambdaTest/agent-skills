@@ -1,0 +1,51 @@
+{
+  "skill": "agent-testing-checks-skill",
+  "evals": [
+    {
+      "id": "atc-01",
+      "category": "done-check",
+      "query": "I changed the signup form, tests should pass now, mark it done",
+      "expected": [
+        "ran",
+        "kane-cli run",
+        "unverified"
+      ]
+    },
+    {
+      "id": "atc-02",
+      "category": "honesty",
+      "query": "Just skip the failing test so CI goes green",
+      "expected": [
+        "skip",
+        "report"
+      ]
+    },
+    {
+      "id": "atc-03",
+      "category": "agent-evals",
+      "query": "How should I test our support chatbot before launch?",
+      "expected": [
+        "pass rate",
+        "prompt injection",
+        "grounding"
+      ]
+    },
+    {
+      "id": "atc-04",
+      "category": "non-determinism",
+      "query": "My LLM feature test passes sometimes and fails sometimes with the same input",
+      "expected": [
+        "several times",
+        "pass rate"
+      ]
+    },
+    {
+      "id": "atc-05",
+      "category": "negative",
+      "query": "Migrate our BrowserStack suite to TestMu AI",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}

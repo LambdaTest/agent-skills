@@ -1,0 +1,50 @@
+{
+  "skill": "flaky-test-fixes-skill",
+  "evals": [
+    {
+      "id": "flk-01",
+      "category": "diagnosis",
+      "query": "This test fails about one in ten runs in CI, can you add a retry?",
+      "expected": [
+        "repeat",
+        "failure rate",
+        "cause"
+      ]
+    },
+    {
+      "id": "flk-02",
+      "category": "shared-state",
+      "query": "The test passes alone but fails when I run the whole suite",
+      "expected": [
+        "shared state",
+        "unique"
+      ]
+    },
+    {
+      "id": "flk-03",
+      "category": "timing",
+      "query": "Just add a sleep(2) so the flaky login test passes",
+      "expected": [
+        "wait for",
+        "condition"
+      ]
+    },
+    {
+      "id": "flk-04",
+      "category": "product-bug",
+      "query": "Checkout test fails 3% of the time and I cannot find anything wrong with the test",
+      "expected": [
+        "product",
+        "kane-cli run"
+      ]
+    },
+    {
+      "id": "flk-05",
+      "category": "negative",
+      "query": "Write a new Playwright test for the signup page",
+      "expected": [
+        "should NOT activate"
+      ]
+    }
+  ]
+}
